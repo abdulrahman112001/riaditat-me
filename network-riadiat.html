@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<!-- for english make lang en and dir ltr -->
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة رياديات</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <!-- font file -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <!-- uncomment the following line for english  -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- comment this line for english -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+
+    <!-- fontawesome file -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- calender -->
+    <link rel="stylesheet" href="css/simple-calendar.css">
+
+    <!-- owl -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- calender -->
+    <link rel="stylesheet" href="css/simple-calendar.css">
+
+    <!-- owl -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- Main style file -->
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .network .item {
+            height: 100px;
+            width: 100%;
+            background-image: url(img/encubator-slider.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+
+        }
+
+        .podcast .item .bg::after {
+            background: none;
+
+        }
+
+        .podcast .item .text i {
+            display: none;
+        }
+
+        .podcast .item .text {
+            color: black;
+        }
+
+        .podcast .item .bg {
+            border: none;
+        }
+
+        @media (max-width:550px) {
+            .owl-nav {
+                display: none;
+            }
+
+        }
+
+        .owl-nav {
+            top: 62%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="img/logo.png">
+                        <img src="img/logo.png" width="150" height="75" alt="">
+                    </picture>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li>
+                        <a href="#" class="nav-link px-2 active">الرئيسية</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2">الحاضنة</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2">الأكاديمية</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2">الشبكة</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2  dropdown-toggle">خدماتنا</a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2 dropdown-toggle">شركاء رياديات</a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2">مقارنة الخدمات</a>
+                    </li>
+                </ul>
+
+                <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+              </form>
+      
+              <div class="dropdown text-end">
+                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="https://github.com/mdo.png" alt="mdo" class="rounded-circle" width="32" height="32">
+                </a>
+                <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                  <li><a class="dropdown-item" href="#">New project...</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+              </div> -->
+                <div class="text-end header-btns">
+                    <a href="/" class="font-13 grean">حساب جديد</a>
+                    <a href="/" class="font-13 btn btn-primary ">تسجيل الدخول</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+        <div class=" header-carousel owl-carousel owl-theme  ">
+            <div class="item" style="border-bottom-color: #1FB9B3;">
+                <picture>
+                    <source style="width: 100%;" srcset="img/encubator-slider.png" type="">
+                    <img src="img/encubator-slider.png" alt="">
+                </picture>
+                <div class="text">
+                    <h2>
+                        شبكة رياديات
+                    </h2>
+                    <p>
+                        هذه الشبكه لكن ان كان لديكن شركات ومشاريع ريداية </p>
+                    <a href="#" class="btn btn-primary">انضمي الآن</a>
+                </div>
+            </div>
+            <div class="item " style="border-bottom-color: #1FB9B3">
+                <picture>
+                    <source srcset="img/encubator-slider.png" type="">
+                    <img src="img/encubator-slider.png" alt="">
+                </picture>
+                <div class="text">
+                    <h2>
+                        شبكة رياديات
+                    </h2>
+                    <p>
+                        هذه الشبكه لكن ان كان لديكن شركات ومشاريع ريداية </p>
+                    <a href="#" class="btn btn-primary">انضمي الآن</a>
+                </div>
+            </div>
+            <div class="item " style="border-bottom-color: #1FB9B3">
+                <picture>
+                    <source srcset="img/encubator-slider.png" type="">
+                    <img src="img/encubator-slider.png" alt="">
+                </picture>
+                <div class="text">
+                    <h2>
+                        شبكة رياديات
+                    </h2>
+                    <p>
+                        هذه الشبكه لكن ان كان لديكن شركات ومشاريع ريداية </p>
+                    <a href="#" class="btn btn-primary">انضمي الآن</a>
+                </div>
+            </div>
+    </main>
+    <section class="container">
+        <div class="row  about justify-content-between align-items-center  ">
+            <div class="about-text col-md-5 ">
+                <h2 style="color:black;" class="text-black">
+                    شبكة رياديات : وسع دائرة معارفك
+                </h2>
+                <p>
+                    رياديات هي شركة سعودية منشؤها الرياض، تحفز المرأة للدخول في عالم الأعمال وإطلاق أفكارها وجعلها
+                    حقيقة. إطلاق العديد من المبادرات والبرامج عن طريق تقديم مجموعة متكاملة من الخدمات ومنها الاحتضان
+                    والاستشارات والإرشاد، والتدريب والتعليم والتسويق،
+                </p>
+                <a href="#" class="btn btn-primary">انضمي الآن</a>
+
+            </div>
+            <div class="image text-start  col-md-5 bag-img">
+                <picture class="">
+                    <source srcset="img/about-1.png">
+                    <img style="width: 100%;" src="img/about-1.png" alt="">
+                </picture>
+            </div>
+        </div>
+    </section>
+    <section class="container network mt-5">
+        <h2> اعضاء شبكة رياديات </h2>
+        <div class="row gap-1 m-auto pioneers-carousel owl-carousel owl-theme">
+            <div class="col-md-2 col-sm-4  item d-flex justify-content-center align-items-center ">
+                <h5 class="text-white"> رواد وراشدات اعمال </h5>
+            </div>
+            <div class="col-md-2 col-sm-4  item d-flex justify-content-center align-items-center">
+                <h5 class="text-white"> مؤثرون </h5>
+            </div>
+            <div class="col-md-2 col-sm-4  item d-flex justify-content-center align-items-center">
+                <h5 class="text-white"> معلنين </h5>
+            </div>
+            <div class="col-md-2 col-sm-4  item d-flex justify-content-center align-items-center">
+                <h5 class="text-white"> مستثمرون </h5>
+            </div>
+            <div class="col-md-2 col-sm-4  item d-flex justify-content-center align-items-center">
+                <h5 class="text-white"> مستثمرون </h5>
+            </div>
+            <div class="col-md-2 col-sm-4  item d-flex justify-content-center align-items-center">
+                <h5 class="text-white"> مستثمرون </h5>
+            </div>
+            <div class="col-md-2 col-sm-4  item d-flex justify-content-center align-items-center">
+                <h5 class="text-white"> مستثمرون </h5>
+            </div>
+            <div class="col-md-2 col-sm-4  item d-flex justify-content-center align-items-center">
+                <h5 class="text-white"> مستثمرون </h5>
+            </div>
+            <div class="col-md-2 col-sm-4  item d-flex justify-content-center align-items-center">
+                <h5 class="text-white"> مستثمرون </h5>
+            </div>
+            <div class="col-md-2 col-sm-4  item d-flex justify-content-center align-items-center">
+                <h5 class="text-white"> مستثمرون </h5>
+            </div>
+            <div class="col-md-2 col-sm-4  item d-flex justify-content-center align-items-center">
+                <h5 class="text-white"> مستثمرون </h5>
+            </div>
+            <div class="col-md-2 col-sm-4  item d-flex justify-content-center align-items-center">
+                <h5 class="text-white"> مستثمرون </h5>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- من هم شؤكائنا   -->
+    <section style="margin-top:200px;  " class="container">
+        <main class="  mt-5">
+            <div class="container">
+                <div class="row justify-content-between mt-3 ">
+                    <h1 class="col-auto">
+                        من هم شركائنا ؟
+                    </h1>
+                    <!-- <form class="col-auto search-input">
+                    <input class="form-control me-2" type="search" placeholder="ابحثي عن مستشارين"
+                        aria-label="Search">
+                    <picture>
+                        <source srcset="img/Icon feather-search.png">
+                        <img src="img/Icon feather-search.png" alt="">
+                    </picture>
+                </form> -->
+                </div>
+                <ul class="nav blogs-nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="blogs-tab" data-bs-toggle="tab" data-bs-target="#blogs"
+                            type="button" role="tab" aria-controls="blogs" aria-selected="true">المجوهرات </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="exhibitions-tab" data-bs-toggle="tab" data-bs-target="#exhibitions"
+                            type="button" role="tab" aria-controls="exhibitions" aria-selected="false">التجميل </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects"
+                            type="button" role="tab" aria-controls="projects" aria-selected="false">التقنية</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects"
+                            type="button" role="tab" aria-controls="projects" aria-selected="false">السباحه</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="blogs" role="tabpanel" aria-labelledby="blogs-tab">
+                        <div class="row">
+                            <div class="podcast">
+                                <!-- <div
+                                class="row mx-0 podcast-header row-cols-auto justify-content-between align-items-center">
+                                <h3 class="p-0">بودكاست رياديات</h3>
+                                <a href="#" class="btn btn-white-outlined">
+                                    عرض الكل
+                                </a>
+                            </div> -->
+
+                                <div class="podcast-carousel owl-carousel owl-theme ">
+                                    <div class="item m-auto">
+                                        <div class="bg" style="background-color: white;">
+
+                                        </div>
+                                        <div class="text">
+                                            <picture>
+                                                <source srcset="img/bakoura.png" type="">
+                                                <img src="img/bakoura.png" width="140" alt="">
+                                            </picture>
+                                            <h5>
+                                                <a href="#">
+                                                    باكورة </a>
+                                            </h5>
+                                        </div>
+
+                                    </div>
+                                    <div class="item  m-auto">
+                                        <div class="bg" style="background-color: white;">
+
+                                        </div>
+                                        <div class="text">
+                                            <picture>
+                                                <source srcset="img/bakoura.png" type="">
+                                                <img src="img/bakoura.png" width="140" alt="">
+                                            </picture>
+                                            <h5>
+                                                <a href="#">
+                                                    باكورة </a>
+                                            </h5>
+                                        </div>
+
+                                    </div>
+                                    <div class="item  m-auto">
+                                        <div class="bg" style="background-color: white;">
+
+                                        </div>
+                                        <div class="text">
+                                            <picture>
+                                                <source srcset="img/bakoura.png" type="">
+                                                <img src="img/bakoura.png" width="140" alt="">
+                                            </picture>
+                                            <h5>
+                                                <a href="#">
+                                                    باكورة </a>
+                                            </h5>
+                                        </div>
+
+                                    </div>
+                                    <div class="item  m-auto">
+                                        <div class="bg" style="background-color: white;">
+
+                                        </div>
+                                        <div class="text">
+                                            <picture>
+                                                <source srcset="img/bakoura.png" type="">
+                                                <img src="img/bakoura.png" width="140" alt="">
+                                            </picture>>
+                                            <h5>
+                                                <a href="#">
+                                                    باكورة </a>
+                                            </h5>
+                                        </div>
+
+                                    </div>
+                                    <div class="item  m-auto">
+                                        <div class="bg" style="background-color: white;">
+
+                                        </div>
+                                        <div class="text">
+                                            <picture>
+                                                <source srcset="img/bakoura.png" type="">
+                                                <img src="img/bakoura.png" width="140" alt="">
+                                            </picture>
+                                            <h5>
+                                                <a href="#">
+                                                    باكورة </a>
+                                            </h5>
+                                        </div>
+
+                                    </div>
+                                    <div class="item  m-auto">
+                                        <div class="bg" style="background-color: white;">
+
+                                        </div>
+                                        <div class="text">
+                                            <picture>
+                                                <source srcset="img/bakoura.png" type="">
+                                                <img src="img/bakoura.png" width="140" alt="">
+                                            </picture>
+                                            <h5>
+                                                <a href="#">
+                                                    باكورة </a>
+                                            </h5>
+                                        </div>
+
+                                    </div>
+                                    <div class="item  m-auto">
+                                        <div class="bg" style="background-color: white;">
+
+                                        </div>
+                                        <div class="text">
+                                            <picture>
+                                                <source srcset="img/bakoura.png" type="">
+                                                <img src="img/bakoura.png" width="140" alt="">
+                                            </picture>
+                                            <h5>
+                                                <a href="#">
+                                                    باكورة </a>
+                                            </h5>
+                                        </div>
+
+                                    </div>
+                                    <div class="item  m-auto">
+                                        <div class="bg" style="background-color: white;">
+
+                                        </div>
+                                        <div class="text">
+                                            <picture>
+                                                <source srcset="img/bakoura.png" type="">
+                                                <img src="img/bakoura.png" width="140" alt="">
+                                            </picture>
+                                            <h5>
+                                                <a href="#">
+                                                    باكورة </a>
+                                            </h5>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div class="row">
+
+
+                            <nav aria-label="Page navigation col-12 text-center">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item prev disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item page-number active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item page-number"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item page-number"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item next">
+                                        <a class="page-link" href="#">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="exhibitions" role="tabpanel" aria-labelledby="exhibitions-tab">
+
+                    </div>
+                    <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+
+
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- من هم مدربائنا  -->
+    <section style="background-color: #1FB9B3; width:100% ;padding: 50px;" class=" ">
+        <div class="container">
+            <div class="row">
+                <div class="pioneers">
+                    <div class=" mx-0 pioneers-header row-cols-auto justify-content-between align-items-center">
+                        <h3 class="text-white"> من هم مدربائنا </h3>
+                        <p class="text-white"> لدينا مجموعه من اقوى المدربات </p>
+
+                    </div>
+
+                    <div class="pioneers-carousel owl-carousel owl-theme">
+                        <div class="item">
+                            <picture>
+                                <source srcset="img/raidaat.png" type="">
+                                <img src="img/raidaat.png" width="140" alt="">
+                            </picture>
+
+                            <div class="text">
+                                <h4>
+                                    نهال أحمد
+                                </h4>
+                                <p>
+                                    رائدة آعمال في مجال
+                                    تصميم الازياء
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <picture>
+                                <source srcset="img/raidaat.png" type="">
+                                <img src="img/raidaat.png" width="140" alt="">
+                            </picture>
+
+                            <div class="text">
+                                <h4>
+                                    نهال أحمد
+                                </h4>
+                                <p>
+                                    رائدة آعمال في مجال
+                                    تصميم الازياء
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <picture>
+                                <source srcset="img/raidaat.png" type="">
+                                <img src="img/raidaat.png" width="140" alt="">
+                            </picture>
+
+                            <div class="text">
+                                <h4>
+                                    نهال أحمد
+                                </h4>
+                                <p>
+                                    رائدة آعمال في مجال
+                                    تصميم الازياء
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <picture>
+                                <source srcset="img/raidaat.png" type="">
+                                <img src="img/raidaat.png" width="140" alt="">
+                            </picture>
+
+                            <div class="text">
+                                <h4>
+                                    نهال أحمد
+                                </h4>
+                                <p>
+                                    رائدة آعمال في مجال
+                                    تصميم الازياء
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <picture>
+                                <source srcset="img/raidaat.png" type="">
+                                <img src="img/raidaat.png" width="140" alt="">
+                            </picture>
+
+                            <div class="text">
+                                <h4>
+                                    نهال أحمد
+                                </h4>
+                                <p>
+                                    رائدة آعمال في مجال
+                                    تصميم الازياء
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <picture>
+                                <source srcset="img/raidaat.png" type="">
+                                <img src="img/raidaat.png" width="140" alt="">
+                            </picture>
+
+                            <div class="text">
+                                <h4>
+                                    نهال أحمد
+                                </h4>
+                                <p>
+                                    رائدة آعمال في مجال
+                                    تصميم الازياء
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section style="margin-top: 100px ;" class="container">
+        <div class="col-12 card schedule-card">
+            <div class="row row-cols-auto justify-content-between">
+                <div class="col">
+                    <h3>
+                        جدول الشبكة
+                    </h3>
+                    <div class="row course">
+                        <picture class="col-auto">
+                            <source srcset="img/schedule-course.png">
+                            <img src="img/schedule-course.png" alt="">
+                        </picture>
+                        <div class="col">
+                            <span class="tag">
+                                مجلس
+                            </span>
+                            <h5>
+                                مقدمة في ريادة الأعمال
+                            </h5>
+                            <p>16 مايو</p>
+                        </div>
+                    </div>
+                    <div class="row course">
+                        <picture class="col-auto">
+                            <source srcset="img/schedule-course.png">
+                            <img src="img/schedule-course.png" alt="">
+                        </picture>
+                        <div class="col">
+                            <span class="tag">
+                                مجلس
+                            </span>
+                            <h5>
+                                مقدمة في ريادة الأعمال
+                            </h5>
+                            <p>16 مايو</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="calendarContainer" class="col"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row testimonials">
+            <h2>
+                ماذا تقول المشتركات 
+            </h2>
+            <div class="testimonials-carousel p-0 owl-carousel owl-theme">
+                <div class="item">
+                    <div class="text">
+
+                        <span class="d-inline-block">
+                            <i class=" d-inline-block fas fa-quote-right"></i>
+                            لقد ساعدت هذه الحاضنة في نمو نشاطي التجاري وازدهاره بطريقة لم أكن أتوقعها أوصي بها بشدة لأي
+                            أعمال تجارية جديدة
+                        </span>
+                    </div>
+                    <div class="client">
+                        <div class="row row-cols-auto">
+                            <picture>
+                                <source srcset="img/client.png">
+                                <img src="img/client.png" alt="">
+                            </picture>
+                            <div class="info">
+                                <h5>Ahmed Salman</h5>
+                                <p>Wishoo مؤسس في</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="text">
+
+                        <span class="d-inline-block">
+                            <i class=" d-inline-block fas fa-quote-right"></i>
+                            لقد ساعدت هذه الحاضنة في نمو نشاطي التجاري وازدهاره بطريقة لم أكن أتوقعها أوصي بها بشدة لأي
+                            أعمال تجارية جديدة
+                        </span>
+                    </div>
+                    <div class="client">
+                        <div class="row row-cols-auto">
+                            <picture>
+                                <source srcset="img/client.png">
+                                <img src="img/client.png" alt="">
+                            </picture>
+                            <div class="info">
+                                <h5>Ahmed Salman</h5>
+                                <p>Wishoo مؤسس في</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row app justify-content-center align-items-center text-center p-3">
+            <div class="text col-md-6">
+                <p>
+                    أكملي دوراتك، مراسلاتك وشاركي في الشبكة والحاضنة من خلال تطبيق رياديات
+                </p>
+                <p class="small">
+                    حملي التطبيق الآن
+                </p>
+                <picture class="d-inline-block">
+                    <source srcset="img/app-store-black.png">
+                    <img src="img/app-store-black.png" alt="">
+                </picture>
+                <picture class="d-inline-block">
+                    <source class="img-fluid w-25" srcset="img/google-play.png">
+                    <img class="img-fluid" style="width:155px ; height: 60px; " src="img/google-play.png" alt="">
+                </picture>
+            </div>
+            <div class="image text-center col-md-6">
+                <picture>
+                    <source srcset="img/mobile-screen.png">
+                    <img style="" class="img-fluid" src="img/mobile-screen.png" alt="">
+                </picture>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section class="">
+        <div class="providers-footer mt-5">
+            <h2>
+                انضمي للشبكة وشاركي معنا
+            </h2>
+            <div class="col-12 my-3">
+                <a href="#" class="btn  btn-primary">
+                    انضمي الآن
+                </a>
+            </div>
+            <a href="#" class="btn btn-white-outlined">
+                <span>
+                    أعلني معنا
+                </span>
+                انضمي كشريكة
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row justify-content-between row-cols-auto">
+                <div class="">
+                    <a href="/"
+                        class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                        <picture>
+                            <source media="(min-width:650px)" srcset="img/flogo.png">
+                            <img src="img/flogo.png" width="150" height="75" alt="">
+                        </picture>
+                    </a>
+                    <div class="social mt-3">
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="policy-links">
+                        <a href="#">
+                            شروط الاستخدام
+                        </a>
+                        <a href="#">
+                            سياسة الخصوصية
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row justify-content-between nav row-cols-auto">
+                        <div>
+                            <h6>الشركة</h6>
+                            <a href="#" class="d-block">من نحن</a>
+                            <a href="#" class="d-block">مقارنة الخدمات</a>
+                        </div>
+                        <div>
+                            <h6>قناة رياديات</h6>
+                            <a href="#" class="d-block">المدونة</a>
+                            <a href="#" class="d-block">البودكاست</a>
+                            <a href="#" class="d-block">قصص نجاح</a>
+                        </div>
+                        <div>
+                            <h6>انضمي إلينا</h6>
+                            <a href="#" class="d-block">التوظيف</a>
+                            <a href="#" class="d-block">التسويق بالعمولة</a>
+                        </div>
+                        <div>
+                            <h6>الدعم</h6>
+                            <a href="#" class="d-block">الأسئلة الشائعة</a>
+                            <a href="#" class="d-block">تواصل معنا</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h6>اشتركي بالقائمة البريدية</h6>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="البريد الإلكتروني"
+                        aria-describedby="button-addon2">
+                        <button class="btn btn-primary" type="button" id="button-addon2">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                    </div>
+                    <picture>
+                        <source srcset="img/app-store.png">
+                        <img src="img/app-store.png" alt="">
+                    </picture>
+                    <picture>
+                        <source srcset="img/play-store.png">
+                        <img src="img/play-store.png" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/lightbox.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- owl -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- calender -->
+    <script src="js/jquery.simple-calendar.min.js"></script>
+
+    <!-- Main script file -->
+    <script src="js/main.js"></script>
+
+    <script>
+        $("#calendarContainer").simpleCalendar({
+            displayEvent: true,
+            events: [
+                // generate new event after tomorrow for one hour
+                {
+                    startDate: new Date(new Date().setHours(new Date().getHours() + 24)).toDateString(),
+                    endDate: new Date(new Date().setHours(new Date().getHours() + 25)).toISOString(),
+                    summary: 'Visit of the Eiffel Tower'
+                },
+                // generate new event for yesterday at noon
+                {
+                    startDate: new Date(new Date().setHours(new Date().getHours() - new Date().getHours() - 12, 0)).toISOString(),
+                    endDate: new Date(new Date().setHours(new Date().getHours() - new Date().getHours() - 11)).getTime(),
+                    summary: 'Restaurant'
+                },
+                // generate new event for the last two days
+                {
+                    startDate: new Date(new Date().setHours(new Date().getHours() - 48)).toISOString(),
+                    endDate: new Date(new Date().setHours(new Date().getHours() - 24)).getTime(),
+                    summary: 'Visit of the Louvre'
+                }
+            ],
+            months: ['يناير', 'فبراير', 'مارس', 'ابريل', 'مايو', 'يونيو', 'يوليو', 'اغسطس', 'سبتمبر', 'اكتوبر', 'نوفمبر', 'ديسمبر'],
+        })
+    </script>
+</body>
+
+</html>

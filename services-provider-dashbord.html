@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<!-- for english make lang en and dir ltr -->
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة رياديات</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <!-- font file -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <!-- uncomment the following line for english  -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- comment this line for english -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+
+    <!-- fontawesome file -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- owl -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- Main style file -->
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .box{
+            background-color: #EBFBFB;
+            padding: 30px;
+            text-align: center;
+        }
+        .box h4{
+            font-weight: bolder;
+        }
+        .box.two{
+            background-color: #FFF3E5;
+    
+        }
+        .boxs{
+            padding: 10px;
+            border: 1px solid rgba(26, 25, 25, 0.164);
+            /* text-align: center; */
+        }
+        .mony{
+            font-size: 35px;
+            color: #1FB943;
+            font-weight: bolder;
+        }
+        .mony svg {
+            color: #FFCB45;
+        }
+        .total .boxing {
+            border: 1px solid black;
+            text-align: center;
+    
+        }
+        .total .boxing h1 {
+            font-size: 40px;
+    
+    
+        }
+        body{
+            position: relative;
+        }
+        .nav-side{
+          position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        background-color: white;
+            width: 300px;
+        height: 100vh;
+        text-align: center;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 10px;
+    }
+    .offcanvas-start {
+        top: 0;
+        left: 0;
+        width: 300px;
+    
+    }
+        #close{
+            position: absolute;
+            left: 10px;
+            font-size: 20px;
+            color:#1FB9B3 ;
+        }
+        .nav-side .btn{
+            background-color: white;
+            border: 3px solid #1FB9B3 ;
+            width: 80%;
+            margin: 2px  auto;
+        }
+        .nav-side::-webkit-scrollbar{
+            width: 5px;
+        }
+        .nav-side::-webkit-scrollbar-track{
+            border-radius: 30px ;
+            background-color: #1FB9B3;
+        }
+        .nav-side::-webkit-scrollbar-thumb{
+            border-radius: 30px;
+            background-color: #1FB9B3;
+        }
+        .open{
+            position: absolute;
+            left: 1%;
+            top: 11%;
+            z-index: 100;
+            border: none;
+    
+            
+        }
+        .open svg{
+            color: #1FB9B3;
+            background-color: transparent;
+        }
+        #close{
+            border: none;
+        }
+    
+        .btns{
+            border: none;
+            margin-top: 20px;
+            color: red;
+        }
+        .btns svg{
+            color: red;
+    
+        }
+        /* ----------------------------------------------- */
+    
+    
+        .form-control.box {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            border: 1px solid #1FB9B3;
+        }
+    
+        .box-small {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #E9F8F7;
+    
+        }
+    
+        .selsect {
+            width: 100%;
+            margin: auto;
+            border: 1px solid #EDEFF2;
+            border-radius: 4px;
+    
+        }
+    
+        .trainer-box {
+            width: 55%;
+        height: auto;
+        background-color: white;
+        border-radius: 15px;
+        margin-top: 10px;
+        padding: 10px;
+        overflow: scroll;
+        overflow-x: hidden;
+        }
+    
+        @media (max-width:890px) {
+            .trainer-box {
+                width: 100%;
+                height: 100%;
+            }
+    
+        }
+    
+        textarea,input {
+            border: 1px solid #EDEFF2 !important;
+    
+        }
+        textarea,input:focus-visible{
+            border: 5px solid #EDEFF2 !important;
+            outline: #E9F8F7;
+    
+    
+        }
+        .trainer{           
+            display: none;
+        }
+        .trainer-box {
+        scrollbar-width: thin;
+        scrollbar-color: #eee #1FB9B3;
+        }
+    
+        /* Works on Chrome, Edge, and Safari */
+        .trainer-box::-webkit-scrollbar {
+        width: 10px;
+        }
+    
+        .trainer-box::-webkit-scrollbar-track {
+        background: #eee;
+        }
+    
+        .trainer-box::-webkit-scrollbar-thumb {
+        background-color: #1FB9B3;
+        border-radius: 10px;
+        border: 3px solid #1FB9B3;
+        }
+        .show{
+          display: block;
+    
+        }
+        .hide{
+        /* display: none; */
+    
+        }
+        #close-tranier{
+            cursor: pointer;
+            font-size: 20px;
+        }
+        #close-tranier:hover{
+            color: #1FB9B3;
+        }
+        .nvaigation-main{
+            position: relative;
+        }
+        .nvaigation-main >button{
+            position: absolute;
+            position: absolute;
+            left: 5px;
+            top: 6px;  
+            border: none;
+
+        }
+        .offcanvas-end {
+    top: 0;
+    left: 0;
+    width: 300px;}
+    </style>
+  
+</head>
+
+<body> 
+    <header>
+        <div class="container-fluid">
+            <div
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start header-with-search">
+                <a href="/" class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="img/logo.png">
+                        <img src="img/logo.png" width="150" height="75" alt="">
+                    </picture>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <!-- <li>
+                        <a href="#" class="nav-link px-2 dropdown-toggle active">بحث عن مشروع </a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li> -->
+                    <!-- <li>
+                        <a href="#" class="nav-link dropdown-toggle px-2">الشبكة</a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li> -->
+                    <li>
+                        <a  href="#" class="nav-link px-2">بحث عن مشروع   </a>
+                    </li>
+                    <li id="add-project">
+                        <a href="#" class="nav-link px-2">اضف مشروع </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2">الطلبات الواردة </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2">الدعم والمساعدة   </a>
+                    </li>
+                    <!-- <li>
+                        <a href="#" class="nav-link dropdown-toggle px-2">خدماتنا</a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li> -->
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="ابحث عن خدمة لتقدمها "
+                        aria-label="Search">
+                    <picture>
+                        <source srcset="img/Icon feather-search.png">
+                        <img src="img/Icon feather-search.png" alt="">
+                    </picture>
+                </form>
+                <div class="text-end header-btns">
+                    <div class="dropdown text-end icons">
+                        <a href="#" class="d-block link-dark text-decoration-none" id="dropdownMessages"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>8</span>
+                            <i class="far fa-comment-alt"></i>
+                        </a>
+                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownMessages">
+                            <p class="order">الرسائل (2)</p>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <a href="#" class="bottom-link">
+                                عرض كل الرسائل
+                            </a>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown text-end icons">
+                        <a href="#" class="d-block link-dark text-decoration-none" id="dropdownNotification"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>4</span>
+                            <i class="far fa-bell"></i>
+                        </a>
+                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownNotification">
+                            <p class="gray order">الجديد</p>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication1.png">
+                                            <img src="img/notfication1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>لديك جلسة استشارية اليوم</p>
+                                        <p class="gray">25 دقيقة</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication2.png">
+                                            <img src="img/notfication2.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>تم رفع مرفق جديد</p>
+                                        <p class="gray">25 دقيقة</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <p class="gray order">الأقدم</p>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication3.png">
+                                            <img src="img/notfication3.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>لقد انتهيت من الحاضنة</p>
+                                        <p class="gray">2 يوم</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication4.png">
+                                            <img src="img/notfication4.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>تابع لقاء اليوم خطة العمل
+                                            ودراسة الجدوى المالية</p>
+                                        <p class="gray">2 يوم</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- <div class="icons add">
+                        <i class="fas fa-plus"></i>
+                    </div> -->
+
+                    <div class="dropdown text-end user">
+                        <a href="#" class="d-block link-dark text-decoration-none" id="dropdownUser"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <picture>
+                                <source srcset="img/user-icon.png">
+                                <img src="img/user-icon.png" class="rounded-circle" width="32" height="32">
+                            </picture>
+                        </a>
+                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser">
+                            <li><a class="dropdown-item" href="#">دوراتي</a></li>
+                            <li><a class="dropdown-item" href="#">الصفحة الشخصية</a></li>
+                            <li><a class="dropdown-item" href="#">اعدادات الحساب</a></li>
+
+                            <li><a class="dropdown-item" href="#">كوني مدربة</a></li>
+                            <li><a class="dropdown-item" href="#">كوني شريكة(معلنة)</a></li>
+                            <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-primary">
+                        طوري للمنصة المميزة
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="nvaigation-main">
+        <button class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          
+            <div class="offcanvas-body">
+          
+                <nav id="nav-side" class="nav-side py-3 ">
+                  <div class="offcanvas-header">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                
+                  <div class=" ">
+                      <div class="">
+                      <img class="w-50" src="img/Group 3202.png" alt="">
+                          <h3> نورا علي  </h3>
+                          <h6> مصممة اشعارات   </h6>
+                      </div>
+                      <div class=" row">
+                         <button class="btn d-flex align-items-center">
+                       <span class="mx-2">
+                       <img src="img/Group 3018.svg" alt="">
+                       </span>             
+                          الطلبات  </button>
+                         <button class="btn d-flex align-items-center">
+                          <span class="mx-2">
+                           <img src="img/Popular.svg" alt="">
+                          </span>
+                          
+                          التقييمات   </button>
+                         <button  class="btn d-flex align-items-center">
+                          <span class="mx-2">
+                              <img src="img/Calendar.svg" alt="">
+                          </span>
+                          
+                          الجداول الزمنية   </button>
+                         <button class="btn d-flex align-items-center"> 
+                          <span  class="mx-2">
+                              <img src="img/File Invoice.svg" alt="">
+                                  
+                                  
+                          </span>
+                          
+                          الفواتير  </button>
+                         <button class="btn d-flex align-items-center">
+                          <span class="mx-2">
+                
+                                  <img src="img/Subscription.svg" alt="">
+                          </span>
+                          
+                          الاشتراكات   </button>
+                         <button class="btn d-flex align-items-center"> 
+                          <span class="mx-2">
+                <img src="img/Frame 52.svg" alt="">
+                                  
+                          </span>
+                          معاينة البروفايل 
+                        </button>
+                         <button class="btn d-flex align-items-center">
+                          <span class="mx-2">
+                              <img src="img/Pencil Drawing.png" alt="">
+                          </span>
+                          
+                          تعديل البيانات   </button>
+                         <button class="btn d-flex align-items-center">
+                          <span class="mx-2">
+                              <img src="img/Password Reset.svg" alt="">
+                          </span>
+                          
+                          تغير كلمة السر   </button>
+                         <button class="btns ">
+                          <i class="fa-solid fa-right-from-bracket mx-2"></i>
+                           تسجيل الخروج 
+                            </button>
+                
+                      </div>
+                
+                  </div>
+                
+                
+                </nav>
+          
+          
+            </div>
+          </div>
+          
+    
+     </section>
+    <section class="container m-lg-5">
+
+        <div class="row justify-content-center  gap-3">
+            <div class="col-md-5 box">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h4> اهلا وسهلا نورا علي !   </h4>
+                        <p>   نحن متحمسين لرؤية خدماتك   </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="img-fluid w-50" src="img/bro.png" alt="">
+                    </div>  
+                </div>
+
+            </div>
+            <div class="col-md-5 box two">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h4>اكملي بيانانتك     </h4>
+                        <p class="w-100">   من فضلك اكملي بيانانتك حتى تستطيع البدء في تقديم خدماتك   </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="img-fluid w-50" src="img/bros.png" alt="">
+                    </div>  
+                </div>
+
+            </div>
+            
+
+        </div>
+
+        <div class="row justify-content-center  gap-3 mt-5">
+            <div class="col-md-5 boxs">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row align-items-center">
+                            <svg class="col-md-2" width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <circle cx="28.0195" cy="28" r="28" fill="#EBFBFB" fill-opacity="0.43"/>
+                                <rect x="8.01953" y="8" width="40" height="40" fill="url(#pattern0)"/>
+                                <defs>
+                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_845_34112" transform="scale(0.0104167)"/>
+                                </pattern>
+                                <image id="image0_845_34112" width="96" height="96" xlink:href="data:image/png;base64,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"/>
+                                </defs>
+                            </svg>
+                                
+                            <h4 class="col-md-10"> الرصيد الكلي   </h4>
+                        </div>
+ 
+                    </div>
+                    <div class="col-md-12 mony">
+                        150 ر.س.
+                    </div>  
+                </div>
+
+            </div>
+            <div class="col-md-5 boxs">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row align-items-center">
+                            <svg class="col-md-2 width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <circle cx="28" cy="28" r="28" fill="#EBFBFB" fill-opacity="0.43"/>
+                                <rect x="8" y="8" width="40" height="40" fill="url(#pattern0)"/>
+                                <defs>
+                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_845_34092" transform="scale(0.0104167)"/>
+                                </pattern>
+                                <image id="image0_845_34092" width="96" height="96" xlink:href="data:image/png;base64,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"/>
+                                </defs>
+                            </svg>
+                                
+                                
+                            <h4 class="col-md-10"> إجمالي التقييمات  </h4>
+                        </div>
+ 
+                    </div>
+                    <div class="col-md-12 mony">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    
+                    
+                    </div>  
+                </div>
+
+            </div>
+            
+
+        </div>
+
+        <div class="row justify-content-center  gap-3 mt-5">
+            <div class="col-md-5 boxs p-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row align-items-center">
+                           <img  class=" col-md-2 img-fluid" src="img/Group 3333.png" alt="">
+                            <h4 class="col-md-10"> عدد التعليقات   </h4>
+                        </div>
+ 
+                    </div>
+                    <div class="col-md-12 mony">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50 تعليق </div>
+                          </div>                    </div>  
+                </div>
+
+            </div>
+            <div class="col-md-5 boxs p-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row align-items-center">
+                           <img  class=" col-md-2 img-fluid" src="img/Group 3331.png" alt="">
+                            <h4 class="col-md-10"> الرسائل الجديدة    </h4>
+                        </div>
+ 
+                    </div>
+                    <div class="col-md-12 mony">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50 تعليق </div>
+                          </div>                    </div>  
+                </div>
+
+            </div>
+            
+
+        </div>
+        <div class="row mt-5 total gap-3 r">
+            <div class="col-md-4 boxing  ">
+                <h1 style="font-size: 80px;"> 9 </h1>
+                <p  style="font-size: 40px;"> اجمالي الطلبات  </p>
+
+            </div>
+            <div class="col-md-8 row gap-3">
+                <div class="col-md-5 boxing">
+                    <h1> 2 </h1>
+                    <p> طلبات بانتظار الموافقة </p>
+                </div>
+                <div class="col-md-5 boxing">
+                    <h1> 6 </h1>
+                    <p> طلبات قيد التنفيذ </p>
+                </div>
+                <div class="col-md-5 boxing">
+                    <h1> 1 </h1>
+                    <p> الطلبات المكتملة </p>
+                </div>
+                <div class="col-md-5 boxing">
+                    <h1> 0 </h1>
+                    <p>الطلبات الملغية </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+
+        <section class="trainer ">
+        <div class="trainer-box container">
+            <div class="text-end p-2 ">
+                <i id="close-tranier" class="fa-solid fa-xmark"></i>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="d-flex upload-request-file form-control box align-items-center   mb-3">
+                        <label for="fileinput1" class="form-label file-label col-auto">
+                            <svg class="fa-cloud-upload-alt" width="72" height="72" viewBox="0 0 72 72" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M39.6 18H32.4V32.4H18V39.6H32.4V54H39.6V39.6H54V32.4H39.6V18ZM36 0C16.128 0 0 16.128 0 36C0 55.872 16.128 72 36 72C55.872 72 72 55.872 72 36C72 16.128 55.872 0 36 0ZM36 64.8C20.124 64.8 7.2 51.876 7.2 36C7.2 20.124 20.124 7.2 36 7.2C51.876 7.2 64.8 20.124 64.8 36C64.8 51.876 51.876 64.8 36 64.8Z"
+                                    fill="#D8D8D8" />
+                            </svg>
+                        </label>
+                        <div>
+                            <input class="form-control d-none" type="file" onchange="readName(this)" id="fileinput1">
+                            <span id="selected_filename" class="mx-3 gray font-13 col-auto">
+                                اضافة صور
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="d-flex gap-1 ">
+                        <div class="d-flex upload-request-file form-control box-small align-items-center mb-3">
+                            <label for="fileinput1" class="form-label file-label col-auto">
+                                <svg width="20" height="29" viewBox="0 0 28 29" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M26.0968 13.4749L14.2316 25.3401C12.778 26.7936 10.8066 27.6103 8.7509 27.6103C6.69523 27.6103 4.72376 26.7936 3.27019 25.3401C1.81661 23.8865 1 21.915 1 19.8594C1 17.8037 1.81661 15.8322 3.27019 14.3786L15.1354 2.51346C16.1044 1.54441 17.4187 1 18.7892 1C20.1596 1 21.4739 1.54441 22.443 2.51346C23.412 3.48251 23.9565 4.79682 23.9565 6.16726C23.9565 7.53771 23.412 8.85202 22.443 9.82107L10.5649 21.6863C10.325 21.9262 10.0402 22.1165 9.7267 22.2463C9.41324 22.3762 9.07727 22.443 8.73799 22.443C8.3987 22.443 8.06273 22.3762 7.74927 22.2463C7.43581 22.1165 7.151 21.9262 6.91108 21.6863C6.67117 21.4464 6.48086 21.1615 6.35102 20.8481C6.22118 20.5346 6.15435 20.1986 6.15435 19.8594C6.15435 19.5201 6.22118 19.1841 6.35102 18.8706C6.48086 18.5572 6.67117 18.2724 6.91108 18.0325L17.8725 7.08394"
+                                        stroke="#1FB9B3" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </label>
+                            <div>
+                                <input class="form-control d-none" type="file" onchange="readName(this)"
+                                    id="fileinput1">
+                                <span id="selected_filename" class="mx- gray font-5 col-auto">
+                                    اضافة ملف
+                                </span>
+                            </div>
+
+                        </div>
+                        <div class="d-flex upload-request-file form-control box-small align-items-center   mb-3">
+                            <label for="fileinput1" class="form-label file-label col-auto">
+                                <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.83333 5.66667H0V25.5C0 27.0583 1.275 28.3333 2.83333 28.3333H22.6667V25.5H2.83333V5.66667ZM25.5 0H8.5C6.94167 0 5.66667 1.275 5.66667 2.83333V19.8333C5.66667 21.3917 6.94167 22.6667 8.5 22.6667H25.5C27.0583 22.6667 28.3333 21.3917 28.3333 19.8333V2.83333C28.3333 1.275 27.0583 0 25.5 0ZM14.1667 17.7083V4.95833L22.6667 11.3333L14.1667 17.7083Z"
+                                        fill="#1FB9B3" />
+                                </svg>
+
+
+                            </label>
+                            <div>
+                                <input class="form-control d-none" type="file" onchange="readName(this)"
+                                    id="fileinput1">
+                                <span id="selected_filename" class="mx- gray font-13 col-auto">
+                                    اضافة فيديو
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="d-flex gap-1 ">
+                        <div style="background-color: white; border:none"
+                            class="d-flex upload-request-file form-control box-small align-items-center mb-3">
+
+
+                        </div>
+                        <div class="d-flex upload-request-file form-control box-small align-items-center   mb-3">
+                            <label for="fileinput1" class="form-label file-label col-auto">
+                                <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.83333 5.66667H0V25.5C0 27.0583 1.275 28.3333 2.83333 28.3333H22.6667V25.5H2.83333V5.66667ZM25.5 0H8.5C6.94167 0 5.66667 1.275 5.66667 2.83333V19.8333C5.66667 21.3917 6.94167 22.6667 8.5 22.6667H25.5C27.0583 22.6667 28.3333 21.3917 28.3333 19.8333V2.83333C28.3333 1.275 27.0583 0 25.5 0ZM14.1667 17.7083V4.95833L22.6667 11.3333L14.1667 17.7083Z"
+                                        fill="#1FB9B3" />
+                                </svg>
+
+
+                            </label>
+                            <div>
+                                <input class="form-control d-none" type="file" onchange="readName(this)"
+                                    id="fileinput1">
+                                <span id="selected_filename" class="mx- gray font-13 col-auto">
+                                    اضافة فيديو
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="col-md-8 m-auto">
+                    <div class="form-group mb-3">
+                        <input type="text" class="form-control" placeholder=" عنوان المشروع (اجباري)">
+                    </div>
+                    <div>
+
+
+                        <div class="row mb-3 selsect">
+                            <p class="">
+                                حالة طالب الخدمة
+                            </p>
+
+                            <div class="form-check col-auto mx-3">
+                                <input class="form-check-input" type="checkbox" value="" id="online">
+                                <label class="form-check-label font-14" for="online">
+                                    تصميم واجهات
+                                </label>
+                            </div>
+                            <div class="form-check col-auto mx-3">
+                                <input class="form-check-input" type="checkbox" value="" id="outdoor">
+                                <label class="form-check-label font-14" for="outdoor">
+                                    تحميل </label>
+                            </div>
+                            <div class="form-check col-auto mx-3">
+                                <input class="form-check-input" type="checkbox" value="" id="indoor">
+                                <label class="form-check-label font-14" for="indoor">
+                                    تصميم جرافيك </label>
+                            </div>
+                            <div class="form-check col-auto mx-3">
+                                <input class="form-check-input" type="checkbox" value="" id="indoor">
+                                <label class="form-check-label font-14" for="indoor">
+                                    تصميم واجهات </label>
+                            </div>
+                            <div class="form-check col-auto mx-3">
+                                <input class="form-check-input" type="checkbox" value="" id="indoor">
+                                <label class="form-check-label font-14" for="indoor">
+                                    تصميم داخلي </label>
+                            </div>
+                            <div class="form-check col-auto mx-3">
+                                <input class="form-check-input" type="checkbox" value="" id="indoor">
+                                <label class="form-check-label font-14" for="indoor">
+                                    تصميم داخلي </label>
+                            </div>
+                            <div class="form-check col-auto mx-3">
+                                <input class="form-check-input" type="checkbox" value="" id="indoor">
+                                <label class="form-check-label font-14" for="indoor">
+                                    تصميم داخلي </label>
+                            </div>
+                            <div class="form-check col-auto mx-3">
+                                <input class="form-check-input" type="checkbox" value="" id="indoor">
+                                <label class="form-check-label font-14" for="indoor">
+                                    تصميم داخلي </label>
+
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="form-group mb-3">
+                            <textarea rows="10" class="form-control" placeholder=" عن المشروع (اختياري)"></textarea>
+                        </div>
+                        <div class="form-group mb-3">
+                            <input class="w-100 p-2" type="text" placeholder="سعر المشروع ">  
+                        </div>
+
+                    </div>
+                    <div class="text-center m-5">
+                        <button style="background-color:#1FB9B3 ;color: white; border-radius: 10px;" class="btn w-50">
+                            نشر المشروع
+                        </button>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+    </section>
+
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row justify-content-between row-cols-auto">
+                <div class="">
+                    <a href="/"
+                        class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                        <picture>
+                            <source media="(min-width:650px)" srcset="img/flogo.png">
+                            <img src="img/flogo.png" width="150" height="75" alt="">
+                        </picture>
+                    </a>
+                    <div class="social mt-3">
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="policy-links">
+                        <a href="#">
+                            شروط الاستخدام
+                        </a>
+                        <a href="#">
+                            سياسة الخصوصية
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row justify-content-between nav row-cols-auto">
+                        <div>
+                            <h6>الشركة</h6>
+                            <a href="#" class="d-block">من نحن</a>
+                            <a href="#" class="d-block">مقارنة الخدمات</a>
+                        </div>
+                        <div>
+                            <h6>قناة رياديات</h6>
+                            <a href="#" class="d-block">المدونة</a>
+                            <a href="#" class="d-block">البودكاست</a>
+                            <a href="#" class="d-block">قصص نجاح</a>
+                        </div>
+                        <div>
+                            <h6>انضمي إلينا</h6>
+                            <a href="#" class="d-block">التوظيف</a>
+                            <a href="#" class="d-block">التسويق بالعمولة</a>
+                        </div>
+                        <div>
+                            <h6>الدعم</h6>
+                            <a href="#" class="d-block">الأسئلة الشائعة</a>
+                            <a href="#" class="d-block">تواصل معنا</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h6>اشتركي بالقائمة البريدية</h6>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="البريد الإلكتروني"
+                            aria-describedby="button-addon2">
+                        <button class="btn btn-primary" type="button" id="button-addon2">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                    </div>
+                    <picture>
+                        <source srcset="img/app-store.png">
+                        <img src="img/app-store.png" alt="">
+                    </picture>
+                    <picture>
+                        <source srcset="img/play-store.png">
+                        <img src="img/play-store.png" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/lightbox.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+
+    <!-- owl -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- calender -->
+    <script src="js/jquery.simple-calendar.min.js"></script>
+
+    <!-- Main script file -->
+    <script src="js/main.js"></script>
+
+    <script>
+   
+        let close= document.getElementById('close')
+        let navSide = document.getElementById('nav-side')
+        let show = document.getElementById("show")
+
+
+        show.onclick =  function() {
+            navSide.classList.add("show");
+            show.classList.add("hide")
+            close.classList.add("show")
+            };
+            
+
+        close.onclick = function() {
+        navSide.classList.remove("show");
+        this.classList.remove("show")
+        show.classList.remove("hide")
+        };
+
+        $("#add-project").click(function(){
+        $(".trainer").addClass("show")+ $("body").css("overflow","hidden"),
+        $("#close-tranier").click(function(){
+        $(".trainer").removeClass("show")+ $("body").css("overflow","auto")})
+
+        })
+
+
+    </script>
+</body>
+
+</html>

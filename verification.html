@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<!-- for english make lang en and dir ltr -->
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة رياديات</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <!-- font file -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <!-- uncomment the following line for english  -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- comment this line for english -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+
+    <!-- fontawesome file -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- owl -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- Main style file -->
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .message-mobile {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box {
+            border: 1px solid rgba(19, 18, 18, 0.123);
+            width: 60%;
+            height: 500px;
+            background-color: white;
+
+
+        }
+        .box h3 {
+            font-weight: bolder;
+            margin: 25px;
+        }
+
+        .input-box {
+            border: 1px solid rgba(19, 18, 18, 0.123);
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .submit-box {
+            border-radius: 5px;
+            width: 100px;
+            color: white;
+            background-color: #1FB9B3;
+            border: none;
+            margin-right: -5px;
+            border: 1px solid  #1FB9B3;
+
+            
+        }
+        strong{
+            color: #1FB9B3;
+            font-weight: bolder;
+
+        }
+        .text{
+            color:#1FB9B3 ;
+            margin: 15px;
+            font-size: 17px;
+
+        }
+        .text span{
+            font-weight: bolder;
+        }
+        @media (max-width:670px) {
+            .box{
+                width: 100%;
+            }
+            
+        }
+        .head {
+            color: #1FB9B3;
+            font-weight: bolder;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        @media (max-width:762px) {
+            .trainer-box {
+                height: 100%;
+                width: 100%;
+                text-align: center;
+            }
+
+            body {
+                /* overflow: auto; */
+            }
+
+            .provid {
+                margin-top: 75px !important;
+            }
+
+        }
+
+        .prev {
+            background-color: #E9F8F7;
+            height: 420px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .head-box {
+            font-weight: bolder;
+            text-align: center;
+        }
+
+     
+        .trainer-box{
+            border-radius: 3px;
+            height: auto;
+
+        }
+        .x {
+            position: relative;
+            right: 98%;
+            top: 5px;
+
+        }
+    
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="img/logo.png">
+                        <img src="img/logo.png" width="150" height="75" alt="">
+                    </picture>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li>
+                        <a href="#" class="nav-link px-2 active">الرئيسية</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2">الحاضنة</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2">الأكاديمية</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2">الشبكة</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2  dropdown-toggle">خدماتنا</a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2 dropdown-toggle">شركاء رياديات</a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2">مقارنة الخدمات</a>
+                    </li>
+                </ul>
+                <div class="text-end header-btns">
+                    <a href="/" class="font-13 grean">حساب جديد</a>
+                    <a href="/" class="font-13 btn btn-primary ">تسجيل الدخول</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="message-mobile ">
+
+        <div class="box row ">
+            <div class="col-md-12 text-center">
+                <img class="img-fluid" src="img/mobile.png" alt="">
+                <h3 > تفقد رسائل جوالك </h3>
+                <p> لقد تم إرسال رمز لتأكيد الدخول على رقم جوالك المنتهي بـ 55 </p>
+                <form action="">
+                    <input class="w-50 p-2 input-box  " type="text" placeholder="من فضلك ادخل رمز التأكيد">
+                    <input class="p-2 submit-box " type="submit" value="تاكيد ">
+                </form>
+                <p class="text">
+                    لم تصلك رساله ؟ 
+                    <span> اعادة الارسال  </span>
+                </p>
+            </div>
+
+        </div>
+    </section>
+    <section class="trainer ">
+        <div class="trainer-box container">
+            <a href="#" class=" x " data-bs-dismiss="modal">
+                <i class="fas fa-times"></i>
+            </a>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-7 mt-3  texet-center  ">
+                    <h5 class="head-box texet-center">من فضلك ادخل رمز التحقق  </h5>
+                    <p class="texet-center"> لقد تم إرسال رمز التحقق إلى الرقم 0123456789 966+!
+                    </p>
+                    <div class="d-flex justify-content-center  align-items-center ">
+                        <div class="one">
+                            <input style="width:30px ;"  type="tel">
+                            <input style="width:30px ;"  type="tel">
+                            <input style="width:30px ;"  type="tel">
+
+                        </div>
+                        <div class="two m-4">
+                            <input style="width:30px ;"  type="tel">
+                            <input style="width:30px ;"  type="tel">
+                            <input style="width:30px ;"  type="tel">
+                        </div>
+                    </div>
+                    <div class="text-center col-md-12 mt-5">
+                        <button style="background-color:#1FB9B3 ; color: white; font-weight: bold;"
+                            class="btn w-25 texet-center ">
+                            تاكيد
+                        </button>
+                        <p class="mt-3">  لم تصلك رسالة ؟ <strong> اعادة الارسال  </strong> </p>
+                    </div>
+
+                </div>
+                <div class="col-md-5  prev ">
+                    <img class="img-fluid mt-5 provid " src="img/cuate.png" alt="">
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row justify-content-between row-cols-auto">
+                <div class="">
+                    <a href="/"
+                        class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                        <picture>
+                            <source media="(min-width:650px)" srcset="img/flogo.png">
+                            <img src="img/flogo.png" width="150" height="75" alt="">
+                        </picture>
+                    </a>
+                    <div class="social mt-3">
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="policy-links">
+                        <a href="#">
+                            شروط الاستخدام
+                        </a>
+                        <a href="#">
+                            سياسة الخصوصية
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row justify-content-between nav row-cols-auto">
+                        <div>
+                            <h6>الشركة</h6>
+                            <a href="#" class="d-block">من نحن</a>
+                            <a href="#" class="d-block">مقارنة الخدمات</a>
+                        </div>
+                        <div>
+                            <h6>قناة رياديات</h6>
+                            <a href="#" class="d-block">المدونة</a>
+                            <a href="#" class="d-block">البودكاست</a>
+                            <a href="#" class="d-block">قصص نجاح</a>
+                        </div>
+                        <div>
+                            <h6>انضمي إلينا</h6>
+                            <a href="#" class="d-block">التوظيف</a>
+                            <a href="#" class="d-block">التسويق بالعمولة</a>
+                        </div>
+                        <div>
+                            <h6>الدعم</h6>
+                            <a href="#" class="d-block">الأسئلة الشائعة</a>
+                            <a href="#" class="d-block">تواصل معنا</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h6>اشتركي بالقائمة البريدية</h6>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="البريد الإلكتروني"
+                            aria-describedby="button-addon2">
+                        <button class="btn btn-primary" type="button" id="button-addon2">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                    </div>
+                    <picture>
+                        <source srcset="img/app-store.png">
+                        <img src="img/app-store.png" alt="">
+                    </picture>
+                    <picture>
+                        <source srcset="img/play-store.png">
+                        <img src="img/play-store.png" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/lightbox.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- owl -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- Main script file -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

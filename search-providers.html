@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<!-- for english make lang en and dir ltr -->
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة رياديات</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <!-- font file -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <!-- uncomment the following line for english  -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- comment this line for english -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+
+    <!-- fontawesome file -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- owl -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- calender -->
+    <link rel="stylesheet" href="css/simple-calendar.css">
+
+    <!-- Main style file -->
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start header-with-search">
+              <a href="/" class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                <picture>
+                    <source media="(min-width:650px)" srcset="img/logo.png">
+                    <img src="img/logo.png" width="150" height="75" alt="">
+                </picture>
+              </a>
+      
+              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li>
+                    <a href="#" class="nav-link px-2 dropdown-toggle active">تصفحي الدورات</a>
+                    <ul class="dropdown-menu dropdown-menu-light">
+                        <li>
+                            <a class="dropdown-item" href="#">الاستشارة</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">مساحات العمل</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">التسويق</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="nav-link dropdown-toggle px-2">الشبكة</a>
+                    <ul class="dropdown-menu dropdown-menu-light">
+                        <li>
+                            <a class="dropdown-item" href="#">الاستشارة</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">مساحات العمل</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">التسويق</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="nav-link px-2">الحاضنة</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link dropdown-toggle px-2">خدماتنا</a>
+                    <ul class="dropdown-menu dropdown-menu-light">
+                        <li>
+                            <a class="dropdown-item" href="#">الاستشارة</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">مساحات العمل</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">التسويق</a>
+                        </li>
+                    </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="ابحثي عن  دورات تدريبية, رائدات أعمال" aria-label="Search">
+                <picture>
+                    <source srcset="img/Icon feather-search.png">
+                    <img src="img/Icon feather-search.png" alt="">
+                </picture>
+              </form>
+              <div class="text-end header-btns">
+                <div class="dropdown text-end icons">
+                    <a href="#" class="d-block link-dark text-decoration-none" id="dropdownMessages" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span>8</span>
+                        <i class="far fa-comment-alt"></i>
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownMessages">
+                        <p class="order">الرسائل (2)</p>
+                        <li class="new">
+                            <a class="dropdown-item" href="#">
+                                <div class="d-inline-block">
+                                    <picture>
+                                        <source srcset="img/messages1.png">
+                                        <img src="img/messages1.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="d-inline-block">
+                                    <p>
+                                        <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                    </p>
+                                    <p>إيه الأخبار</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="new">
+                            <a class="dropdown-item" href="#">
+                                <div class="d-inline-block">
+                                    <picture>
+                                        <source srcset="img/messages1.png">
+                                        <img src="img/messages1.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="d-inline-block">
+                                    <p>
+                                        <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                    </p>
+                                    <p>إيه الأخبار</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="d-inline-block">
+                                    <picture>
+                                        <source srcset="img/messages1.png">
+                                        <img src="img/messages1.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="d-inline-block">
+                                    <p>
+                                        <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                    </p>
+                                    <p>إيه الأخبار</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="d-inline-block">
+                                    <picture>
+                                        <source srcset="img/messages1.png">
+                                        <img src="img/messages1.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="d-inline-block">
+                                    <p>
+                                        <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                    </p>
+                                    <p>إيه الأخبار</p>
+                                </div>
+                            </a>
+                        </li>
+                        <a href="#" class="bottom-link">
+                            عرض كل الرسائل
+                        </a>
+                    </ul>
+                </div>
+        
+                <div class="dropdown text-end icons">
+                    <a href="#" class="d-block link-dark text-decoration-none" id="dropdownNotification" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span>4</span>
+                        <i class="far fa-bell"></i>
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownNotification">
+                        <p class="gray order">الجديد</p>
+                        <li class="new">
+                            <a class="dropdown-item" href="#">
+                                <div class="d-inline-block">
+                                    <picture>
+                                        <source srcset="img/notfication1.png">
+                                        <img src="img/notfication1.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="d-inline-block">
+                                    <p>لديك جلسة استشارية اليوم</p>
+                                    <p class="gray">25 دقيقة</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="new">
+                            <a class="dropdown-item" href="#">
+                                <div class="d-inline-block">
+                                    <picture>
+                                        <source srcset="img/notfication2.png">
+                                        <img src="img/notfication2.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="d-inline-block">
+                                    <p>تم رفع مرفق جديد</p>
+                                    <p class="gray">25 دقيقة</p>
+                                </div>
+                            </a>
+                        </li>
+                        <p class="gray order">الأقدم</p>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="d-inline-block">
+                                    <picture>
+                                        <source srcset="img/notfication3.png">
+                                        <img src="img/notfication3.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="d-inline-block">
+                                    <p>لقد انتهيت من الحاضنة</p>
+                                    <p class="gray">2 يوم</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="d-inline-block">
+                                    <picture>
+                                        <source srcset="img/notfication4.png">
+                                        <img src="img/notfication4.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="d-inline-block">
+                                    <p>تابع لقاء اليوم خطة العمل
+                                        ودراسة الجدوى المالية</p>
+                                    <p class="gray">2 يوم</p>
+                                </div>
+                            </a>    
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="icons add">
+                    <i class="fas fa-plus"></i>
+                </div>
+        
+                <div class="dropdown text-end user">
+                    <a href="#" class="d-block link-dark text-decoration-none" id="dropdownUser"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                        <picture>
+                            <source srcset="img/user-icon.png">
+                            <img src="img/user-icon.png" class="rounded-circle" width="32" height="32">
+                        </picture>
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser">
+                        <li><a class="dropdown-item" href="#">دوراتي</a></li>
+                        <li><a class="dropdown-item" href="#">الصفحة الشخصية</a></li>
+                        <li><a class="dropdown-item" href="#">اعدادات الحساب</a></li>
+                        
+                        <li><a class="dropdown-item" href="#">كوني مدربة</a></li>
+                        <li><a class="dropdown-item" href="#">كوني شريكة(معلنة)</a></li>
+                        <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="btn btn-primary">
+                    طوري للمنصة المميزة
+                </a>
+                    
+              </div>
+            </div>
+          </div>
+    </header>
+    <main>
+        <div class="container search">
+            <div class="row mt-3 justify-content-between">
+                <div class="col-auto search-filter my-5">
+                    <a href="#">قائمة الاعمال </a>
+                    <h4>
+                        
+                    </h4>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h4 class="accordion-header" id="headingOne">
+                            <span class="accordion-button  font-18 pb-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        الازياء
+                            </span>
+                          </h4>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check2_1">
+                                    <label class="form-check-label font-14" for="check2_1">
+                                        الأزياء
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check2_2">
+                                    <label class="form-check-label font-14" for="check2_2">
+                                        المجوهرات
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check2_3">
+                                    <label class="form-check-label font-14" for="check2_3">
+                                        التصميم الداخلي
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check2_4">
+                                    <label class="form-check-label font-14" for="check2_4">
+                                        التقنية
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check2_5">
+                                    <label class="form-check-label font-14" for="check2_5">
+                                        التجارة الإلكترونية
+                                    </label>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                          <h4 class="accordion-header" id="headingTwo">
+                            <span class="accordion-button  font-18 pb-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        الازياء
+                            </span>
+                          </h4>
+                          <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check2_1">
+                                    <label class="form-check-label font-14" for="check2_1">
+                                        الأزياء
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check2_2">
+                                    <label class="form-check-label font-14" for="check2_2">
+                                        المجوهرات
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check2_3">
+                                    <label class="form-check-label font-14" for="check2_3">
+                                        التصميم الداخلي
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check2_4">
+                                    <label class="form-check-label font-14" for="check2_4">
+                                        التقنية
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check2_5">
+                                    <label class="form-check-label font-14" for="check2_5">
+                                        التجارة الإلكترونية
+                                    </label>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                          <h4 class="accordion-header" id="headingThree">
+                            <span class="accordion-button  font-18 pb-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                        الازياء
+                            </span>
+                          </h4>
+                          <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check2_1">
+                                    <label class="form-check-label font-14" for="check2_1">
+                                        الأزياء
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check2_2">
+                                    <label class="form-check-label font-14" for="check2_2">
+                                        المجوهرات
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check2_3">
+                                    <label class="form-check-label font-14" for="check2_3">
+                                        التصميم الداخلي
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check2_4">
+                                    <label class="form-check-label font-14" for="check2_4">
+                                        التقنية
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check2_5">
+                                    <label class="form-check-label font-14" for="check2_5">
+                                        التجارة الإلكترونية
+                                    </label>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                          <h4 class="accordion-header" id="headingFour">
+                            <span class="accordion-button  font-18 pb-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                        الازياء
+                            </span>
+                          </h4>
+                          <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check2_1">
+                                    <label class="form-check-label font-14" for="check2_1">
+                                        الأزياء
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check2_2">
+                                    <label class="form-check-label font-14" for="check2_2">
+                                        المجوهرات
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check2_3">
+                                    <label class="form-check-label font-14" for="check2_3">
+                                        التصميم الداخلي
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check2_4">
+                                    <label class="form-check-label font-14" for="check2_4">
+                                        التقنية
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check2_5">
+                                    <label class="form-check-label font-14" for="check2_5">
+                                        التجارة الإلكترونية
+                                    </label>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                </div>
+                <div class="col-9">
+                    <ul class="nav nav-pills mb-3 blogs-nav" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">الكل</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">اونلاين </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">مكان العميل </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-services-tab" data-bs-toggle="pill" data-bs-target="#pills-services" type="button" role="tab" aria-controls="pills-services" aria-selected="false">مكان مقدم الخدمة  </button>
+                          </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="card search-results ">
+                            <h2>
+                                النتائج
+                                <span class="count">(500)</span>
+                            </h2>
+                            <div class="services  mt-3">
+                                <div class="row justify-content-center">
+                                    <div class="col-auto mb-3">
+                                        <div class="item">
+                                            <picture>
+                                                <source srcset="img/service-carousel.png" type="">
+                                                <img src="img/service-carousel.png" alt="">
+                                            </picture>
+                                            
+                                            <div class="text">
+                                                <p class="">مستقلين</p>
+                                                <p>الخياطات</p>
+                                            </div>                            
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="item">
+                                            <picture>
+                                                <source srcset="img/service-carousel.png" type="">
+                                                <img src="img/service-carousel.png" alt="">
+                                            </picture>
+                                            
+                                            <div class="text">
+                                                <p class="">مستقلين</p>
+                                                <p>الخياطات</p>
+                                            </div>                            
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="item">
+                                            <picture>
+                                                <source srcset="img/service-carousel.png" type="">
+                                                <img src="img/service-carousel.png" alt="">
+                                            </picture>
+                                            
+                                            <div class="text">
+                                                <p class="">مستقلين</p>
+                                                <p>الخياطات</p>
+                                            </div>                            
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="item">
+                                            <picture>
+                                                <source srcset="img/service-carousel.png" type="">
+                                                <img src="img/service-carousel.png" alt="">
+                                            </picture>
+                                            
+                                            <div class="text">
+                                                <p class="">مستقلين</p>
+                                                <p>الخياطات</p>
+                                            </div>                            
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="item">
+                                            <picture>
+                                                <source srcset="img/service-carousel.png" type="">
+                                                <img src="img/service-carousel.png" alt="">
+                                            </picture>
+                                            
+                                            <div class="text">
+                                                <p class="">مستقلين</p>
+                                                <p>الخياطات</p>
+                                            </div>                            
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="item">
+                                            <picture>
+                                                <source srcset="img/service-carousel.png" type="">
+                                                <img src="img/service-carousel.png" alt="">
+                                            </picture>
+                                            
+                                            <div class="text">
+                                                <p class="">مستقلين</p>
+                                                <p>الخياطات</p>
+                                            </div>                            
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="item">
+                                            <picture>
+                                                <source srcset="img/service-carousel.png" type="">
+                                                <img src="img/service-carousel.png" alt="">
+                                            </picture>
+                                            
+                                            <div class="text">
+                                                <p class="">مستقلين</p>
+                                                <p>الخياطات</p>
+                                            </div>                            
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="item">
+                                            <picture>
+                                                <source srcset="img/service-carousel.png" type="">
+                                                <img src="img/service-carousel.png" alt="">
+                                            </picture>
+                                            
+                                            <div class="text">
+                                                <p class="">مستقلين</p>
+                                                <p>الخياطات</p>
+                                            </div>                            
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="item">
+                                            <picture>
+                                                <source srcset="img/service-carousel.png" type="">
+                                                <img src="img/service-carousel.png" alt="">
+                                            </picture>
+                                            
+                                            <div class="text">
+                                                <p class="">مستقلين</p>
+                                                <p>الخياطات</p>
+                                            </div>                            
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="item">
+                                            <picture>
+                                                <source srcset="img/service-carousel.png" type="">
+                                                <img src="img/service-carousel.png" alt="">
+                                            </picture>
+                                            
+                                            <div class="text">
+                                                <p class="">مستقلين</p>
+                                                <p>الخياطات</p>
+                                            </div>                            
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="item">
+                                            <picture>
+                                                <source srcset="img/service-carousel.png" type="">
+                                                <img src="img/service-carousel.png" alt="">
+                                            </picture>
+                                            
+                                            <div class="text">
+                                                <p class="">مستقلين</p>
+                                                <p>الخياطات</p>
+                                            </div>                            
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="item">
+                                            <picture>
+                                                <source srcset="img/service-carousel.png" type="">
+                                                <img src="img/service-carousel.png" alt="">
+                                            </picture>
+                                            
+                                            <div class="text">
+                                                <p class="">مستقلين</p>
+                                                <p>الخياطات</p>
+                                            </div>                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination justify-content-center">
+                                  <li class="page-item prev disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                  </li>
+                                  <li class="page-item page-number active"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item page-number"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item page-number"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item next">
+                                    <a class="page-link" href="#">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </nav>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                    <div class="tab-pane fade" id="pills-services" role="tabpanel" aria-labelledby="pills-services-tab">...</div>
+
+                    </div>
+                </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row justify-content-between row-cols-auto">
+                <div class="">
+                    <a href="/" class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                        <picture>
+                            <source media="(min-width:650px)" srcset="img/flogo.png">
+                            <img src="img/flogo.png" width="150" height="75" alt="">
+                        </picture>
+                      </a>
+                    <div class="social mt-3">
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="policy-links">
+                        <a href="#">
+                            شروط الاستخدام
+                        </a>
+                        <a href="#">
+                            سياسة الخصوصية
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row justify-content-between nav row-cols-auto">
+                        <div>
+                            <h6>الشركة</h6>
+                            <a href="#" class="d-block">من نحن</a>
+                            <a href="#" class="d-block">مقارنة الخدمات</a>
+                        </div>
+                        <div>
+                            <h6>قناة رياديات</h6>
+                            <a href="#" class="d-block">المدونة</a>
+                            <a href="#" class="d-block">البودكاست</a>
+                            <a href="#" class="d-block">قصص نجاح</a>
+                        </div>
+                        <div>
+                            <h6>انضمي إلينا</h6>
+                            <a href="#" class="d-block">التوظيف</a>
+                            <a href="#" class="d-block">التسويق بالعمولة</a>
+                        </div>
+                        <div>
+                            <h6>الدعم</h6>
+                            <a href="#" class="d-block">الأسئلة الشائعة</a>
+                            <a href="#" class="d-block">تواصل معنا</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h6>اشتركي بالقائمة البريدية</h6>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="البريد الإلكتروني"
+                        aria-describedby="button-addon2">
+                        <button class="btn btn-primary" type="button" id="button-addon2">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                    </div>
+                    <picture>
+                        <source srcset="img/app-store.png">
+                        <img src="img/app-store.png" alt="">
+                    </picture>
+                    <picture>
+                        <source srcset="img/play-store.png">
+                        <img src="img/play-store.png" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/lightbox.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- owl -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- calender -->
+    <script src="js/jquery.simple-calendar.min.js"></script>
+
+    <!-- Main script file -->
+    <script src="js/main.js"></script>
+</body>
+</html>

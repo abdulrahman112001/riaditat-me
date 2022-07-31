@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<!-- for english make lang en and dir ltr -->
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة رياديات</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <!-- font file -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <!-- uncomment the following line for english  -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- comment this line for english -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+
+    <!-- fontawesome file -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- owl -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- calender -->
+    <link rel="stylesheet" href="css/simple-calendar.css">
+
+    <!-- Main style file -->
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .message-mobile {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box {
+            border: 1px solid rgba(19, 18, 18, 0.123);
+            width: 60%;
+            height: 500px;
+            background-color: white;
+
+
+        }
+        .box h3 {
+            font-weight: bolder;
+            margin: 25px;
+        }
+
+        .input-box {
+            border: 1px solid rgba(19, 18, 18, 0.123);
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .submit-box {
+            border-radius: 5px;
+            width: 100px;
+            color: white;
+            background-color: #1FB9B3;
+            border: none;
+            margin-right: -5px;
+            border: 1px solid  #1FB9B3;
+
+            
+        }
+        strong{
+            color: #1FB9B3;
+            font-weight: bolder;
+
+        }
+        .text{
+            color:#1FB9B3 ;
+            margin: 15px;
+            font-size: 17px;
+
+        }
+        .text span{
+            font-weight: bolder;
+        }
+        @media (max-width:670px) {
+            .box{
+                width: 100%;
+            }
+            
+        }
+        .head {
+            color: #1FB9B3;
+            font-weight: bolder;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        @media (max-width:762px) {
+            .trainer-box {
+                height: 100%;
+                width: 100%;
+                text-align: center;
+            }
+
+            body {
+                /* overflow: auto; */
+            }
+
+            .provid {
+                margin-top: 75px !important;
+            }
+
+        }
+
+        .prev {
+            background-color: #E9F8F7;
+            height: 420px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .head-box {
+            font-weight: bolder;
+            text-align: center;
+        }
+
+     
+        .trainer-box{
+            border-radius: 3px;
+            height: auto;
+
+        }
+        .x {
+            position: relative;
+            right: 98%;
+            top: 5px;
+
+        }
+    
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start header-with-search">
+                <a href="/" class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="img/logo.png">
+                        <img src="img/logo.png" width="150" height="75" alt="">
+                    </picture>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li>
+                        <a href="#" class="nav-link px-2 dropdown-toggle active">تصفحي الدورات</a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link dropdown-toggle px-2">الشبكة</a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2">الحاضنة</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link dropdown-toggle px-2">خدماتنا</a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="ابحثي عن  دورات تدريبية, رائدات أعمال"
+                        aria-label="Search">
+                    <picture>
+                        <source srcset="img/Icon feather-search.png">
+                        <img src="img/Icon feather-search.png" alt="">
+                    </picture>
+                </form>
+                <div class="text-end header-btns">
+                    <div class="dropdown text-end icons">
+                        <a href="#" class="d-block link-dark text-decoration-none" id="dropdownMessages"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>8</span>
+                            <i class="far fa-comment-alt"></i>
+                        </a>
+                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownMessages">
+                            <p class="order">الرسائل (2)</p>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <a href="#" class="bottom-link">
+                                عرض كل الرسائل
+                            </a>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown text-end icons">
+                        <a href="#" class="d-block link-dark text-decoration-none" id="dropdownNotification"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>4</span>
+                            <i class="far fa-bell"></i>
+                        </a>
+                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownNotification">
+                            <p class="gray order">الجديد</p>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication1.png">
+                                            <img src="img/notfication1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>لديك جلسة استشارية اليوم</p>
+                                        <p class="gray">25 دقيقة</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication2.png">
+                                            <img src="img/notfication2.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>تم رفع مرفق جديد</p>
+                                        <p class="gray">25 دقيقة</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <p class="gray order">الأقدم</p>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication3.png">
+                                            <img src="img/notfication3.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>لقد انتهيت من الحاضنة</p>
+                                        <p class="gray">2 يوم</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication4.png">
+                                            <img src="img/notfication4.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>تابع لقاء اليوم خطة العمل
+                                            ودراسة الجدوى المالية</p>
+                                        <p class="gray">2 يوم</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="icons add">
+                        <i class="fas fa-plus"></i>
+                    </div>
+
+                    <div class="dropdown text-end user">
+                        <a href="#" class="d-block link-dark text-decoration-none" id="dropdownUser"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <picture>
+                                <source srcset="img/user-icon.png">
+                                <img src="img/user-icon.png" class="rounded-circle" width="32" height="32">
+                            </picture>
+                        </a>
+                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser">
+                            <li><a class="dropdown-item" href="#">دوراتي</a></li>
+                            <li><a class="dropdown-item" href="#">الصفحة الشخصية</a></li>
+                            <li><a class="dropdown-item" href="#">اعدادات الحساب</a></li>
+
+                            <li><a class="dropdown-item" href="#">كوني مدربة</a></li>
+                            <li><a class="dropdown-item" href="#">كوني شريكة(معلنة)</a></li>
+                            <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-primary">
+                        طوري للمنصة المميزة
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container search">
+            <div class="row mt-3 justify-content-between">
+                <ul class="nav blogs-nav col-md-12 justify-content-center">
+                    <li>
+                        <a href="#" class="nav-link px-2 active ">الكل</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2 ">الحالي</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2">رائدات السابق</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2">رائدات القادم</a>
+                    </li>
+                </ul>
+                <div class="col-auto search-filter">
+                    <h4 class="font-18">
+                        وقت التسليم
+                    </h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="check1">
+                        <label class="form-check-label font-14" for="check1">
+                            تسلميات هذا الاسبوع
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="check2">
+                        <label class="form-check-label font-14" for="check2">
+                            تسلميات هذا الشهر
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="check3">
+                        <label class="form-check-label font-14" for="check3">
+                            مر وقت التسليم
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="warning-banner">
+                        <div class="row">
+                            <span class="col-auto">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </span>
+                            <span class="col-auto p-0">
+                                <span class="bold d-block">
+                                    يجب تسليم المشروع اليوم
+                                </span>
+                                <span class="d-block">
+                                    يرجي العلم انه اذا لم يتم تسليم المشروع اليوم ستتعرض للمسأله القانونيه
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card search-results">
+                        <div class="my-offers  mt-3">
+                            <div class="item mb-3">
+                                <div class="row">
+                                    <picture class="col-auto">
+                                        <source srcset="img/user-icon.png">
+                                        <img src="img/user-icon.png" alt="">
+                                    </picture>
+                                    <div class="text col">
+                                        <h5 class="font-18">
+                                            تصميم داخلي لغرفة ازياء
+
+                                            <span href="#" class="font-14 regular float-end yellow-color">
+                                                <i class="far fa-clock"></i>
+                                                انتهي الوقت
+                                            </span>
+                                        </h5>
+                                        <p class="title font-14">علا مصطفي</p>
+                                        <p>
+                                            حصلت على بكالوريوس الحاسبات و المعلومات، خبرة 5 سنوات في ريادة الأعمال، حصلت
+                                            على جوائز عديدة ولها شركات ناجحة في المملكة وخارجها
+                                        </p>
+
+                                        <a href="#" class="btn btn-primary py-1">
+                                            تم الانتهاء
+                                        </a>
+                                        <a href="#" class="btn text-danger  py-1">
+                                            الغاء الطلب </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item mb-3">
+                                <div class="row">
+                                    <picture class="col-auto">
+                                        <source srcset="img/user-icon.png">
+                                        <img src="img/user-icon.png" alt="">
+                                    </picture>
+                                    <div class="text col">
+                                        <h5 class="font-18">
+                                            تصميم داخلي لغرفة ازياء
+
+                                            <span href="#" class="font-14 regular float-end green-color">
+                                                <i class="far fa-clock"></i>
+                                                متبقي 7 ايام
+                                            </span>
+                                        </h5>
+                                        <p class="title font-14">علا مصطفي</p>
+                                        <p>
+                                            حصلت على بكالوريوس الحاسبات و المعلومات، خبرة 5 سنوات في ريادة الأعمال، حصلت
+                                            على جوائز عديدة ولها شركات ناجحة في المملكة وخارجها
+                                        </p>
+
+                                        <a href="#" class="btn btn-primary py-1">
+                                            تم الانتهاء
+                                        </a>
+                                        <a href="#" class="btn text-danger  py-1">
+                                            الغاء الطلب </a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item mb-3">
+                                <div class="row">
+                                    <picture class="col-auto">
+                                        <source srcset="img/user-icon.png">
+                                        <img src="img/user-icon.png" alt="">
+                                    </picture>
+                                    <div class="text col">
+                                        <h5 class="font-18">
+                                            تصميم داخلي لغرفة ازياء
+
+                                            <span href="#" class="font-14 regular float-end red-color">
+                                                <i class="far fa-clock"></i>
+                                                متبقي يوم واحد
+                                            </span>
+                                        </h5>
+                                        <p class="title font-14">علا مصطفي</p>
+                                        <p>
+                                            حصلت على بكالوريوس الحاسبات و المعلومات، خبرة 5 سنوات في ريادة الأعمال، حصلت
+                                            على جوائز عديدة ولها شركات ناجحة في المملكة وخارجها
+                                        </p>
+
+                                        <a href="#" class="btn btn-primary py-1">
+                                            تم الانتهاء
+                                        </a>
+                                        <a href="#" class="btn text-danger  py-1">
+                                            الغاء الطلب </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item mb-3">
+                                <div class="row">
+                                    <picture class="col-auto">
+                                        <source srcset="img/user-icon.png">
+                                        <img src="img/user-icon.png" alt="">
+                                    </picture>
+                                    <div class="text col">
+                                        <h5 class="font-18">
+                                            تصميم داخلي لغرفة ازياء
+
+                                            <span href="#" class="font-14 regular float-end yellow-color">
+                                                <i class="far fa-clock"></i>
+                                                انتهي الوقت
+                                            </span>
+                                        </h5>
+                                        <p class="title font-14">علا مصطفي</p>
+                                        <p>
+                                            حصلت على بكالوريوس الحاسبات و المعلومات، خبرة 5 سنوات في ريادة الأعمال، حصلت
+                                            على جوائز عديدة ولها شركات ناجحة في المملكة وخارجها
+                                        </p>
+
+                                        <a href="#" class="btn btn-primary py-1">
+                                            تم الانتهاء
+                                        </a>
+                                        <a href="#" class="btn text-danger  py-1">
+                                            الغاء الطلب </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item mb-3">
+                                <div class="row">
+                                    <picture class="col-auto">
+                                        <source srcset="img/user-icon.png">
+                                        <img src="img/user-icon.png" alt="">
+                                    </picture>
+                                    <div class="text col">
+                                        <h5 class="font-18">
+                                            تصميم داخلي لغرفة ازياء
+
+                                            <span href="#" class="font-14 regular float-end green-color">
+                                                <i class="far fa-clock"></i>
+                                                متبقي 7 ايام
+                                            </span>
+                                        </h5>
+                                        <p class="title font-14">علا مصطفي</p>
+                                        <p>
+                                            حصلت على بكالوريوس الحاسبات و المعلومات، خبرة 5 سنوات في ريادة الأعمال، حصلت
+                                            على جوائز عديدة ولها شركات ناجحة في المملكة وخارجها
+                                        </p>
+
+                                        <a href="#" class="btn btn-primary py-1">
+                                            تم الانتهاء
+                                        </a>
+                                        <a href="#" class="btn text-danger  py-1">
+                                            الغاء الطلب </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item mb-3">
+                                <div class="row">
+                                    <picture class="col-auto">
+                                        <source srcset="img/user-icon.png">
+                                        <img src="img/user-icon.png" alt="">
+                                    </picture>
+                                    <div class="text col">
+                                        <h5 class="font-18">
+                                            تصميم داخلي لغرفة ازياء
+
+                                            <span href="#" class="font-14 regular float-end red-color">
+                                                <i class="far fa-clock"></i>
+                                                متبقي يوم واحد
+                                            </span>
+                                        </h5>
+                                        <p class="title font-14">علا مصطفي</p>
+                                        <p>
+                                            حصلت على بكالوريوس الحاسبات و المعلومات، خبرة 5 سنوات في ريادة الأعمال، حصلت
+                                            على جوائز عديدة ولها شركات ناجحة في المملكة وخارجها
+                                        </p>
+
+                                        <a href="#" class="btn btn-primary py-1">
+                                            تم الانتهاء
+                                        </a>
+                                        <a href="#" class="btn text-danger  py-1">
+                                            الغاء الطلب </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item prev disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item page-number active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item page-number"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item page-number"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item next">
+                                    <a class="page-link" href="#">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <section class="trainer ">
+        <div class="trainer-box container">
+            <a href="#" class=" x " data-bs-dismiss="modal">
+                <i class="fas fa-times"></i>
+            </a>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-7 mt-3 justify-content-center text-center  ">
+                    <h5 class="head-box texet-center"> هل انت متاكد انك تريد الغاء الطلب ؟  </h5>
+                    <p class="text-center">في حالة أنك قمت بإلغاء الطلب سوف يتم إعادة المبلغ المدفوع من قبل العميل وإصدار فاتورة ترجيع له
+                    </p>
+                    <textarea name="" id="" cols="50" rows="4"></textarea>
+                    <div class="text-center col-md-12 mt-5">
+                        <a style="font-weight: bolder;" href="#" class="btn text-danger  py-1">
+                            الغاء الطلب </a>
+                    </div>
+
+                </div>
+                <div class="col-md-5  prev ">
+                    <img class="img-fluid mt-5 provid " src="img/panas.png" alt="">
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="row justify-content-between row-cols-auto">
+                <div class="">
+                    <a href="/"
+                        class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                        <picture>
+                            <source media="(min-width:650px)" srcset="img/flogo.png">
+                            <img src="img/flogo.png" width="150" height="75" alt="">
+                        </picture>
+                    </a>
+                    <div class="social mt-3">
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="policy-links">
+                        <a href="#">
+                            شروط الاستخدام
+                        </a>
+                        <a href="#">
+                            سياسة الخصوصية
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row justify-content-between nav row-cols-auto">
+                        <div>
+                            <h6>الشركة</h6>
+                            <a href="#" class="d-block">من نحن</a>
+                            <a href="#" class="d-block">مقارنة الخدمات</a>
+                        </div>
+                        <div>
+                            <h6>قناة رياديات</h6>
+                            <a href="#" class="d-block">المدونة</a>
+                            <a href="#" class="d-block">البودكاست</a>
+                            <a href="#" class="d-block">قصص نجاح</a>
+                        </div>
+                        <div>
+                            <h6>انضمي إلينا</h6>
+                            <a href="#" class="d-block">التوظيف</a>
+                            <a href="#" class="d-block">التسويق بالعمولة</a>
+                        </div>
+                        <div>
+                            <h6>الدعم</h6>
+                            <a href="#" class="d-block">الأسئلة الشائعة</a>
+                            <a href="#" class="d-block">تواصل معنا</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h6>اشتركي بالقائمة البريدية</h6>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="البريد الإلكتروني"
+                            aria-describedby="button-addon2">
+                        <button class="btn btn-primary" type="button" id="button-addon2">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                    </div>
+                    <picture>
+                        <source srcset="img/app-store.png">
+                        <img src="img/app-store.png" alt="">
+                    </picture>
+                    <picture>
+                        <source srcset="img/play-store.png">
+                        <img src="img/play-store.png" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/lightbox.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- owl -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- calender -->
+    <script src="js/jquery.simple-calendar.min.js"></script>
+
+    <!-- Main script file -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

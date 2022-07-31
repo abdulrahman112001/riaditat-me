@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<!-- for english make lang en and dir ltr -->
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة رياديات</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <!-- font file -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <!-- uncomment the following line for english  -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- comment this line for english -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+
+    <!-- fontawesome file -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- owl -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- Main style file -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+        .num {
+            background-color: #1FB9B3;
+            padding: 5px 10px;
+            margin-left: 5px;
+        }
+
+        /* 
+        .adv-req-serv {
+            background-color: #1FB9B3;
+            padding: 50px;
+        } */
+
+        .adv-req-serv.two {
+            background-color: #EBF9F8;
+        }
+
+        .adv-req-serv.two h1 {
+            color: #1FB9B3;
+        }
+
+        .adv-req-serv h1 {
+            color: white;
+            margin-bottom: 50px;
+
+        }
+
+        /* .adv-req-serv .box {
+            background-color: #3AC2BD;
+
+        } */
+
+        /* .adv-req-serv .box h3 {
+            font-weight: bolder;
+            text-align: start;
+            padding: 5px;
+
+        } */
+/* 
+        .adv-req-serv .box p {
+            color: white;
+            text-align: start;
+            padding: 5px;
+
+
+        } */
+
+        .box-service {
+            background-color: white;
+            padding: 10px;
+        }
+
+        .box-service .text>p span {
+            background-color: #1fb9b438;
+            padding: 2px;
+        }
+
+        .box-service .text svg {
+            color: #FFFA54;
+        }
+
+        .input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3),
+        .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+            background-color: #3AC2BD;
+        }
+        .input-group{
+            position: static;
+        }
+        @media (max-width:991px) {
+            .adv-req-serv .box{
+                margin: 15px auto;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <header>
+        <div class="container-fluid">
+            <div
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start header-with-search">
+                <a href="/" class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="img/logo.png">
+                        <img src="img/logo.png" width="150" height="75" alt="">
+                    </picture>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <!-- <li>
+                        <a href="#" class="nav-link px-2 dropdown-toggle active">بحث عن مشروع </a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li> -->
+                    <!-- <li>
+                        <a href="#" class="nav-link dropdown-toggle px-2">الشبكة</a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li> -->
+                    <li>
+                        <a href="#" class="nav-link px-2">بحث عن مقدم خدمة</a>
+                    </li>
+                    <li id="add-project">
+                        <a href="#" class="nav-link px-2"> طلباتي </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2"> أضف مشروع </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2"> خدمات من المقر </a>
+                    </li>
+                    <!-- <li>
+                        <a href="#" class="nav-link dropdown-toggle px-2">خدماتنا</a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li> -->
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="ابحث عن  مقدم خدمتك, مقدم خدمة  "
+                        aria-label="Search">
+                    <picture>
+                        <source srcset="img/Icon feather-search.png">
+                        <img src="img/Icon feather-search.png" alt="">
+                    </picture>
+                </form>
+                <div class="text-end header-btns">
+                    <div class="dropdown text-end icons">
+                        <a href="#" class="d-block link-dark text-decoration-none" id="dropdownMessages"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>8</span>
+                            <i class="far fa-comment-alt"></i>
+                        </a>
+                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownMessages">
+                            <p class="order">الرسائل (2)</p>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <a href="#" class="bottom-link">
+                                عرض كل الرسائل
+                            </a>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown text-end icons">
+                        <a href="#" class="d-block link-dark text-decoration-none" id="dropdownNotification"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>4</span>
+                            <i class="far fa-bell"></i>
+                        </a>
+                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownNotification">
+                            <p class="gray order">الجديد</p>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication1.png">
+                                            <img src="img/notfication1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>لديك جلسة استشارية اليوم</p>
+                                        <p class="gray">25 دقيقة</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication2.png">
+                                            <img src="img/notfication2.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>تم رفع مرفق جديد</p>
+                                        <p class="gray">25 دقيقة</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <p class="gray order">الأقدم</p>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication3.png">
+                                            <img src="img/notfication3.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>لقد انتهيت من الحاضنة</p>
+                                        <p class="gray">2 يوم</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication4.png">
+                                            <img src="img/notfication4.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>تابع لقاء اليوم خطة العمل
+                                            ودراسة الجدوى المالية</p>
+                                        <p class="gray">2 يوم</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- <div class="icons add">
+                        <i class="fas fa-plus"></i>
+                    </div> -->
+
+                    <div class="dropdown text-end user">
+                        <a href="#" class="d-block link-dark text-decoration-none" id="dropdownUser"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <picture>
+                                <source srcset="img/user-icon.png">
+                                <img src="img/user-icon.png" class="rounded-circle" width="32" height="32">
+                            </picture>
+                        </a>
+                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser">
+                            <li><a class="dropdown-item" href="#">دوراتي</a></li>
+                            <li><a class="dropdown-item" href="#">الصفحة الشخصية</a></li>
+                            <li><a class="dropdown-item" href="#">اعدادات الحساب</a></li>
+
+                            <li><a class="dropdown-item" href="#">كوني مدربة</a></li>
+                            <li><a class="dropdown-item" href="#">كوني شريكة(معلنة)</a></li>
+                            <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-primary">
+                        سجل كمقدم خدمة 
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="provider-header ">
+            <div class=" header-carousel owl-carousel owl-theme">
+
+
+                <div class="head-main">
+                    <div class="content text-center">
+                        <h1 class="text-white">أهلاً و مرحباً بك في مقدمي الخدمات</p>
+                            <h6 class="text-white">المنصة الأولى لرائدات الأعمال في تقديم الخدمات </h6>
+                        </H1>
+                          <div class="input-group mb-3 search w-50 m-auto ">
+
+                        <span class="input-group-text " id="basic-addon2"><i
+                                class="fa-solid fa-magnifying-glass"></i></span>
+
+                        <input type="text" class="form-control" placeholder="ابحث عن خدمتك الآن"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    </div>
+
+                    </div>
+                  
+                    <div>
+
+                    </div>
+
+
+                </div>
+                <div class="head-main">
+                    <div class="content text-center">
+                        <h1 class="text-white">أهلاً و مرحباً بك في مقدمي الخدمات</p>
+                            <h6 class="text-white">المنصة الأولى لرائدات الأعمال في تقديم الخدمات </h6>
+                        </H1>
+                          <div class="input-group mb-3 search w-50 m-auto ">
+
+                        <span class="input-group-text " id="basic-addon2"><i
+                                class="fa-solid fa-magnifying-glass"></i></span>
+
+                        <input type="text" class="form-control" placeholder="ابحث عن خدمتك الآن"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    </div>
+
+                    </div>
+                  
+                    <div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="head-main">
+                    <div class="content text-center">
+                        <h1 class="text-white">أهلاً و مرحباً بك في مقدمي الخدمات</p>
+                            <h6 class="text-white">المنصة الأولى لرائدات الأعمال في تقديم الخدمات </h6>
+                        </H1>
+                          <div class="input-group mb-3 search w-50 m-auto ">
+
+                        <span class="input-group-text " id="basic-addon2"><i
+                                class="fa-solid fa-magnifying-glass"></i></span>
+
+                        <input type="text" class="form-control" placeholder="ابحث عن خدمتك الآن"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    </div>
+
+                    </div>
+                  
+                    <div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="container ">
+            <div style="margin:100px 0 ;" class="row  featured-services text-center ">
+                <h2>
+                    كيف يعمل
+                </h2>
+
+                <div style="margin:  100px  0;" class="services ">
+                    <div class="row">
+                        <div class="item  col-12 col-sm-6 col-lg-3 ">
+                            <picture>
+                                <img src="img/rafiki.png" alt="">
+                            </picture>
+                            <p> <span class="num">1 </span> ابحث عن خدمتك </p>
+
+
+                        </div>
+                        <div class="item col-12 col-sm-6 col-lg-3 ">
+                            <picture>
+                                <img src="img/rafiki-2.png" alt="">
+                            </picture>
+                            <p> <span class="num">2</span> تعرف اكثر على مقدم خدمتك </p>
+
+
+
+                        </div>
+                        <div class="item col-12 col-sm-6 col-lg-3 ">
+                            <picture>
+                                <img src="img/Group 3057.png" alt="">
+                            </picture>
+
+                            <p> <span class="num">3</span> تواصل عن طريق الرسائل </p>
+
+                        </div>
+                        <div class="item col-12 col-sm-6 col-lg-3 ">
+                            <picture>
+                                <img src="img/Group 3056.png" alt="">
+                            </picture>
+                            <p> <span class="num">4</span> ادفع ثمن الخدمة </p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class=" mb-3 adv-req-serv  ">
+                    <h1 style="color:#1FB9B3 ;"> مميزات ان تطلب خدمة </h1>
+                    <div class="row justify-content-md-center   justify-content-lg-between ">
+                        <div class="col-lg-3 right">
+                            <div class="box one shadow  ">
+                                <img class="icon-serv" src="img/Group 3482.png" alt="">
+                                <h6> خدمات على ارض الواقع </h6>
+                                <p> مكانية الحصول على خدمات في أرض الواقع مثل
+                                    (التصوير الفوتوغرافي , تحضير كوشة الأفراح والخدمات التجميلية)
+                                </p>
+                            </div>
+                            <div class="box shadow">
+                                <img class="icon-serv" src="img/Group 3479.png" alt="">
+
+                                <h6> كفاءات عالية من مقدمي الخدمات
+                                </h6>
+                                <p> 
+                                    لا نقوم بقبول غير الشركات أو الأفراد الحاصلين على وثيقة
+                                    العمل الحر أو ما يثبت كفاءتهم.                                </p>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 ">
+                            <img class="img-fluid " src="img/Group 3450.png" alt="">
+                        </div>
+                        <div class="col-lg-3 left">
+                            <div class="box one  shadow">
+                                <img class="icon-serv" src="img/Group 3480.png" alt="">
+                                <h6>المرونة وتعدد وسائل الدفع</h6>
+                                <p> 
+                                    نوفر لك عدة طرق للدفع كي تختار أكثر الطرق راحة  لك.                                </p>
+                            </div>
+                            <div class="box shadow">
+                                <img class="icon-serv" src="img/Group 3481.png" alt="">
+
+                                <h6> الدعم الدائم والسريع</h6>
+                                <p>يمكنك التواصل مع خدمة عملاء رياديات 
+                                    عن طريق الإيميل و وسائل التواصل الاجتماعي أينما كنت.                             </p>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <div class=" mb-3 adv-req-serv  ">
+                    <h1 style="color:#1FB9B3 ;" > مميزات ان تقدم خدمة </h1>
+                    <div class="row justify-content-between">
+                        <div class="col-lg-3 right">
+                            <div class="box one shadow ">
+                                <img class="icon-serv" src="img/Group 3498.png" alt="">
+                                <h6> عدم وجود عمولة</h6>
+                                <p> 
+                                    لا توجد أي عمولة لمنصة رياديات من الخدمات المقدمة.                                </p>
+                            </div>
+                            <div class="box shadow ">
+                                <img class="icon-serv" src="img/Group 3486.png" alt="">
+
+                                <h6> التسويق لخدمتك ومنتجاتك</h6>
+                                <p> سنقوم بالتسويق لمنتجاتك وخدماتك عبر 
+                                    التسويق الإلكتروني حتى تصل لأكبر عدد من العملاء.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 ">
+                            <img class="img-fluid " src="img/Group 3504.png" alt="">
+                        </div>
+                        <div class="col-lg-3 left">
+                            <div class="box one shadow ">
+                                <img class="icon-serv" src="img/Group 3487.png" alt="">
+
+                                <h6> إصدار الفواتير بسهولة</h6>
+                                <p> يمكنك إصدار الفواتير بشكل سهل وسريع في أي وقت.
+                                </p>
+                            </div>
+                            <div class="box shadow">
+                                <img class="icon-serv" src="img/Group 3484.png" alt="">
+
+                                <h6> خدمات على ارض الواقالتواصل المباشر مع العملاء</h6>
+                                <p> يمكنك التواصل المباشر مع العملاء عن طريق المحادثات 
+                                    حيث يمكنك مشاركة الصور ومقاطع الفيديو والعنوان
+                                </p>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- <div class=" mb-3 adv-req-serv two">
+                    <h1> مميزات ان تطلب خدمة </h1>
+                    <div class="row justify-content-between">
+
+                        <div class="col-md-6  ">
+                            <div class="box">
+                                <h3> الدعم الدائم السريع </h3>
+                                <p> يمكنك التواصل مع خدمة عملاء رياديات عن طريق الإيميل و وسائل التواصل الاجتماعي أينما
+                                    كنت. </p>
+                            </div>
+                            <div class="box">
+                                <h3>المرونة وتعدد وسائل الدفع </h3>
+                                <p>نوفر لك عدة طرق للدفع كي تختار أكثر الطرق راحة لك. </p>
+                            </div>
+                            <div class="box">
+                                <h3>خدمات على أرض الواقع </h3>
+                                <p>إمكانية الحصول على خدمات في أرض الواقع مثل (التصوير الفوتوغرافي , تحضير كوشة الأفراح
+                                    والخدمات التجميلية). </p>
+                            </div>
+                            <div class="box">
+                                <h3>كفاءات عالية من مقدمي الخدمات </h3>
+                                <p>لا نقوم بقبول غير الشركات أو الأفراد الحاصلين على وثيقة العمل الحر أو ما يثبت
+                                    كفاءتهم.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <img class="img-fluid " src="img/Group 3087.png" alt="">
+                        </div>
+
+                    </div>
+                </div> -->
+            </div>
+            <div style="margin-top: 100px;" class="row justify-content-center mb-3 work-list mt-5 text-center ">
+                <h2  style="color:#1FB9B3 ;"  class="col-12 p-0 text-center fs-4">
+                    أشهر خدماتنا في رياديات
+                </h2>
+                <p>مهما كانت احتياجاتك، فحصولك عليها وحجزها عن بعد أصبح أسهل مع رياديات 
+                </p>
+                <div class="services">
+                    <div class="services-carousel owl-carousel owl-theme mb-3">
+                        <div class="item">
+                            <picture>
+                                <img class="img-fluid" src="img/service-carousel.png" alt="">
+                            </picture>
+
+                            <div class="text">
+                                <p class="">خدمات </p>
+                                <p>الخياطات</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <picture>
+                                <img class="img-fluid" src="img/Group 3095.png" alt="">
+                            </picture>
+
+                            <div class="text">
+                                <p class="">خدمات </p>
+                                <p>الميك اب ارتيست</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <picture>
+                                <img class="img-fluid" src="img/Group 3096.png" alt="">
+                            </picture>
+
+                            <div class="text">
+                                <p class="">خدمات </p>
+                                <p>مصممات ديكور </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <picture>
+                                <img class="img-fluid" src="img/Rectangle 649.png" alt="">
+                            </picture>
+
+                            <div class="text">
+                                <p class="">خدمات </p>
+                                <p>كتابة المحتوى والترجمة </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <picture>
+                                <img class="img-fluid" src="img/Group 3097.png" alt="">
+                            </picture>
+
+                            <div class="text">
+                                <p class="">خدمات </p>
+                                <p>الازياء</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <picture>
+                                <img class="img-fluid" src="img/Rectangle 649.png" alt="">
+                            </picture>
+
+                            <div class="text">
+                                <p class="">حدمات </p>
+                                <p>الازياء</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="providers mb-3">
+                    <div class="row text-center  ">
+                        <h3 style="color:#1FB9B3 ;" class="fs-4">خدماتنا الجاهزة </h3>
+                        <p> ابحث واشتري فورا خدمات جاهزة وسعرها ثابت من مقدمي الخدمات </p>
+
+                    </div>
+
+                    <div class="providers-carousel owl-carousel owl-theme">
+                        <div class="box-service">
+                            <picture>
+                                <img src="img/cfd156b05e8df236e777672045cacbe8 1.png" width="140" alt="">
+                            </picture>
+                            <div class="text">
+                                <h6 class="p-3">
+                                    تصميم شهادة الكترونية للطباعه </h6>
+                                <p>
+                                    <span class="m-3"> تصميم </span>
+                                    <span> اخرى </span>
+                                </p>
+                                <div class="row ">
+                                    <div class=" col-md-8 d-flex justify-content-center">
+                                        <div class="col-md-3">
+                                            <img class="img-fluid w-100" src="img/Ellipse 1.png" alt="">
+                                        </div>
+                                        <div class="col-md-9  ">
+                                            <h6> نورا علي </h6>
+                                            <p>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </p>
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p style="font-weight:bolder ;"> <span>ر.س.</span> 10 </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-service">
+                            <picture>
+                                <img src="img/cfd156b05e8df236e777672045cacbe8 1.png" width="140" alt="">
+                            </picture>
+                            <div class="text">
+                                <h6 class="p-3">
+                                    تصميم شهادة الكترونية للطباعه </h6>
+                                <p>
+                                    <span class="m-3"> تصميم </span>
+                                    <span> اخرى </span>
+                                </p>
+                                <div class="row ">
+                                    <div class=" col-md-8 d-flex justify-content-center">
+                                        <div class="col-md-3">
+                                            <img class="img-fluid w-100" src="img/Ellipse 1.png" alt="">
+                                        </div>
+                                        <div class="col-md-9  ">
+                                            <h6> نورا علي </h6>
+                                            <p>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </p>
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p style="font-weight:bolder ;"> <span>ر.س.</span> 10 </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-service">
+                            <picture>
+                                <img src="img/cfd156b05e8df236e777672045cacbe8 1.png" width="140" alt="">
+                            </picture>
+                            <div class="text">
+                                <h6 class="p-3">
+                                    تصميم شهادة الكترونية للطباعه </h6>
+                                <p>
+                                    <span class="m-3"> تصميم </span>
+                                    <span> اخرى </span>
+                                </p>
+                                <div class="row ">
+                                    <div class=" col-md-8 d-flex justify-content-center">
+                                        <div class="col-md-3">
+                                            <img class="img-fluid w-100" src="img/Ellipse 1.png" alt="">
+                                        </div>
+                                        <div class="col-md-9  ">
+                                            <h6> نورا علي </h6>
+                                            <p>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </p>
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p style="font-weight:bolder ;"> <span>ر.س.</span> 10 </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-service">
+                            <picture>
+                                <img src="img/cfd156b05e8df236e777672045cacbe8 1.png" width="140" alt="">
+                            </picture>
+                            <div class="text">
+                                <h6 class="p-3">
+                                    تصميم شهادة الكترونية للطباعه </h6>
+                                <p>
+                                    <span class="m-3"> تصميم </span>
+                                    <span> اخرى </span>
+                                </p>
+                                <div class="row ">
+                                    <div class=" col-md-8 d-flex justify-content-center">
+                                        <div class="col-md-3">
+                                            <img class="img-fluid w-100" src="img/Ellipse 1.png" alt="">
+                                        </div>
+                                        <div class="col-md-9  ">
+                                            <h6> نورا علي </h6>
+                                            <p>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </p>
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p style="font-weight:bolder ;"> <span>ر.س.</span> 10 </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-service">
+                            <picture>
+                                <img src="img/cfd156b05e8df236e777672045cacbe8 1.png" width="140" alt="">
+                            </picture>
+                            <div class="text">
+                                <h6 class="p-3">
+                                    تصميم شهادة الكترونية للطباعه </h6>
+                                <p>
+                                    <span class="m-3"> تصميم </span>
+                                    <span> اخرى </span>
+                                </p>
+                                <div class="row ">
+                                    <div class=" col-md-8 d-flex justify-content-center">
+                                        <div class="col-md-3">
+                                            <img class="img-fluid w-100" src="img/Ellipse 1.png" alt="">
+                                        </div>
+                                        <div class="col-md-9  ">
+                                            <h6> نورا علي </h6>
+                                            <p>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </p>
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p style="font-weight:bolder ;"> <span>ر.س.</span> 10 </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-service">
+                            <picture>
+                                <img src="img/cfd156b05e8df236e777672045cacbe8 1.png" width="140" alt="">
+                            </picture>
+                            <div class="text">
+                                <h6 class="p-3">
+                                    تصميم شهادة الكترونية للطباعه </h6>
+                                <p>
+                                    <span class="m-3"> تصميم </span>
+                                    <span> اخرى </span>
+                                </p>
+                                <div class="row ">
+                                    <div class=" col-md-8 d-flex justify-content-center">
+                                        <div class="col-md-3">
+                                            <img class="img-fluid w-100" src="img/Ellipse 1.png" alt="">
+                                        </div>
+                                        <div class="col-md-9  ">
+                                            <h6> نورا علي </h6>
+                                            <p>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </p>
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p style="font-weight:bolder ;"> <span>ر.س.</span> 10 </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-service">
+                            <picture>
+                                <img src="img/cfd156b05e8df236e777672045cacbe8 1.png" width="140" alt="">
+                            </picture>
+                            <div class="text">
+                                <h6 class="p-3">
+                                    تصميم شهادة الكترونية للطباعه </h6>
+                                <p>
+                                    <span class="m-3"> تصميم </span>
+                                    <span> اخرى </span>
+                                </p>
+                                <div class="row ">
+                                    <div class=" col-md-8 d-flex justify-content-center">
+                                        <div class="col-md-3">
+                                            <img class="img-fluid w-100" src="img/Ellipse 1.png" alt="">
+                                        </div>
+                                        <div class="col-md-9  ">
+                                            <h6> نورا علي </h6>
+                                            <p>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </p>
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p style="font-weight:bolder ;"> <span>ر.س.</span> 10 </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-between align-items-start ">
+                <div class="faqs col-md-12 p-0">
+                    <h1>
+                        الأسئلة الشائعة
+                    </h1>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-general" role="tabpanel"
+                            aria-labelledby="pills-general-tab">
+                            <div class="row">
+                                <div class="accordion accordion-flush" id="accordionFaqs1">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                                ما هي مقدمي خدمات رياديات؟ </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFaqs1">
+                                            <div class="accordion-body">
+                                                رياديات شركة سعودية تتخذ من الرياض مقراَ لها، تهدف لدعم المرأة وتمكينها
+                                                في مجال ريادة الأعمال، من خلال مجموعة متكاملة من الخدمات والمنتجات لدعم
+                                                ريادة الأعمال ومنها الاحتضان والتسريع وتوفير مساحات العمل والاستشارات
+                                                والإرشاد.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                كيف أضمن حقوقي؟ </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFaqs1">
+                                            <div class="accordion-body">
+                                                رياديات شركة سعودية تتخذ من الرياض مقراَ لها، تهدف لدعم المرأة وتمكينها
+                                                في مجال ريادة الأعمال، من خلال مجموعة متكاملة من الخدمات والمنتجات لدعم
+                                                ريادة الأعمال ومنها الاحتضان والتسريع وتوفير مساحات العمل والاستشارات
+                                                والإرشاد.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                aria-expanded="false" aria-controls="flush-collapseThree">
+                                                ماذا لو لم أكن راضياً عن مستوى الخدمة؟ </button>
+                                        </h2>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFaqs1">
+                                            <div class="accordion-body">
+                                                رياديات شركة سعودية تتخذ من الرياض مقراَ لها، تهدف لدعم المرأة وتمكينها
+                                                في مجال ريادة الأعمال، من خلال مجموعة متكاملة من الخدمات والمنتجات لدعم
+                                                ريادة الأعمال ومنها الاحتضان والتسريع وتوفير مساحات العمل والاستشارات
+                                                والإرشاد.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapsefour"
+                                                aria-expanded="false" aria-controls="flush-collapsefour">
+                                                ماذا سيحدث بعد نشر مشروعي؟
+                                        </h2>
+                                        <div id="flush-collapsefour" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-collapsefour" data-bs-parent="#accordionFaqs1">
+                                            <div class="accordion-body">
+                                                رياديات شركة سعودية تتخذ من الرياض مقراَ لها، تهدف لدعم المرأة وتمكينها
+                                                في مجال ريادة الأعمال، من خلال مجموعة متكاملة من الخدمات والمنتجات لدعم
+                                                ريادة الأعمال ومنها الاحتضان والتسريع وتوفير مساحات العمل والاستشارات
+                                                والإرشاد.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row justify-content-between row-cols-auto">
+                <div class="">
+                    <a href="/"
+                        class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                        <picture>
+                            <source media="(min-width:650px)" srcset="img/flogo.png">
+                            <img src="img/flogo.png" width="150" height="75" alt="">
+                        </picture>
+                    </a>
+                    <div class="social mt-3">
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="policy-links">
+                        <a href="#">
+                            شروط الاستخدام
+                        </a>
+                        <a href="#">
+                            سياسة الخصوصية
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row justify-content-between nav row-cols-auto">
+                        <div>
+                            <h6>الشركة</h6>
+                            <a href="#" class="d-block">من نحن</a>
+                            <a href="#" class="d-block">مقارنة الخدمات</a>
+                        </div>
+                        <div>
+                            <h6>قناة رياديات</h6>
+                            <a href="#" class="d-block">المدونة</a>
+                            <a href="#" class="d-block">البودكاست</a>
+                            <a href="#" class="d-block">قصص نجاح</a>
+                        </div>
+                        <div>
+                            <h6>انضمي إلينا</h6>
+                            <a href="#" class="d-block">التوظيف</a>
+                            <a href="#" class="d-block">التسويق بالعمولة</a>
+                        </div>
+                        <div>
+                            <h6>الدعم</h6>
+                            <a href="#" class="d-block">الأسئلة الشائعة</a>
+                            <a href="#" class="d-block">تواصل معنا</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h6>اشتركي بالقائمة البريدية</h6>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="البريد الإلكتروني"
+                            aria-describedby="button-addon2">
+                        <button class="btn btn-primary" type="button" id="button-addon2">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                    </div>
+                    <picture>
+                        <source srcset="img/app-store.png">
+                        <img src="img/app-store.png" alt="">
+                    </picture>
+                    <picture>
+                        <source srcset="img/play-store.png">
+                        <img src="img/play-store.png" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/lightbox.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- owl -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="js/all.min.js"></script>
+    <!-- Main script file -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

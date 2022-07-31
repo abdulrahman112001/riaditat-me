@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<!-- for english make lang en and dir ltr -->
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة رياديات</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <!-- font file -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <!-- uncomment the following line for english  -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- comment this line for english -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+
+    <!-- fontawesome file -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- owl -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- Main style file -->
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .btn.filter {
+            background-color: white;
+            color: black;
+            padding: 0;
+            border: none;
+            color: #1FB9B3;
+        }
+
+        .btn-secondary:hover {
+            background-color: transparent !important;
+            color: #1FB9B3;
+            border: none;
+        }
+
+        .btn-check:focus+.btn-secondary,
+        .btn-secondary:focus {
+            background-color: transparent !important;
+            color: #1FB9B3;
+            border: none;
+
+        }
+
+        .fa-star {
+            color: rgb(255, 217, 0);
+        }
+
+        .dropdown-toggle::after {
+            display: none;
+        }
+
+        .dropdown-menu {
+            /* background-color: transparent; */
+            border: none;
+        }
+
+        .dropdown ul.dropdown-menu:before {
+            display: none;
+        }
+
+        .btn-check:focus+.btn-secondary,
+        .btn-secondary:focus {
+            box-shadow: none;
+        }
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            border: navajowhite;
+        }
+
+        .dropdown-toggle p {
+            padding: 0;
+            margin: 0;
+            height: 6px;
+
+        }
+
+        .dropend .dropdown-toggle::after {
+            display: none;
+        }
+
+        .info {
+            position: relative;
+        }
+
+        .dotted {
+            color: black;
+            position: absolute;
+            left: -2px;
+            top: -19px;
+        }
+
+        .dotted .dropdown-menu {
+            min-width: 0;
+            transform: translate(35.9375px, 0px) !important;
+        }
+
+        .info span {
+            position: absolute;
+            left: -10px;
+            top: 66px;
+        }
+
+
+        .btn-secondary:hover {
+            background-color: transparent !important;
+            color: #1FB9B3;
+            border: none;
+        }
+
+        .btn-check:focus+.btn-secondary,
+        .btn-secondary:focus {
+            background-color: transparent !important;
+            color: #1FB9B3;
+            border: none;
+
+        }
+
+        .fa-star {
+            color: rgb(255, 217, 0);
+        }
+
+        .trainer-box {
+            height: auto;
+            margin-top: 20px;
+            padding: 10px;
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+
+        .owl-carousel .owl-nav button.owl-next,
+        .owl-carousel .owl-nav button.owl-prev,
+        .owl-carousel button.owl-dot {
+            display: none;
+        }
+
+        .trainer {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .trainer-show {
+            display: block;
+
+        }
+
+        .close {
+            top: 36px;
+            position: absolute !important;
+            left: 25%;
+            cursor: pointer;
+        }
+
+        svg.close {
+            font-size: 17px;
+            transition: 0.3s all;
+        }
+
+        svg.close:hover {
+            color: #1FB9B3;
+            font-size: 20px;
+        }
+
+        .trainer-box::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .trainer-box::-webkit-scrollbar-track {
+            border-radius: 50px;
+            background-color: #1FB9B3;
+
+        }
+
+        .trainer-box::-webkit-scrollbar-thumb {
+            border-radius: 50px;
+            background-color: #1FB9B3;
+
+        }
+
+        .item .content img {
+            border-radius: 2px !important;
+        }
+
+
+        .trainer-report {
+            border-radius: 3px;
+            height: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 5000000;
+            background-color: rgba(0, 0, 0, 0.377);
+            display: none;
+
+        }
+
+        .trainer-report-show {
+            display: block;
+        }
+
+        .trainer-box-report {
+            position: relative;
+            width: 50%;
+            height: 60%;
+            background-color: white;
+            top: 17%;
+        }
+
+        .trainer-box-report .prev {
+            padding: 50px;
+            background-color: #1fb9b361;
+            height: 60vh;
+        }
+
+        .x {
+            position: absolute;
+            left: 10px;
+        }
+
+        .modal-body .text .svg-inline--fa {
+            height: 3rem;
+            color: #1fb9b3;
+        }
+
+        .add-modal .file-label {
+            width: 100%;
+            border: 2px solid #1FB9B3;
+            border-radius: 6px;
+            text-align: center;
+            padding: 10% 0;
+            position: relative;
+        }
+
+        .add-modal .file-label.first {
+            width: inherit;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start header-with-search">
+                <a href="/" class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="img/logo.png">
+                        <img src="img/logo.png" width="150" height="75" alt="">
+                    </picture>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <!-- <li>
+                        <a href="#" class="nav-link px-2 dropdown-toggle active">بحث عن مشروع </a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li> -->
+                    <!-- <li>
+                        <a href="#" class="nav-link dropdown-toggle px-2">الشبكة</a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li> -->
+                    <li>
+                        <a href="#" class="nav-link px-2">بحث عن مشروع </a>
+                    </li>
+                    <li id="add-project">
+                        <a href="#" class="nav-link px-2">اضف مشروع </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2">الطلبات الواردة </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2">الدعم والمساعدة </a>
+                    </li>
+                    <!-- <li>
+                        <a href="#" class="nav-link dropdown-toggle px-2">خدماتنا</a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li> -->
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="ابحث عن خدمة لتقدمها "
+                        aria-label="Search">
+                    <picture>
+                        <source srcset="img/Icon feather-search.png">
+                        <img src="img/Icon feather-search.png" alt="">
+                    </picture>
+                </form>
+                <div class="text-end header-btns">
+                    <div class="dropdown text-end icons">
+                        <a href="#" class="d-block link-dark text-decoration-none" id="dropdownMessages"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>8</span>
+                            <i class="far fa-comment-alt"></i>
+                        </a>
+                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownMessages">
+                            <p class="order">الرسائل (2)</p>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <a href="#" class="bottom-link">
+                                عرض كل الرسائل
+                            </a>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown text-end icons">
+                        <a href="#" class="d-block link-dark text-decoration-none" id="dropdownNotification"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>4</span>
+                            <i class="far fa-bell"></i>
+                        </a>
+                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownNotification">
+                            <p class="gray order">الجديد</p>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication1.png">
+                                            <img src="img/notfication1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>لديك جلسة استشارية اليوم</p>
+                                        <p class="gray">25 دقيقة</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication2.png">
+                                            <img src="img/notfication2.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>تم رفع مرفق جديد</p>
+                                        <p class="gray">25 دقيقة</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <p class="gray order">الأقدم</p>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication3.png">
+                                            <img src="img/notfication3.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>لقد انتهيت من الحاضنة</p>
+                                        <p class="gray">2 يوم</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication4.png">
+                                            <img src="img/notfication4.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>تابع لقاء اليوم خطة العمل
+                                            ودراسة الجدوى المالية</p>
+                                        <p class="gray">2 يوم</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- <div class="icons add">
+                        <i class="fas fa-plus"></i>
+                    </div> -->
+
+                    <div class="dropdown text-end user">
+                        <a href="#" class="d-block link-dark text-decoration-none" id="dropdownUser"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <picture>
+                                <source srcset="img/user-icon.png">
+                                <img src="img/user-icon.png" class="rounded-circle" width="32" height="32">
+                            </picture>
+                        </a>
+                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser">
+                            <li><a class="dropdown-item" href="#">دوراتي</a></li>
+                            <li><a class="dropdown-item" href="#">الصفحة الشخصية</a></li>
+                            <li><a class="dropdown-item" href="#">اعدادات الحساب</a></li>
+
+                            <li><a class="dropdown-item" href="#">كوني مدربة</a></li>
+                            <li><a class="dropdown-item" href="#">كوني شريكة(معلنة)</a></li>
+                            <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-primary">
+                        طوري للمنصة المميزة
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row  justify-content-between align-items-start mt-3 ">
+                <div class="col-md-4 user-side-cards">
+                    <div class="card">
+                        <div class="row row-cols-auto justify-content-between">
+                            <div class="col-md-12">
+                                <div class="row row-cols-auto align-items-center gx-2">
+                                    <picture>
+                                        <source srcset="img/profile.png">
+                                        <img src="img/profile.png" alt="">
+                                    </picture>
+                                    <div class="text d-inline-block">
+                                        <h5 class="font-14 mt-3">
+                                            نسرين السيد
+                                        </h5>
+                                        <p class="gray font-14 mb-0">
+                                            رائدة أعمال
+                                        </p>
+                                        <div class="rate">
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star"></i>
+                                            <span class="bold">
+                                                4.1
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                حصلت على بكالوريوس معهد الكونسرفتوار، خبرة 5 سنوات في ريادة الأعمال، حصلت على جوائز
+                                عديدة ولها شركات ناجحة في المملكة وخارجها
+                            </div>
+                            <div class="col-md-12 mt-4 p-0">
+                                <div class="row align-items-center justify-content-around text-center">
+
+                                    <a href="#" class="btn btn-primary col-auto">
+                                        جدول اعملي
+                                    </a>
+                                    <a href="#" class="btn btn-white-outlined col-auto">
+                                        تعديل الحساب
+                                    </a>
+                                    <div class="social-links col-12 mt-3">
+
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-globe"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card user-tabs">
+                        <div class="row justify-content-between align-items-start">
+
+                            <ul class="nav blogs-nav nav-tabs col-auto" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="service-tab" data-bs-toggle="tab"
+                                        data-bs-target="#service" type="button" role="tab" aria-controls="service"
+                                        aria-selected="true"> الخدمات </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="publishedCourses-tab" data-bs-toggle="tab"
+                                        data-bs-target="#publishedCourses" type="button" role="tab"
+                                        aria-controls="publishedCourses" aria-selected="true">قائمة اعمالي </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="meetups-tab" data-bs-toggle="tab"
+                                        data-bs-target="#meetups" type="button" role="tab" aria-controls="meetups"
+                                        aria-selected="true">التقيميات</button>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-white-outlined col-auto m-2" data-bs-toggle="modal"
+                                data-bs-target="#addModal">
+                                ضيفي عمل <i class="fas fa-plus-circle"></i>
+                            </a>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane my-work fade show active" id="service" role="tabpanel"
+                                aria-labelledby="service-tab">
+                                <div class="row">
+                                    <div class="col-4 item">
+                                        <picture>
+                                            <source srcset="img/Rectangle 686.png">
+                                            <img src="img/Rectangle 686.png" alt="">
+                                        </picture>
+                                        <p class="text-end font-13 gray mt-2">
+                                            122
+                                            <i class="far fa-eye"></i>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 item">
+                                        <picture>
+                                            <source srcset="img/Rectangle 686.png">
+                                            <img src="img/Rectangle 686.png" alt="">
+                                        </picture>
+                                        <p class="text-end font-13 gray mt-2">
+                                            122
+                                            <i class="far fa-eye"></i>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 item">
+                                        <picture>
+                                            <source srcset="img/Rectangle 686.png">
+                                            <img src="img/Rectangle 686.png" alt="">
+                                        </picture>
+                                        <p class="text-end font-13 gray mt-2">
+                                            122
+                                            <i class="far fa-eye"></i>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 item">
+                                        <picture>
+                                            <source srcset="img/Rectangle 686.png">
+                                            <img src="img/Rectangle 686.png" alt="">
+                                        </picture>
+                                        <p class="text-end font-13 gray mt-2">
+                                            122
+                                            <i class="far fa-eye"></i>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 item">
+                                        <picture>
+                                            <source srcset="img/Rectangle 686.png">
+                                            <img src="img/Rectangle 686.png" alt="">
+                                        </picture>
+                                        <p class="text-end font-13 gray mt-2">
+                                            122
+                                            <i class="far fa-eye"></i>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 item">
+                                        <picture>
+                                            <source srcset="img/Rectangle 686.png">
+                                            <img src="img/Rectangle 686.png" alt="">
+                                        </picture>
+                                        <p class="text-end font-13 gray mt-2">
+                                            122
+                                            <i class="far fa-eye"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" class="show-more ">
+                                        عرض المزيد
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tab-pane my-work fade  " id="publishedCourses" role="tabpanel"
+                                aria-labelledby="publishedCourses-tab">
+                                <div class="row">
+                                    <div class="col-4 item">
+                                        <picture>
+                                            <source srcset="img/my-work.png">
+                                            <img src="img/my-work.png" alt="">
+                                        </picture>
+                                        <p class="text-end font-13 gray mt-2">
+                                            122
+                                            <i class="far fa-eye"></i>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 item">
+                                        <picture>
+                                            <source srcset="img/my-work.png">
+                                            <img src="img/my-work.png" alt="">
+                                        </picture>
+                                        <p class="text-end font-13 gray mt-2">
+                                            122
+                                            <i class="far fa-eye"></i>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 item">
+                                        <picture>
+                                            <source srcset="img/my-work.png">
+                                            <img src="img/my-work.png" alt="">
+                                        </picture>
+                                        <p class="text-end font-13 gray mt-2">
+                                            122
+                                            <i class="far fa-eye"></i>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 item">
+                                        <picture>
+                                            <source srcset="img/my-work.png">
+                                            <img src="img/my-work.png" alt="">
+                                        </picture>
+                                        <p class="text-end font-13 gray mt-2">
+                                            122
+                                            <i class="far fa-eye"></i>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 item">
+                                        <picture>
+                                            <source srcset="img/my-work.png">
+                                            <img src="img/my-work.png" alt="">
+                                        </picture>
+                                        <p class="text-end font-13 gray mt-2">
+                                            122
+                                            <i class="far fa-eye"></i>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 item">
+                                        <picture>
+                                            <source srcset="img/my-work.png">
+                                            <img src="img/my-work.png" alt="">
+                                        </picture>
+                                        <p class="text-end font-13 gray mt-2">
+                                            122
+                                            <i class="far fa-eye"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" class="show-more ">
+                                        عرض المزيد
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tab-pane my-work fade comment" id="meetups" role="tabpanel"
+                                aria-labelledby="meetups-tab">
+                                <h3>
+                                    التعليقات
+                                </h3>
+
+                                <div class="dropdown my-4 ">
+                                    <button class="btn btn-secondary dropdown-toggle filter" type="button"
+                                        id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                        تصنيف حسب
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <li><button class="dropdown-item" type="button">الاحدث </button></li>
+                                        <li><button class="dropdown-item" type="button">الاقدم </button></li>
+                                        <li><button class="dropdown-item" type="button">التقييمات الاعلى </button></li>
+                                        <li><button class="dropdown-item" type="button">التقييمات الاقل </button></li>
+                                        <li><button class="dropdown-item" type="button">تقييمات مع الصور </button></li>
+                                        <li><button class="dropdown-item" type="button">الكل </button></li>
+
+
+
+                                    </ul>
+                                </div>
+
+                                <div class="comment">
+                                    <div class="row gx-2">
+                                        <picture class="col-auto">
+                                            <source srcset="img/comment.png">
+                                            <img src="img/comment.png" alt="">
+                                        </picture>
+
+                                        <div class="info col">
+                                            <div class=" d-flex justify-content-between">
+                                                <h5>
+                                                    يمنى فريد
+
+
+                                                </h5>
+                                                <div>
+                                                    <div class="dotted">
+                                                        <div class="btn-group dropend">
+                                                            <a type="" class="d-flex dropdown-toggle"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <p>.</p>
+                                                                <p>.</p>
+                                                                <p>.</p>
+
+
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <a type="" class="text-danger report"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#staticBackdrop">
+                                                                    ابلاغ
+                                                                </a>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <span class="date float-end">منذ 5 ايام</span>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row align-items-center">
+                                                <div class="col-md-6">
+                                                    <p class="title">
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </p>
+                                                    <p>
+                                                        مصممة مميزة جدا وافضل شيء التزامها وجودة العمل بالتاكيد سوف اكرر
+                                                        هذه
+                                                        التجربة
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-6 p-2">
+                                                    <a type="" class="">
+                                                        <img class="img-fluid" src="img/unsplash_tiWcNvpQF4E.png"
+                                                            alt="">
+                                                    </a>
+                                                    <a type="" class="">
+                                                        <img class="img-fluid" src="img/unsplash_tiWcNvpQF4E.png"
+                                                            alt="">
+                                                    </a>
+
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment">
+                                    <div class="row gx-2">
+                                        <picture class="col-auto">
+                                            <source srcset="img/comment.png">
+                                            <img src="img/comment.png" alt="">
+                                        </picture>
+
+                                        <div class="info col">
+                                            <div class=" d-flex justify-content-between">
+                                                <h5>
+                                                    يمنى فريد
+
+
+                                                </h5>
+                                                <div>
+                                                    <div class="dotted">
+                                                        <div class="btn-group dropend">
+                                                            <a type="" class="d-flex dropdown-toggle"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <p>.</p>
+                                                                <p>.</p>
+                                                                <p>.</p>
+
+
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <a type="" class="text-danger report"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#staticBackdrop">
+                                                                    ابلاغ
+                                                                </a>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <span class="date float-end">منذ 5 ايام</span>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row align-items-center">
+                                                <div class="col-md-6">
+                                                    <p class="title">
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </p>
+                                                    <p>
+                                                        مصممة مميزة جدا وافضل شيء التزامها وجودة العمل بالتاكيد سوف اكرر
+                                                        هذه
+                                                        التجربة
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-6 p-2">
+                                                    <a type="" class="">
+                                                        <img class="img-fluid" src="img/unsplash_tiWcNvpQF4E.png"
+                                                            alt="">
+                                                    </a>
+                                                    <a type="" class="">
+                                                        <img class="img-fluid" src="img/unsplash_tiWcNvpQF4E.png"
+                                                            alt="">
+                                                    </a>
+
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment">
+                                    <div class="row gx-2">
+                                        <picture class="col-auto">
+                                            <source srcset="img/comment.png">
+                                            <img src="img/comment.png" alt="">
+                                        </picture>
+
+                                        <div class="info col">
+                                            <div class=" d-flex justify-content-between">
+                                                <h5>
+                                                    يمنى فريد
+
+
+                                                </h5>
+                                                <div>
+                                                    <div class="dotted">
+                                                        <div class="btn-group dropend">
+                                                            <a type="" class="d-flex dropdown-toggle"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <p>.</p>
+                                                                <p>.</p>
+                                                                <p>.</p>
+
+
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <a type="" class="text-danger report"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#staticBackdrop">
+                                                                    ابلاغ
+                                                                </a>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <span class="date float-end">منذ 5 ايام</span>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row align-items-center">
+                                                <div class="col-md-6">
+                                                    <p class="title">
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star active"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </p>
+                                                    <p>
+                                                        مصممة مميزة جدا وافضل شيء التزامها وجودة العمل بالتاكيد سوف اكرر
+                                                        هذه
+                                                        التجربة
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-6 p-2">
+                                                    <a type="" class="">
+                                                        <img class="img-fluid" src="img/unsplash_tiWcNvpQF4E.png"
+                                                            alt="">
+                                                    </a>
+                                                    <a type="" class="">
+                                                        <img class="img-fluid" src="img/unsplash_tiWcNvpQF4E.png"
+                                                            alt="">
+                                                    </a>
+
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- <div class="text-center">
+                                    <a href="#" class="show-more ">
+                                        عرض المزيد
+                                    </a>
+                                </div> -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row justify-content-between row-cols-auto">
+                <div class="">
+                    <a href="/"
+                        class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                        <picture>
+                            <source media="(min-width:650px)" srcset="img/flogo.png">
+                            <img src="img/flogo.png" width="150" height="75" alt="">
+                        </picture>
+                    </a>
+                    <div class="social mt-3">
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="policy-links">
+                        <a href="#">
+                            شروط الاستخدام
+                        </a>
+                        <a href="#">
+                            سياسة الخصوصية
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row justify-content-between nav row-cols-auto">
+                        <div>
+                            <h6>الشركة</h6>
+                            <a href="#" class="d-block">من نحن</a>
+                            <a href="#" class="d-block">مقارنة الخدمات</a>
+                        </div>
+                        <div>
+                            <h6>قناة رياديات</h6>
+                            <a href="#" class="d-block">المدونة</a>
+                            <a href="#" class="d-block">البودكاست</a>
+                            <a href="#" class="d-block">قصص نجاح</a>
+                        </div>
+                        <div>
+                            <h6>انضمي إلينا</h6>
+                            <a href="#" class="d-block">التوظيف</a>
+                            <a href="#" class="d-block">التسويق بالعمولة</a>
+                        </div>
+                        <div>
+                            <h6>الدعم</h6>
+                            <a href="#" class="d-block">الأسئلة الشائعة</a>
+                            <a href="#" class="d-block">تواصل معنا</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h6>اشتركي بالقائمة البريدية</h6>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="البريد الإلكتروني"
+                            aria-describedby="button-addon2">
+                        <button class="btn btn-primary" type="button" id="button-addon2">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                    </div>
+                    <picture>
+                        <source srcset="img/app-store.png">
+                        <img src="img/app-store.png" alt="">
+                    </picture>
+                    <picture>
+                        <source srcset="img/play-store.png">
+                        <img src="img/play-store.png" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- content img  -->
+    <section class="trainer  ">
+        <div class="trainer-box container">
+            <i class="fa-solid fa-xmark position-absolute close "></i>
+            <div class="row  justify-content-between ">
+
+                <div class="col-md-7">
+
+                    <div class=" row user-tabs ">
+                        <div id="slider" class="slider owl-carousel col-md-12">
+                            <div class="item">
+                                <div class="content d-flex justify-content-center ">
+                                    <img src="img/slider1.png" class="img-fluid w-75">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content d-flex justify-content-center">
+                                    <img src="img/slider1.png" class="img-fluid w-75">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content d-flex justify-content-center">
+                                    <img src="img/slider1.png" class="img-fluid w-75">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content d-flex justify-content-center">
+                                    <img src="img/slider1.png" class="img-fluid w-75">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content d-flex justify-content-center">
+                                    <img src="img/slider1.png" class="img-fluid w-75">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="thumbnailSlider" class="thumbnail-slider owl-carousel mt-3 col-md-6">
+                            <div class="item">
+                                <div class="content">
+                                    <img src="img/slider1.png" class="img-fluid w-50">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <img src="img/unsplash_tiWcNvpQF4E.pngg" class="img-fluid w-50">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <img src="img/slider1.png" class="img-fluid w-50">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <img src="img/slider1.png" class="img-fluid w-50">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <img src="img/slider1.png" class="img-fluid w-50">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="comment">
+                        <div class="row gx-2">
+                            <picture class="col-md-12 m-2">
+                                <source srcset="img/comment.png">
+                                <img src="img/comment.png" alt="">
+                            </picture>
+                            <div class="row   info mt-3">
+                                <h5 class="col-md-6 ">
+                                    يمنى فريد
+
+                                </h5>
+                                <div class=" align-items-center col-md-6">
+                                    <div class=" ">
+                                        <p class="title">
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star"></i>
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                                <p>
+                                    مصممة مميزة جدا وافضل شيء التزامها وجودة العمل بالتاكيد سوف اكرر هذه
+                                    التجربة
+                                </p>
+                                <p style="color:rgba(27, 26, 26, 0.39) ;"> منذ يوم </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        </div>
+
+
+    </section>
+
+    <!-- Modal -->
+    <section class="trainer-report ">
+        <div class="trainer-box-report container">
+            <a href="#" class=" x " data-bs-dismiss="modal">
+                <i class="fas fa-times cancel"></i>
+            </a>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-7 mt-3 justify-content-center text-center  ">
+                    <h5 class="head-box texet-center">نعتذر لك اذا كان التعليق ازعجك ! </h5>
+                    <p class="text-center">أخبرنا من فضلك عن سبب انزعاجك من هذا التعليق وسوف نقوم باتخاذ الإجراء المناسب
+                    </p>
+                    <textarea name="" id="" cols="40" rows="4"></textarea>
+                    <div class="text-center col-md-12 mt-5">
+                        <button style="background-color:#1FB9B3 ; color: white; font-weight: bold;"
+                            class="btn w-50 texet-center ">
+                            ابلغ عن تعليق
+                        </button>
+                    </div>
+
+                </div>
+                <div class="col-md-5  prev ">
+                    <img class=" mt-5 provid " src="img/panas.png" alt="">
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <div class="modal fade add-modal" id="addModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row add-portfolio m-3 p-0">
+                            <div class="col-12 col-lg-4  justify-content-center m-auto">
+                                <div class="col-md-12">
+                                    <label for="imginput" class="form-label file-label first w-100">
+                                        <div class="text">
+                                            <i class="fas fa-plus-circle"></i>
+                                            <p>اضافة صورة</p>
+                                        </div>
+                                        <img src="none" id="image_selected" />
+                                    </label>
+                                    <input onchange="readURL(this);" class="form-control d-none" type="file"
+                                        id="imginput">
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="col-md-12">
+                                            <div class="text">
+                                                <label for="videoUpload" class="custom-file-upload file-label">
+                                                    <i class="fa-solid fa-circle-play"></i>
+                                                    <p> اضافة فيديو </p>
+
+                                                </label>
+                                                <input class="d-none " type='file' id='videoUpload' />
+
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="text">
+
+                                            <label for="choose-file" class="custom-file-upload file-label "
+                                                id="choose-file-label">
+                                                <i class="fa-solid fa-paperclip"></i>
+
+                                                <p> اضافة ملف
+                                                </p>
+                                            </label>
+                                            <input name="uploadDocument" type="file" id="choose-file"
+                                                accept=".jpg,.jpeg,.pdf,doc,docx,application/msword,.png"
+                                                style="display: none;" />
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <video class="custom-file-upload file-label " width="320" height="240"
+                                            style="display:none" controls>
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                            <div class="col-12 col-lg-8">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="عنوان المشروع (اجباري)">
+                                </div>
+
+                                <div class="mb-3">
+                                    <div type="text" class="form-control">
+                                        <p class="font-14">
+                                            صنف مشروعك (اجباري)
+                                        </p>
+                                        <div class="row mt-3">
+
+                                            <div class="form-check col-3 d-flex justify-content-around ">
+                                                <input class="form-check-input" type="checkbox" value="" id="category1">
+                                                <label class="form-check-label" for="category1">
+                                                    تصميم واجهات
+                                                </label>
+                                            </div>
+
+
+
+                                            <div class="form-check col-3 d-flex justify-content-around ">
+                                                <input class="form-check-input" type="checkbox" value="" id="category9">
+                                                <label class="form-check-label" for="category9">
+                                                    تصميم واجهات
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-3 d-flex justify-content-around ">
+                                                <input class="form-check-input" type="checkbox" value="" id="category9">
+                                                <label class="form-check-label" for="category9">
+                                                    تصميم واجهات
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-3 d-flex justify-content-around ">
+                                                <input class="form-check-input" type="checkbox" value="" id="category9">
+                                                <label class="form-check-label" for="category9">
+                                                    تصميم واجهات
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-3 d-flex justify-content-around ">
+                                                <input class="form-check-input" type="checkbox" value="" id="category9">
+                                                <label class="form-check-label" for="category9">
+                                                    تصميم واجهات
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="10"
+                                        placeholder="عن المشروع (اختياري)"></textarea>
+                                </div>
+                                <div>
+                                    <input class="w-100 p-2 mt-1 form-control" type="text" placeholder="سعر المشروع ">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-primary">
+                        ارسلي رساله
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/lightbox.js"></script>
+
+
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- owl -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/all.min.js"></script>
+
+    <!-- Main script file -->
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById("videoUpload").onchange = function (event) {
+            let file = event.target.files[0];
+            let blobURL = URL.createObjectURL(file);
+            document.querySelector("video").style.display = 'block';
+            document.querySelector("video").src = blobURL;
+        }
+
+        $(".img-fluid").click(function () {
+            $(".trainer").addClass("trainer-show") + $("body").css("overflow", "hidden");
+            $(".close").click(function () {
+                $(".trainer").removeClass("trainer-show") + $("body").css("overflow", "auto");
+
+            })
+        })
+        $(".report").click(function () {
+            $(".trainer-report").addClass("trainer-report-show") + $("body").css("overflow", "hidden");
+            $(".cancel").click(function () {
+                $(".trainer-report").removeClass("trainer-report-show") + $("body").css("overflow", "auto");
+
+            })
+        })
+
+
+        $(document).ready(function () {
+            $('#choose-file').change(function () {
+                var i = $(this).prev('label').clone();
+                var file = $('#choose-file')[0].files[0].name;
+                $(this).prev('label').text(file);
+            });
+        });
+
+    </script>
+</body>
+
+</html>

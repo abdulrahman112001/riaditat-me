@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<!-- for english make lang en and dir ltr -->
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة رياديات</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <!-- font file -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <!-- uncomment the following line for english  -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- comment this line for english -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+
+    <!-- fontawesome file -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- owl -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- Main style file -->
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+              <a href="/" class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                <picture>
+                    <source media="(min-width:650px)" srcset="img/logo.png">
+                    <img src="img/logo.png" width="150" height="75" alt="">
+                </picture>
+              </a>
+      
+              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li>
+                    <a href="#" class="nav-link px-2 active">الرئيسية</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link px-2">الحاضنة</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link px-2">الأكاديمية</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link px-2">الشبكة</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link px-2  dropdown-toggle">خدماتنا</a>
+                    <ul class="dropdown-menu dropdown-menu-light">
+                        <li>
+                            <a class="dropdown-item" href="#">الاستشارة</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">مساحات العمل</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">التسويق</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="nav-link px-2 dropdown-toggle">شركاء رياديات</a>
+                    <ul class="dropdown-menu dropdown-menu-light">
+                        <li>
+                            <a class="dropdown-item" href="#">الاستشارة</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">مساحات العمل</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">التسويق</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="nav-link px-2">مقارنة الخدمات</a>
+                </li>
+              </ul>
+      
+              <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+              </form>
+      
+              <div class="dropdown text-end">
+                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="https://github.com/mdo.png" alt="mdo" class="rounded-circle" width="32" height="32">
+                </a>
+                <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                  <li><a class="dropdown-item" href="#">New project...</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+              </div> -->
+              <div class="text-end header-btns">
+                <a href="/" class="font-13 grean">حساب جديد</a>
+                <a href="/" class="font-13 btn btn-primary ">تسجيل الدخول</a>
+              </div>
+            </div>
+          </div>
+    </header>
+    <main>
+        <div class="container">
+           <div class="row justify-content-between align-items-start ">
+               <div class="faqs col-md-12 p-0">
+                    <h1>
+                    الأسئلة الشائعة
+                    </h1>
+                    <ul class=" row nav nav-pills nav-justified"> 
+                        <li class="nav-item col-md-2" role="presentation">
+                            <button class="nav-link active" id="pills-general-tab" data-bs-toggle="pill" data-bs-target="#pills-general" type="button" role="tab" aria-controls="pills-general" aria-selected="true">أسئلة عامة</button>
+                        </li>
+                        <li class="nav-item col-md-2" role="presentation">
+                            <button class="nav-link" id="pills-academy-tab" data-bs-toggle="pill" data-bs-target="#pills-academy" type="button" role="tab" aria-controls="pills-academy" aria-selected="false">عن الأكاديمية</button>
+                        </li>
+                        <li class="nav-item col-md-2" role="presentation">
+                            <button class="nav-link" id="pills-network-tab" data-bs-toggle="pill" data-bs-target="#pills-network" type="button" role="tab" aria-controls="pills-network" aria-selected="false">عن الشبكة</button>
+                        </li>
+                        <li class="nav-item col-md-2" role="presentation">
+                            <button class="nav-link" id="pills-incubator-tab" data-bs-toggle="pill" data-bs-target="#pills-incubator" type="button" role="tab" aria-controls="pills-incubator" aria-selected="false">عن الحاضنة</button>
+                        </li>
+                        <li class="nav-item col-md-2" role="presentation">
+                            <button class="nav-link" id="pills-consulting-tab" data-bs-toggle="pill" data-bs-target="#pills-consulting" type="button" role="tab" aria-controls="pills-consulting" aria-selected="false">
+                                عن الإستشارة
+                            </button>
+                        </li>
+                        <li class="nav-item col-md-2" role="presentation">
+                            <button class="nav-link" id="pills-invest-tab" data-bs-toggle="pill" data-bs-target="#pills-invest" type="button" role="tab" aria-controls="pills-invest" aria-selected="false">
+                                عن الاستثمار
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-general" role="tabpanel" aria-labelledby="pills-general-tab">
+                            <div class="row">
+                                <div class="accordion accordion-flush" id="accordionFaqs1">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            هل رياديات منظمة ربحية؟
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFaqs1">
+                                        <div class="accordion-body">
+                                            رياديات شركة سعودية تتخذ من الرياض مقراَ لها، تهدف لدعم المرأة وتمكينها في مجال ريادة الأعمال، من خلال مجموعة متكاملة من الخدمات والمنتجات لدعم ريادة الأعمال ومنها الاحتضان والتسريع وتوفير مساحات العمل والاستشارات والإرشاد.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            ماهي الخدمات المقدمة في الموقع؟
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFaqs1">
+                                        <div class="accordion-body">
+                                            رياديات شركة سعودية تتخذ من الرياض مقراَ لها، تهدف لدعم المرأة وتمكينها في مجال ريادة الأعمال، من خلال مجموعة متكاملة من الخدمات والمنتجات لدعم ريادة الأعمال ومنها الاحتضان والتسريع وتوفير مساحات العمل والاستشارات والإرشاد.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            كيف يمكنني دفع الرسوم؟
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFaqs1">
+                                        <div class="accordion-body">
+                                            رياديات شركة سعودية تتخذ من الرياض مقراَ لها، تهدف لدعم المرأة وتمكينها في مجال ريادة الأعمال، من خلال مجموعة متكاملة من الخدمات والمنتجات لدعم ريادة الأعمال ومنها الاحتضان والتسريع وتوفير مساحات العمل والاستشارات والإرشاد.
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination justify-content-center">
+                                      <li class="page-item prev disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                      </li>
+                                      <li class="page-item page-number active"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item page-number"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item page-number"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item next">
+                                        <a class="page-link" href="#">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-academy" role="tabpanel" aria-labelledby="pills-academy-tab">
+                            <div class="row">
+                                <div class="accordion accordion-flush" id="accordionFaqs2">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            هل رياديات منظمة ربحية؟
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFaqs2">
+                                        <div class="accordion-body">
+                                            رياديات شركة سعودية تتخذ من الرياض مقراَ لها، تهدف لدعم المرأة وتمكينها في مجال ريادة الأعمال، من خلال مجموعة متكاملة من الخدمات والمنتجات لدعم ريادة الأعمال ومنها الاحتضان والتسريع وتوفير مساحات العمل والاستشارات والإرشاد.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            ماهي الخدمات المقدمة في الموقع؟
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFaqs2">
+                                        <div class="accordion-body">
+                                            رياديات شركة سعودية تتخذ من الرياض مقراَ لها، تهدف لدعم المرأة وتمكينها في مجال ريادة الأعمال، من خلال مجموعة متكاملة من الخدمات والمنتجات لدعم ريادة الأعمال ومنها الاحتضان والتسريع وتوفير مساحات العمل والاستشارات والإرشاد.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            كيف يمكنني دفع الرسوم؟
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFaqs2">
+                                        <div class="accordion-body">
+                                            رياديات شركة سعودية تتخذ من الرياض مقراَ لها، تهدف لدعم المرأة وتمكينها في مجال ريادة الأعمال، من خلال مجموعة متكاملة من الخدمات والمنتجات لدعم ريادة الأعمال ومنها الاحتضان والتسريع وتوفير مساحات العمل والاستشارات والإرشاد.
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-network" role="tabpanel" aria-labelledby="pills-network-tab">
+                            <div class="row">
+                                <div class="accordion accordion-flush" id="accordionFaqs3">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            هل رياديات منظمة ربحية؟
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFaqs3">
+                                        <div class="accordion-body">
+                                            رياديات شركة سعودية تتخذ من الرياض مقراَ لها، تهدف لدعم المرأة وتمكينها في مجال ريادة الأعمال، من خلال مجموعة متكاملة من الخدمات والمنتجات لدعم ريادة الأعمال ومنها الاحتضان والتسريع وتوفير مساحات العمل والاستشارات والإرشاد.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            ماهي الخدمات المقدمة في الموقع؟
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFaqs3">
+                                        <div class="accordion-body">
+                                            رياديات شركة سعودية تتخذ من الرياض مقراَ لها، تهدف لدعم المرأة وتمكينها في مجال ريادة الأعمال، من خلال مجموعة متكاملة من الخدمات والمنتجات لدعم ريادة الأعمال ومنها الاحتضان والتسريع وتوفير مساحات العمل والاستشارات والإرشاد.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            كيف يمكنني دفع الرسوم؟
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFaqs3">
+                                        <div class="accordion-body">
+                                            رياديات شركة سعودية تتخذ من الرياض مقراَ لها، تهدف لدعم المرأة وتمكينها في مجال ريادة الأعمال، من خلال مجموعة متكاملة من الخدمات والمنتجات لدعم ريادة الأعمال ومنها الاحتضان والتسريع وتوفير مساحات العمل والاستشارات والإرشاد.
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-incubator" role="tabpanel" aria-labelledby="pills-incubator-tab">
+                            <div class="row">
+                                <div class="accordion accordion-flush" id="accordionFaqs4">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            هل رياديات منظمة ربحية؟
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFaqs4">
+                                        <div class="accordion-body">
+                                            رياديات شركة سعودية تتخذ من الرياض مقراَ لها، تهدف لدعم المرأة وتمكينها في مجال ريادة الأعمال، من خلال مجموعة متكاملة من الخدمات والمنتجات لدعم ريادة الأعمال ومنها الاحتضان والتسريع وتوفير مساحات العمل والاستشارات والإرشاد.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            ماهي الخدمات المقدمة في الموقع؟
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFaqs4">
+                                        <div class="accordion-body">
+                                            رياديات شركة سعودية تتخذ من الرياض مقراَ لها، تهدف لدعم المرأة وتمكينها في مجال ريادة الأعمال، من خلال مجموعة متكاملة من الخدمات والمنتجات لدعم ريادة الأعمال ومنها الاحتضان والتسريع وتوفير مساحات العمل والاستشارات والإرشاد.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            كيف يمكنني دفع الرسوم؟
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFaqs4">
+                                        <div class="accordion-body">
+                                            رياديات شركة سعودية تتخذ من الرياض مقراَ لها، تهدف لدعم المرأة وتمكينها في مجال ريادة الأعمال، من خلال مجموعة متكاملة من الخدمات والمنتجات لدعم ريادة الأعمال ومنها الاحتضان والتسريع وتوفير مساحات العمل والاستشارات والإرشاد.
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-consulting" role="tabpanel" aria-labelledby="pills-consulting-tab"><div class="row">
+                            <div class="accordion accordion-flush" id="accordionFaqs5">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        هل رياديات منظمة ربحية؟
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFaqs5">
+                                    <div class="accordion-body">
+                                        رياديات شركة سعودية تتخذ من الرياض مقراَ لها، تهدف لدعم المرأة وتمكينها في مجال ريادة الأعمال، من خلال مجموعة متكاملة من الخدمات والمنتجات لدعم ريادة الأعمال ومنها الاحتضان والتسريع وتوفير مساحات العمل والاستشارات والإرشاد.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        ماهي الخدمات المقدمة في الموقع؟
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFaqs5">
+                                    <div class="accordion-body">
+                                        رياديات شركة سعودية تتخذ من الرياض مقراَ لها، تهدف لدعم المرأة وتمكينها في مجال ريادة الأعمال، من خلال مجموعة متكاملة من الخدمات والمنتجات لدعم ريادة الأعمال ومنها الاحتضان والتسريع وتوفير مساحات العمل والاستشارات والإرشاد.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        كيف يمكنني دفع الرسوم؟
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFaqs5">
+                                    <div class="accordion-body">
+                                        رياديات شركة سعودية تتخذ من الرياض مقراَ لها، تهدف لدعم المرأة وتمكينها في مجال ريادة الأعمال، من خلال مجموعة متكاملة من الخدمات والمنتجات لدعم ريادة الأعمال ومنها الاحتضان والتسريع وتوفير مساحات العمل والاستشارات والإرشاد.
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="tab-pane fade" id="pills-invest" role="tabpanel" aria-labelledby="pills-invest-tab">
+                            <div class="row">
+                                <div class="accordion accordion-flush" id="accordionFaqs6">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            هل رياديات منظمة ربحية؟
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFaqs6">
+                                        <div class="accordion-body">
+                                            رياديات شركة سعودية تتخذ من الرياض مقراَ لها، تهدف لدعم المرأة وتمكينها في مجال ريادة الأعمال، من خلال مجموعة متكاملة من الخدمات والمنتجات لدعم ريادة الأعمال ومنها الاحتضان والتسريع وتوفير مساحات العمل والاستشارات والإرشاد.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            ماهي الخدمات المقدمة في الموقع؟
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFaqs6">
+                                        <div class="accordion-body">
+                                            رياديات شركة سعودية تتخذ من الرياض مقراَ لها، تهدف لدعم المرأة وتمكينها في مجال ريادة الأعمال، من خلال مجموعة متكاملة من الخدمات والمنتجات لدعم ريادة الأعمال ومنها الاحتضان والتسريع وتوفير مساحات العمل والاستشارات والإرشاد.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            كيف يمكنني دفع الرسوم؟
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFaqs6">
+                                        <div class="accordion-body">
+                                            رياديات شركة سعودية تتخذ من الرياض مقراَ لها، تهدف لدعم المرأة وتمكينها في مجال ريادة الأعمال، من خلال مجموعة متكاملة من الخدمات والمنتجات لدعم ريادة الأعمال ومنها الاحتضان والتسريع وتوفير مساحات العمل والاستشارات والإرشاد.
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+           </div> 
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row justify-content-between row-cols-auto">
+                <div class="">
+                    <a href="/" class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                        <picture>
+                            <source media="(min-width:650px)" srcset="img/flogo.png">
+                            <img src="img/flogo.png" width="150" height="75" alt="">
+                        </picture>
+                      </a>
+                    <div class="social mt-3">
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="policy-links">
+                        <a href="#">
+                            شروط الاستخدام
+                        </a>
+                        <a href="#">
+                            سياسة الخصوصية
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row justify-content-between nav row-cols-auto">
+                        <div>
+                            <h6>الشركة</h6>
+                            <a href="#" class="d-block">من نحن</a>
+                            <a href="#" class="d-block">مقارنة الخدمات</a>
+                        </div>
+                        <div>
+                            <h6>قناة رياديات</h6>
+                            <a href="#" class="d-block">المدونة</a>
+                            <a href="#" class="d-block">البودكاست</a>
+                            <a href="#" class="d-block">قصص نجاح</a>
+                        </div>
+                        <div>
+                            <h6>انضمي إلينا</h6>
+                            <a href="#" class="d-block">التوظيف</a>
+                            <a href="#" class="d-block">التسويق بالعمولة</a>
+                        </div>
+                        <div>
+                            <h6>الدعم</h6>
+                            <a href="#" class="d-block">الأسئلة الشائعة</a>
+                            <a href="#" class="d-block">تواصل معنا</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h6>اشتركي بالقائمة البريدية</h6>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="البريد الإلكتروني"
+                        aria-describedby="button-addon2">
+                        <button class="btn btn-primary" type="button" id="button-addon2">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                    </div>
+                    <picture>
+                        <source srcset="img/app-store.png">
+                        <img src="img/app-store.png" alt="">
+                    </picture>
+                    <picture>
+                        <source srcset="img/play-store.png">
+                        <img src="img/play-store.png" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/lightbox.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- owl -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- Main script file -->
+    <script src="js/main.js"></script>
+</body>
+</html>

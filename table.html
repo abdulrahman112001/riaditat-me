@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<!-- for english make lang en and dir ltr -->
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة رياديات</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <!-- font file -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <!-- uncomment the following line for english  -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- comment this line for english -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+
+    <!-- fontawesome file -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- owl -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link href="https://releases.transloadit.com/uppy/v1.30.0/uppy.min.css" rel="stylesheet">
+
+    <!-- Main style file -->
+    <link rel="stylesheet" href="css/main.css">
+<style>
+    .box{
+        /* border: 1px solid rgba(0, 0, 0, 0.247); */
+        padding: 30px;
+        box-shadow: 0 0 5px -4px;    }
+    section{
+        background-color: white;
+        height: 100vh;
+    }
+    .dropend .dropdown-toggle::after{
+        display: none;
+    }
+    .dropdown-menu.show {
+        transform: translate(100px, 0px) !important;
+        min-width: 6rem !important;
+    }
+    .box  {
+        color: #1FB9B3;
+    }
+</style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start header-with-search">
+                <a href="/" class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="img/logo.png">
+                        <img src="img/logo.png" width="150" height="75" alt="">
+                    </picture>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li>
+                        <a href="#" class="nav-link px-2 dropdown-toggle active">تصفحي الدورات</a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link dropdown-toggle px-2">الشبكة</a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2">الحاضنة</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link dropdown-toggle px-2">خدماتنا</a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="ابحثي عن  دورات تدريبية, رائدات أعمال"
+                        aria-label="Search">
+                    <picture>
+                        <source srcset="img/Icon feather-search.png">
+                        <img src="img/Icon feather-search.png" alt="">
+                    </picture>
+                </form>
+                <div class="text-end header-btns">
+                    <div class="dropdown text-end icons">
+                        <a href="#" class="d-block link-dark text-decoration-none" id="dropdownMessages"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>8</span>
+                            <i class="far fa-comment-alt"></i>
+                        </a>
+                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownMessages">
+                            <p class="order">الرسائل (2)</p>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <a href="#" class="bottom-link">
+                                عرض كل الرسائل
+                            </a>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown text-end icons">
+                        <a href="#" class="d-block link-dark text-decoration-none" id="dropdownNotification"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>4</span>
+                            <i class="far fa-bell"></i>
+                        </a>
+                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownNotification">
+                            <p class="gray order">الجديد</p>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication1.png">
+                                            <img src="img/notfication1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>لديك جلسة استشارية اليوم</p>
+                                        <p class="gray">25 دقيقة</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication2.png">
+                                            <img src="img/notfication2.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>تم رفع مرفق جديد</p>
+                                        <p class="gray">25 دقيقة</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <p class="gray order">الأقدم</p>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication3.png">
+                                            <img src="img/notfication3.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>لقد انتهيت من الحاضنة</p>
+                                        <p class="gray">2 يوم</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication4.png">
+                                            <img src="img/notfication4.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>تابع لقاء اليوم خطة العمل
+                                            ودراسة الجدوى المالية</p>
+                                        <p class="gray">2 يوم</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="icons add">
+                        <i class="fas fa-plus"></i>
+                    </div>
+
+                    <div class="dropdown text-end user">
+                        <a href="#" class="d-block link-dark text-decoration-none" id="dropdownUser"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <picture>
+                                <source srcset="img/user-icon.png">
+                                <img src="img/user-icon.png" class="rounded-circle" width="32" height="32">
+                            </picture>
+                        </a>
+                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser">
+                            <li><a class="dropdown-item" href="#">دوراتي</a></li>
+                            <li><a class="dropdown-item" href="#">الصفحة الشخصية</a></li>
+                            <li><a class="dropdown-item" href="#">اعدادات الحساب</a></li>
+
+                            <li><a class="dropdown-item" href="#">كوني مدربة</a></li>
+                            <li><a class="dropdown-item" href="#">كوني شريكة(معلنة)</a></li>
+                            <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-primary">
+                        طوري للمنصة المميزة
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container ">
+        <div class="row p-5">
+            <dic class="col-md-3 text-center ">
+                <div class="box  position-relative ">
+
+                    جدول المساج
+                    <div class="btn-group dropend position-absolute end-0 top-0 ">
+                        <button type="button" class="dropdown-toggleborder-0 bg-transparent border-0" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>                        </button>
+                        <a href="#" class="dropdown-menu p-1  bg-white shadow border-0 text-end">
+                        اضافة موعد 
+                        </a >
+                      </div>
+                </div>
+            </dic>
+            <dic class="col-md-3 text-center">
+                <div class="box position-relative">
+                    جدول تصفيف الشعر 
+                    <div class="btn-group dropend position-absolute end-0 top-0 ">
+                        <button type="button" class="dropdown-toggleborder-0 bg-transparent border-0" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>                        </button>
+                        <a href="#" class="dropdown-menu p-1  bg-white shadow border-0 text-end ">
+                        اضافة موعد 
+                        </a >
+                      </div>
+                
+                </div>
+            </dic>
+            <dic class="col-md-3 text-center">
+                <div class="box text-dark">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="24" height="24" fill="url(#pattern0)"/>
+                        <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_845_43320" transform="scale(0.0104167)"/>
+                        </pattern>
+                        <image id="image0_845_43320" width="96" height="96" xlink:href="data:image/png;base64,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"/>
+                        </defs>
+                        </svg>
+                    اضافة جدول
+                  
+                        
+                </div>
+            </dic>
+        </div>
+
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="row justify-content-between row-cols-auto">
+                <div class="">
+                    <a href="/"
+                        class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                        <picture>
+                            <source media="(min-width:650px)" srcset="img/flogo.png">
+                            <img src="img/flogo.png" width="150" height="75" alt="">
+                        </picture>
+                    </a>
+                    <div class="social mt-3">
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="policy-links">
+                        <a href="#">
+                            شروط الاستخدام
+                        </a>
+                        <a href="#">
+                            سياسة الخصوصية
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row justify-content-between nav row-cols-auto">
+                        <div>
+                            <h6>الشركة</h6>
+                            <a href="#" class="d-block">من نحن</a>
+                            <a href="#" class="d-block">مقارنة الخدمات</a>
+                        </div>
+                        <div>
+                            <h6>قناة رياديات</h6>
+                            <a href="#" class="d-block">المدونة</a>
+                            <a href="#" class="d-block">البودكاست</a>
+                            <a href="#" class="d-block">قصص نجاح</a>
+                        </div>
+                        <div>
+                            <h6>انضمي إلينا</h6>
+                            <a href="#" class="d-block">التوظيف</a>
+                            <a href="#" class="d-block">التسويق بالعمولة</a>
+                        </div>
+                        <div>
+                            <h6>الدعم</h6>
+                            <a href="#" class="d-block">الأسئلة الشائعة</a>
+                            <a href="#" class="d-block">تواصل معنا</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h6>اشتركي بالقائمة البريدية</h6>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="البريد الإلكتروني"
+                            aria-describedby="button-addon2">
+                        <button class="btn btn-primary" type="button" id="button-addon2">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                    </div>
+                    <picture>
+                        <source srcset="img/app-store.png">
+                        <img src="img/app-store.png" alt="">
+                    </picture>
+                    <picture>
+                        <source srcset="img/play-store.png">
+                        <img src="img/play-store.png" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/all.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- owl -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Main script file -->
+    <script src="js/main.js"></script>
+
+    <!-- Drag and Drop -->
+    <script src="https://releases.transloadit.com/uppy/v1.30.0/uppy.min.js"></script>
+    <!-- <script>
+        var uppy = Uppy.Core({
+            allowMultipleUploads: false,
+            autoProceed: true,
+        }).use(Uppy.Dashboard, {
+            inline: true,
+            target: '#drag-drop-area',
+            width: 350,
+            height: 170,
+            showLinkToFileUploadResult: false,
+            showProgressDetails: true,
+            hideUploadButton: false,
+            disableStatusBar: false,
+            hideProgressAfterFinish: true,
+            doneButtonHandler: null,
+            proudlyDisplayPoweredByUppy: false,
+            disableInformer: true,
+            debug: true,
+            locale: {
+                "strings": {
+                    addMoreFiles: 'اضافة ملف اخر',
+                    importFrom: 'اضافة من %{name}',
+                    done: 'تم',
+                    dropPaste: 'اسحبي الفيديو هنا  %{browse}',
+                    browse: 'او ارفعي الدرس',
+                    uploadComplete: 'اكتمل الرفع',
+                    resumeUpload: 'استئناف الرفع',
+                    pauseUpload: 'ايقاف الرفع',
+                    retryUpload: 'اعادة المحاولة',
+
+                    // @uppy/status-bar strings:
+                    uploading: 'جار التحميل',
+                    complete: 'تم'
+                    // ...etc
+                }
+            }
+
+        })
+            .use(Uppy.Tus, { endpoint: 'https://tusd.tusdemo.net/files/' })
+
+        uppy.on('complete', (result) => {
+            console.log('Upload complete! We’ve uploaded these files:', result.successful)
+        })
+    </script> -->
+</body>
+
+</html>

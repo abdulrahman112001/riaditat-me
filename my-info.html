@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<!-- for english make lang en and dir ltr -->
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة رياديات</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <!-- font file -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <!-- uncomment the following line for english  -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- comment this line for english -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+
+    <!-- fontawesome file -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- owl -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- mdb css -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css.map">
+
+    <!-- Main style file -->
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .my-info {
+            border: 1px solid black;
+            padding: 50px;
+            margin: 50px auto;
+        }
+
+        .my-info .input-group {
+            border: 1px solid rgba(0, 0, 0, 0.137);
+            border-radius: 3px;
+        }
+
+        input,
+        select {
+            border: 1px solid rgba(0, 0, 0, 0.137);
+            border-radius: 3px;
+        }
+
+        .green {
+            background-color: white;
+            border: none;
+        }
+
+        .right-side {
+            border-left: 1px solid rgba(0, 0, 0, 0.137);
+        }
+
+        .list-group-item.active {
+            background-color: #1FB9B3;
+        }
+
+        .groubs {
+            padding-top: 10px;
+
+        }
+
+        .presonal {
+            border-top: 1px solid rgba(0, 0, 0, 0.137);
+        }
+
+        .personal-input {
+            position: relative;
+        }
+
+        .personal-input>svg {
+            right: 9px;
+            position: absolute;
+            top: 12px;
+        }
+
+
+        .personal-input input,
+        h6 {
+            padding: 10px 30px 10px 0px;
+        }
+
+        .provid {
+            background-color: #D5F2F0;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+        .upload-request-file {
+            background-color: transparent;
+        }
+
+        .form-control,
+        .form-select {
+            border: none;
+        }
+
+        .x {
+            position: relative;
+            right: 95%;
+        }
+
+        small {
+            color: #1FB9B3;
+            font-weight: bolder;
+        }
+
+        .skil {
+            position: relative;
+        }
+        .main-skils{
+            position: absolute;
+            top: 4px;
+        }
+        .skil-input {
+            /* position: absolute;
+            left: 74%;
+            top: 4px; */
+            width: 50%;
+        }
+
+        .skil-input p {
+            background-color: #D5F2F0;
+
+        }
+     
+    </style>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start header-with-search">
+                <a href="/" class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="img/logo.png">
+                        <img src="img/logo.png" width="150" height="75" alt="">
+                    </picture>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li>
+                        <a href="#" class="nav-link px-2 dropdown-toggle active">تصفحي الدورات</a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link dropdown-toggle px-2">الشبكة</a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2">الحاضنة</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link dropdown-toggle px-2">خدماتنا</a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="ابحثي عن  دورات تدريبية, رائدات أعمال"
+                        aria-label="Search">
+                    <picture>
+                        <source srcset="img/Icon feather-search.png">
+                        <img src="img/Icon feather-search.png" alt="">
+                    </picture>
+                </form>
+                <div class="text-end header-btns">
+                    <div class="dropdown text-end icons">
+                        <a href="#" class="d-block link-dark text-decoration-none" id="dropdownMessages"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>8</span>
+                            <i class="far fa-comment-alt"></i>
+                        </a>
+                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownMessages">
+                            <p class="order">الرسائل (2)</p>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <a href="#" class="bottom-link">
+                                عرض كل الرسائل
+                            </a>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown text-end icons">
+                        <a href="#" class="d-block link-dark text-decoration-none" id="dropdownNotification"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>4</span>
+                            <i class="far fa-bell"></i>
+                        </a>
+                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownNotification">
+                            <p class="gray order">الجديد</p>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication1.png">
+                                            <img src="img/notfication1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>لديك جلسة استشارية اليوم</p>
+                                        <p class="gray">25 دقيقة</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication2.png">
+                                            <img src="img/notfication2.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>تم رفع مرفق جديد</p>
+                                        <p class="gray">25 دقيقة</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <p class="gray order">الأقدم</p>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication3.png">
+                                            <img src="img/notfication3.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>لقد انتهيت من الحاضنة</p>
+                                        <p class="gray">2 يوم</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication4.png">
+                                            <img src="img/notfication4.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>تابع لقاء اليوم خطة العمل
+                                            ودراسة الجدوى المالية</p>
+                                        <p class="gray">2 يوم</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="icons add">
+                        <i class="fas fa-plus"></i>
+                    </div>
+
+                    <div class="dropdown text-end user">
+                        <a href="#" class="d-block link-dark text-decoration-none" id="dropdownUser"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <picture>
+                                <source srcset="img/user-icon.png">
+                                <img src="img/user-icon.png" class="rounded-circle" width="32" height="32">
+                            </picture>
+                        </a>
+                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser">
+                            <li><a class="dropdown-item" href="#">دوراتي</a></li>
+                            <li><a class="dropdown-item" href="#">الصفحة الشخصية</a></li>
+                            <li><a class="dropdown-item" href="#">اعدادات الحساب</a></li>
+
+                            <li><a class="dropdown-item" href="#">كوني مدربة</a></li>
+                            <li><a class="dropdown-item" href="#">كوني شريكة(معلنة)</a></li>
+                            <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-primary">
+                        طوري للمنصة المميزة
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container my-info">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-md-4">
+                <img class="img-fluid w-50" src="img/Group 3195.png" alt="">
+            </div>
+            <div class="col-md-8">
+                <div class="  mb-3">
+                    <div class="input-group">
+                        <input style="border: none;" type="text" class="form-control p-3 "
+                            placeholder="البريد الالكتروني">
+                        <button style="border: none;" class="green" type="button" data-bs-toggle="modal">
+                            <i class="fas fa-pen"></i>
+
+                        </button>
+                    </div>
+                    <div class="input-group mt-2">
+                        <input style="border: none;" type="text" class="form-control  " placeholder=" المسمى الوظيفي ">
+                        <button style="border: none;" class="green" type="button" data-bs-toggle="modal">
+                            <i class="fas fa-pen"></i>
+
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-12">
+                <div class=" input-group mt-5  ">
+                    <input style="border: none;" type="text" class="form-control p-4 "
+                        placeholder=" النبذه التعريفية  ">
+                    <button style="border: none;" class="green" type="button" data-bs-toggle="modal">
+                        <i class="fas fa-pen"></i>
+
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="mt-5 presonal">
+            <div class="row">
+                <div class="col-md-4 right-side">
+                    <div class="row">
+                        <div class="col-10 groubs ">
+                            <div class="list-group list-group-light" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action active px-3 border-0"
+                                    id="list-home-list" data-mdb-toggle="list" href="#list-home" role="tab"
+                                    aria-controls="list-home"> معلومات شخصية </a>
+                                <a class="list-group-item list-group-item-action px-3 border-0" id="list-profile-list"
+                                    data-mdb-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">
+                                    معلومات عن خدمتك </a>
+                                <a class="list-group-item list-group-item-action px-3 border-0" id="list-messages-list"
+                                    data-mdb-toggle="list" href="#list-messages" role="tab"
+                                    aria-controls="list-messages">معلومات تحويل الارباح  </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="tab-content " id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                            aria-labelledby="list-home-list">
+                            <h5> البيانات الشخصية </h5>
+
+                            <div class="mb-3  personal-input">
+                                <input type="text" class="form-control " placeholder="مثال: نورا علي">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+
+
+                            <div class="mb-3  personal-input">
+                                <h6> تاريخ الميلاد </h6>
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <input class="w-25" type="text" placeholder="يوم">
+                                <input class="w-25" type="text" placeholder="شهر">
+                                <input class="w-25" type="text" placeholder="سنه">
+
+                            </div>
+
+
+                            <div class="mb-3  personal-input">
+
+                                <select class="w-100 p-2" name="" id="">
+                                    <option value="type" disabled selected>الجنس</option>
+                                    <option value="male">ذكر</option>
+                                    <option value="female">انثر</option>
+
+
+                                </select>
+
+
+                            </div>
+
+                            <div class="  mb-3">
+                                <div class="input-group personal-input  ">
+
+
+                                    <input type="text" class="form-control "
+                                        placeholder="  وثيقة ممارسة عمل حر او رثم معروف ">
+                                    <i class="fa-solid fa-file-lines"></i>
+
+                                    <button class="green" type="button" id="button-addon1" data-bs-toggle="modal"
+                                        data-bs-target="#successModal">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect y="0.046875" width="24" height="24" fill="url(#pattern0)" />
+                                            <defs>
+                                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                                    height="1">
+                                                    <use xlink:href="#image0_845_18894" transform="scale(0.0104167)" />
+                                                </pattern>
+                                                <image id="image0_845_18894" width="96" height="96"
+                                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAH/klEQVR4nO2da2wc1RXH/2fGu5t1TSKUVBQo6xSMKsWiLUJqq0ILbhOvk6ztJBIGGlWlCBUUKajlQ2klpGxVFYmKD6hVBarqtiqtCksk7Ngexw6CQlQK1FCelYA8bEdpY0pIAMdevDv39IOddpvM7N5Z37uzO76/j3NnzrnzP3PP3Mc8AIPBYDAYDAaDwbDSoLArUCsuGRpqjsXoS7BwHZg3EOEKZqwF0AKgAGAewHEw3mGi12zhPnP0hb+/gWxW6KxXtAPATK0HhjeD8S0APQCaA1o4DsZjDP7NdFfPmxpqGNEAMFPqwMhOAn4E5g0qLAIYESR+fKyzd0KBvf8SuQCsHx/5ArN4CMCXNZgXAPq5QPdMZzKnVBiMTgCYKXVg+C5i3A8godUVcIyZdh7ryhxcrq1oBCCXs1tXJx8G4fYaei0CfOdUuqd/OUYaPgBtjpMo2u7jDHRL7H4awAiDnrUEv81NNOO6TTNNrhsnW1wkLFzKgq6yCN9g8NcB2BXsMQPfm053/7za+jd0ANocJ1Gw3ScAbK6w62sAfhZz7b2Htmz5WMb2Z54cvMgt0h1EdBeAtWV2ZWb+9nRXzyOS1f4/GjYAkuKfZsYPpp9/qb/a/nxqePhCauKfgLAL/noVALphKp15Lqj9hgyAnPg8QcK9cXLz9kkVPlvH9m0G6I8ALvTcgTDFC3R10N6RpaJytURGfAbG80jcoEp8AJhK94wy81cBHPdx2koxvj+o3YZqAZJpZzTm2ttlc31QUvv3tRPRQXi3BMGgL06nMy/J2muYFtCey8WLtvs4yl35jDGKt+zQJT4ALE5J8E4sjo7PxSJwNoi9hghAm+MkZtckByp0NUfjwu6d7OjI667PVLpnFKCHfIq3pvbva5e1VfcBqIe04wUXcC+Akx5FRBZ9R9ZOXQegXsUHgOlM5hQDv/AqY0YfmKXur3UbgHoW/yy2LR4G4J67nYDLLhsfkUpDdRmARhAfAI5u7J0B489eZRbx9TI26i4A9dLbkcaip7w2E/PnZA5vUlub5dHmOIlZiSs/Luzthzo6whcfgAWe8JrjYNCVcsfXCY2Sds6lWLQP+xRdLHN8XbSA9lwufkYi7ViJlh31cuWfhYR432fS+gKZ40MPQCOmnVLiluUWzu8IAZXXEgCEnIK0pp1s1kI2q/385oHVPkWzMseH1gJ0id/mOIlCk/sAGLcBsHj/8KPzibnd/+7okxIkKHbMXQ/vlQavUfJ5hBIAreLb7hPg/9kl4luTHzcDgPT0QBAsQVex57wcDkkdr7Y6ldEuvoddIr5ZVzoS8BlwEf1D5viaBiAM8ZcoYs8ez8t0OXz6uVySfHwKAalHVmoWgBDFBzH6QaQ8ANaHyRvhfROeTQjrRSkbaqvkTZjiAxhtEvY9sjalyeVsssjP7qDseWgPQNji6xo5t65ZdYffc6fE1h9k7WhdE27P5eJn1iT3llvJWhrhbguykqXLriypJ4cvJ5dfBrDm3DICXp/szHxeNuVp64bqGuGGPXL+7ODgBfki7wWdL/4idF+Q+42WFhDVtLP4GKQYYvAmr3ICDk52Zq4PEgDlLSDK4i/59xQfQN4F7Qra21IaAF2zmmHPlsr4J9Ddx9KZN4LaVhaAqOZ8Of/UP5nO+D2mUhYl3dAVkHbKXPkYmop/4s5qfSy7BazktMOMMUq09KGjo1itn2X1gqLaz6+l/6oDYMRX47+qABjx1fkPHAAjvlr/gQJgxFfvXzoARnw9/qUCYMTX4x+QGAes7BGu/ueRKo6EC03uA1iBI1yd/kspH4Bs1lp6vsYPI/4ykZkL8tvHiK+ASi1AMNOjHiVGfEVUbAHzibndzPQ7AHkAswx+0IivDvmBGDNV82xN2Ccftv9KyE9HVyF+o0wph/negbbHUsIe5ITtXxaplwiCcs3EROy0yA8AyJTZbTQu7G1HOju1pJ180h4AsDUM/0HQ8lzQeydPPAhgi1/5Sk87pSgPQGps+LsA7yqzS+SnF4Kg9B5wydND62ILOAyf13ZMzj8fpS0gVsAP4f/OlLnyPVDWAtocZ3XBdk8ASHoUv5JH/LqZdPqMKn8lfuu6n18JZS1gwXY7yVv8om1bN81sNOJ7ofL9AO8uJ+GRIxu3vq3QD4BoiA8obAEEXO25negxVT7O0mhdzXKovAl/ymujhcTzCn009A3XCzUpaPEV0HUeJfNHNm36QIkPRCftlKIqAALAnEfJqmsmJmIqXDTcd4QkUXkTPuGxjU6e/NcVyzVcb19NVIm6ADCmPDeT/5yQDFFMO6UoCwBbGPcuoN1tjlPVDxWimnZKUdcCBI94F/D6BasY+EXpKKedUpROxrWODf0V3v9uEcx8y3RXT07GziefzrU0LyRziGjaKUXpm/JMuNfPDxH9KTU2tKc9l4uXs5FyBjY0LyT/ghUgPqBhSbJ1bN8oQF1lXE4C4pewrJGWU3OH3+zrW1j8SQK+AotvAuObKL9SFxnxAQ0BWFwToL8BvF7ykDyAVZL7Rkp8QMPHOv7Z0f2exbwNkt9Mg7z4TtTEBzR9LeVoV/erlhDXAjiqwh6Bf7Vu7cXboiY+oPlrKUtLlL9H5b8c+fEBMb4/2dX9W5X1qidq8guT1PjgtWC6j0BfkzxkjoBf2yj89HB6x7taKxcyNf2HTMoZ2EC2vZVAmxicAnApFlfR3gXjBIhehoCzasE98FZv70e1rJvBYDAYDAaDwWAw1Ir/AEHL5E97P9mpAAAAAElFTkSuQmCC" />
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <h6 style="color: #1FB9B3; font-weight: bold;" class="text-end font-12 ">
+                                    <a href="">
+
+                                        لاتمتلك وثيقة
+                                        عمل حر ؟
+                                    </a>
+
+                                </h6>
+                            </div>
+
+                            <div>
+                                <h5> مكان الاقامة </h5>
+
+
+                                <div class="mb-3  personal-input">
+                                    <i class="fa-solid fa-location-pin"></i>
+                                    <select style=" padding: 7px 25px 0 0;" class="w-100  " name="" id="">
+                                        <option style="padding-left: 15px;" value="type" disabled selected>الدولة
+                                        </option>
+                                        <option value="male">مصر </option>
+                                        <option value="female">السعودية </option>
+                                        <option value="female">الكويت </option>
+                                        <option value="female">الاردن </option>
+                                        <option value="female">قطر </option>
+                                        <option value="female">الامارات </option>
+                                    </select>
+                                </div>
+
+
+                                <div class="input-group personal-input  ">
+
+
+                                    <input type="text" class="form-control " placeholder="  المدينة  ">
+                                    <i class="fa-solid fa-house"></i>
+                                    <button class="green" type="button" id="button-addon1" data-bs-toggle="modal">
+                                        <i class="fas fa-pen"></i>
+
+                                    </button>
+                                </div>
+                                <div class="input-group personal-input mt-2  ">
+
+
+                                    <input type="number" class="form-control " placeholder="  رقم الهوية الوطنية  ">
+                                    <i class="fa-solid fa-id-card"></i>
+                                    <button class="green" type="button" id="button-addon1" data-bs-toggle="modal">
+                                        <i class="fas fa-pen"></i>
+
+                                    </button>
+                                </div>
+
+
+                            </div>
+                            <div>
+                                <h5 class="m-3">كيفية التواصل معك </h5>
+                                <div class="input-group personal-input mt-2   ">
+
+
+                                    <input type="number" class="form-control " placeholder=" 05195109510 ">
+                                    <i class="fa-solid fa-mobile-screen"></i> <button class="green" type="button"
+                                        id="button-addon1" data-bs-toggle="modal"> <button class="green" type="button"
+                                            id="button-addon1" data-bs-toggle="modal">
+                                            <strong> تاكيد الرقم </strong>
+
+                                        </button>
+                                </div>
+                                <div class="input-group personal-input mt-2  ">
+
+
+                                    <input type="mail" class="form-control " placeholder="  noraali@gmail.com  ">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <!-- <button class="green" type="button" id="button-addon1" data-bs-toggle="modal">
+
+                                    </button> -->
+                                </div>
+
+                                <div class="input-group personal-input mt-2  ">
+
+
+                                    <input type="text" class="form-control "
+                                        placeholder="  ادخل رابط حساب الانستجرام هنا (اختياري) ">
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <button class="green" type="button" id="button-addon1" data-bs-toggle="modal">
+                                        <i class="fas fa-pen"></i>
+
+                                    </button>
+                                </div>
+
+                                <div class="input-group personal-input mt-2  ">
+
+
+                                    <input type="text" class="form-control "
+                                        placeholder=" ادخل رابط حساب تويتر هنا (اختياري) ">
+                                    <i class="fa-brands fa-twitter"></i> <button class="green" type="button"
+                                        id="button-addon1" data-bs-toggle="modal">
+                                        <i class="fas fa-pen"></i>
+
+                                    </button>
+                                </div>
+
+                                <div class="input-group personal-input mt-2  ">
+
+
+                                    <input type="text" class="form-control "
+                                        placeholder=" ادخل رابط حساب لينكد إن هنا (اختياري) ">
+                                    <i class="fa-brands fa-linkedin"></i> <button class="green" type="button"
+                                        id="button-addon1" data-bs-toggle="modal">
+                                        <i class="fas fa-pen"></i>
+
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade mt-5 " id="list-profile" role="tabpanel"
+                            aria-labelledby="list-profile-list">
+
+                            <h3 style="color:#1FB9B3" class="">معلومات عن خدماتك </h3>
+
+                            <div class="mb-3  personal-input">
+                                <i class="fa-solid fa-pen-ruler"></i>
+                                <select style=" padding: 7px 25px 0 0;" class="w-100  " name="" id="">
+                                    <option style="padding-left: 15px;" value="type" disabled selected>مجال خدمتك
+                                    </option>
+                                    <option value="serv1">1 </option>
+                                    <option value="serv2">التصوير والفيديو </option>
+                                    <option value="serv3">موسيقى وصوت </option>
+                                    <option value="serv4">أخرى </option>
+
+                                </select>
+                            </div>
+                            <div class="input-group personal-input mt-2  ">
+
+
+                                <input type="text" class="form-control " placeholder=" اسم البراند (اختياري) ">
+                                <i class="fa-solid fa-disease"></i>
+
+                                <button class="green" type="button" id="button-addon1" data-bs-toggle="modal">
+                                    <i class="fas fa-pen"></i>
+
+                                </button>
+                            </div>
+
+                            <div class="input-group personal-input mt-2  ">
+
+
+                                <input type="text" class="form-control " placeholder="  الشعار (اختياري) ">
+                                <i class="fa-solid fa-image"></i>
+
+                                <div class="">
+                                    <label for="imginput" class="form-label file-label">
+                                        <picture>
+                                            <source srcset="img/camera.png">
+                                        </picture>
+                                        <span class="p-2">
+                                            <img src="img/Attach.png" alt="">
+
+                                        </span>
+                                    </label>
+                                    <input onchange="readURL(this);" class="form-control d-none" type="file"
+                                        id="imginput">
+                                </div>
+
+                            </div>
+                            <div class="mt-4">
+                                <h6> ماهي مهاراتك </h6>
+                                <div class="input-group personal-input mt-2  ">
+
+                                    <input  type="text" class="form-control skil w-100   " placeholder="  ">
+
+                                    <div class="row main-skils">
+
+                                        <div class="skil-input col-md-5">
+                                            <p class="d-flex w-100 gap-3">
+                                                 تصميم ثلاثي الأبعاد 
+                                                <i style="margin: 4px 0px 0px 1px;" class="fa-solid fa-xmark"></i>
+    
+    
+    
+    
+                                            </p>
+                                    
+                                        </div>
+                                        <div class="skil-input col-md-5">
+                                            <p class="d-flex w-100 gap-3">
+                                                 تصميم ثلاثي الأبعاد 
+                                                <i style="margin: 4px 0px 0px 1px;" class="fa-solid fa-xmark"></i>
+    
+    
+    
+    
+                                            </p>
+                                    
+                                        </div>
+                               
+                                    </div>
+                                
+                                   
+
+                                </div>
+
+                            </div>
+                            <div class="mt-3">
+                                <small> هل ستحتاج خدمتك إلى دفع كامل قبل البدء في تقديمها؟ </small>
+                                <div class="d-flex  justify-content-between w-25">
+                                    <div>
+                                        <input type="checkbox" value="yes">
+                                        <label  for=""  > لا </label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" value="no">
+                                        <label for="" > نعم </label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <small class="f-18 m-4 d-block"> مكان تقديم خدمتك </small>
+                                    <div class="mb-3  personal-input">
+                                        <i class="fa-solid fa-location-pin"></i> 
+                                        <select style=" padding: 10px 25px 10px 0;"
+                                            class="w-100  " name="" id="">
+                                            <option style="padding-left: 15px;" value="type" disabled selected>أين ستقدم
+                                                خدمتك؟
+                                            </option>
+                                            <option value="">عن بعد </option>
+                                            <option value="">مكان يحدده العمل  </option>
+                                            <option value=""> مكان يحدده مقدم الخدمة  </option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button style="    background: #1FB9B3;
+                                    font-size: 18px;
+                                    color: white;
+                                    padding: 9px 40px;" class="btn"> حفظ  </button>
+                                </div>
+
+
+
+
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                            aria-labelledby="list-messages-list">
+                            <h4 style= "color:#1FB9B3" class="fw-bolder p-3">معلومات تحويل الارباح   </h4>
+
+                            <div class="input-group personal-input mt-2  ">
+                                <input type="text" class="form-control " placeholder=" اسم البنك   ">
+                                <i class="fa-solid fa-building-columns"></i>
+                                <button class="green" type="button" id="button-addon1" data-bs-toggle="modal">
+                                    <i class="fas fa-pen"></i>
+
+                                </button>
+                            </div>
+                            <div class="input-group personal-input mt-2  ">
+
+
+                                <input type="text" class="form-control " placeholder=" رقم الايبان  ">
+                                <i class="fa-solid fa-money-check"></i>
+                                <button class="green" type="button" id="button-addon1" data-bs-toggle="modal">
+                                    <i class="fas fa-pen"></i>
+
+                                </button>
+                            </div>
+                            <div class="m-2  personal-input ">
+                                <!-- <select style=" padding: 7px 25px 0 0;" class="w-100  " name="" id="">
+                                    <option style="padding-left: 15px;" value="type" disabled selected>طريقة الدفع للاشتراك الشهري لرياديات
+                                    </option>
+                                    <option value="serv1">1 </option>
+                                    <option value="serv2">2 </option>
+                                    <option value="serv3">3 </option>
+                                    <option value="serv4">4 </option>
+                                    
+                            
+
+                                </select> -->
+                                <p style="color:#1FB9B3 ;
+
+                                
+                                "> سيتم تحديد طريقة الدفع للاشتراك في مقدمي خدمات رياديات عند اختيارك للباقات المناسبة لك اذا كنت تريد الاشتراك لتستطيع تقديم خدماتك بعد ملئ جميع بياناتك  <span class="fw-bolder"> <a href="#"> اضغط هنا  </a> </span>   </p>
+                            </div>
+                        </div>
+                  
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row justify-content-between row-cols-auto">
+                <div class="">
+                    <a href="/"
+                        class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                        <picture>
+                            <source media="(min-width:650px)" srcset="img/flogo.png">
+                            <img src="img/flogo.png" width="150" height="75" alt="">
+                        </picture>
+                    </a>
+                    <div class="social mt-3">
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="policy-links">
+                        <a href="#">
+                            شروط الاستخدام
+                        </a>
+                        <a href="#">
+                            سياسة الخصوصية
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row justify-content-between nav row-cols-auto">
+                        <div>
+                            <h6>الشركة</h6>
+                            <a href="#" class="d-block">من نحن</a>
+                            <a href="#" class="d-block">مقارنة الخدمات</a>
+                        </div>
+                        <div>
+                            <h6>قناة رياديات</h6>
+                            <a href="#" class="d-block">المدونة</a>
+                            <a href="#" class="d-block">البودكاست</a>
+                            <a href="#" class="d-block">قصص نجاح</a>
+                        </div>
+                        <div>
+                            <h6>انضمي إلينا</h6>
+                            <a href="#" class="d-block">التوظيف</a>
+                            <a href="#" class="d-block">التسويق بالعمولة</a>
+                        </div>
+                        <div>
+                            <h6>الدعم</h6>
+                            <a href="#" class="d-block">الأسئلة الشائعة</a>
+                            <a href="#" class="d-block">تواصل معنا</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h6>اشتركي بالقائمة البريدية</h6>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="البريد الإلكتروني"
+                            aria-describedby="button-addon2">
+                        <button class="btn btn-primary" type="button" id="button-addon2">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                    </div>
+                    <picture>
+                        <source srcset="img/app-store.png">
+                        <img src="img/app-store.png" alt="">
+                    </picture>
+                    <picture>
+                        <source srcset="img/play-store.png">
+                        <img src="img/play-store.png" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </footer>
+    <div class="modal fade verfication-modal" id="successModal" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <section class="trainer ">
+                        <div class="trainer-box container">
+                            <a href="#" class=" x " data-bs-dismiss="modal">
+                                <i class="fas fa-times"></i>
+                            </a>
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-md-7 ">
+                                    <div class="texet-header">
+                                        <h2> من فضلك ادخل وثيقة العمل الحر </h2>
+                                        <h6> ادخل وثيقة العمل الحر بالطريقة المناسبة لك </h6>
+
+                                    </div>
+                                    <div class="add">
+                                        <div
+                                            class="d-flex upload-request-file form-control box align-items-center  justify-content-between  mb-3">
+                                            <div class="d-flex">
+                                                <label for="fileinput1" class="form-label file-label col-auto">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <rect width="24" height="24" fill="url(#pattern0)" />
+                                                        <defs>
+                                                            <pattern id="pattern0"
+                                                                patternContentUnits="objectBoundingBox" width="1"
+                                                                height="1">
+                                                                <use xlink:href="#image0_845_26624"
+                                                                    transform="scale(0.0104167)" />
+                                                            </pattern>
+                                                            <image id="image0_845_26624" width="96" height="96"
+                                                                xlink:href="data:image/png;base64,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" />
+                                                        </defs>
+                                                    </svg>
+
+                                                </label>
+                                                <div>
+                                                    <input class="form-control d-none" type="file"
+                                                        onchange="readName(this)" id="fileinput1">
+                                                    <span id="selected_filename" class="mx-3 gray font-13 col-auto">
+                                                        اضافة صور
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <label style="margin-right:px ;" for="fileinput1"
+                                                class="form-label file-label col-auto text-start">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M13.2 6H10.8V10.8H6V13.2H10.8V18H13.2V13.2H18V10.8H13.2V6ZM12 0C5.376 0 0 5.376 0 12C0 18.624 5.376 24 12 24C18.624 24 24 18.624 24 12C24 5.376 18.624 0 12 0ZM12 21.6C6.708 21.6 2.4 17.292 2.4 12C2.4 6.708 6.708 2.4 12 2.4C17.292 2.4 21.6 6.708 21.6 12C21.6 17.292 17.292 21.6 12 21.6Z"
+                                                        fill="#D8D8D8" />
+                                                </svg>
+
+                                            </label>
+
+                                        </div>
+                                        <div
+                                            class="d-flex upload-request-file form-control box align-items-center  justify-content-between  mb-3">
+                                            <div class="d-flex">
+                                                <label for="fileinput1" class="form-label file-label col-auto">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <rect width="24" height="24" fill="url(#pattern0)" />
+                                                        <defs>
+                                                            <pattern id="pattern0"
+                                                                patternContentUnits="objectBoundingBox" width="1"
+                                                                height="1">
+                                                                <use xlink:href="#image0_845_26624"
+                                                                    transform="scale(0.0104167)" />
+                                                            </pattern>
+                                                            <image id="image0_845_26624" width="96" height="96"
+                                                                xlink:href="data:image/png;base64,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" />
+                                                        </defs>
+                                                    </svg>
+
+                                                </label>
+                                                <div>
+                                                    <input class="form-control d-none" type="file"
+                                                        onchange="readName(this)" id="fileinput1">
+                                                    <span id="selected_filename" class="mx-3 gray font-13 col-auto">
+                                                        اضافة ملف بصيغة pdf
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <label style="margin-right:px ;" for="fileinput1"
+                                                class="form-label file-label col-auto text-start">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M13.2 6H10.8V10.8H6V13.2H10.8V18H13.2V13.2H18V10.8H13.2V6ZM12 0C5.376 0 0 5.376 0 12C0 18.624 5.376 24 12 24C18.624 24 24 18.624 24 12C24 5.376 18.624 0 12 0ZM12 21.6C6.708 21.6 2.4 17.292 2.4 12C2.4 6.708 6.708 2.4 12 2.4C17.292 2.4 21.6 6.708 21.6 12C21.6 17.292 17.292 21.6 12 21.6Z"
+                                                        fill="#D8D8D8" />
+                                                </svg>
+
+                                            </label>
+
+                                        </div>
+                                        <div
+                                            class="d-flex upload-request-file form-control box align-items-center  justify-content-between  mb-3">
+                                            <div class="d-flex">
+                                                <label for="fileinput1" class="form-label file-label col-auto">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <rect width="24" height="24" fill="url(#pattern0)" />
+                                                        <defs>
+                                                            <pattern id="pattern0"
+                                                                patternContentUnits="objectBoundingBox" width="1"
+                                                                height="1">
+                                                                <use xlink:href="#image0_845_26624"
+                                                                    transform="scale(0.0104167)" />
+                                                            </pattern>
+                                                            <image id="image0_845_26624" width="96" height="96"
+                                                                xlink:href="data:image/png;base64,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" />
+                                                        </defs>
+                                                    </svg>
+
+                                                </label>
+                                                <div>
+                                                    <input class="form-control d-none" type="file"
+                                                        onchange="readName(this)" id="fileinput1">
+                                                    <span id="selected_filename" class="mx-3 gray font-13 col-auto">
+                                                        اضافة رابط
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <label style="margin-right:px ;" for="fileinput1"
+                                                class="form-label file-label col-auto text-start">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M13.2 6H10.8V10.8H6V13.2H10.8V18H13.2V13.2H18V10.8H13.2V6ZM12 0C5.376 0 0 5.376 0 12C0 18.624 5.376 24 12 24C18.624 24 24 18.624 24 12C24 5.376 18.624 0 12 0ZM12 21.6C6.708 21.6 2.4 17.292 2.4 12C2.4 6.708 6.708 2.4 12 2.4C17.292 2.4 21.6 6.708 21.6 12C21.6 17.292 17.292 21.6 12 21.6Z"
+                                                        fill="#D8D8D8" />
+                                                </svg>
+
+                                            </label>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="text-center m-5">
+                                        <button style="background-color:#1FB9B3 ;color: white; border-radius: 10px;"
+                                            class="btn w-50">
+                                            تاكيد
+                                        </button>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-5 provid   align-items-center ">
+                                    <img class="img-fluid  " src="img/bro.png" alt="">
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- <script src="js/lightbox.js"></script> -->
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- owl -->
+    <!-- <script src="js/owl.carousel.min.js"></script> -->
+    <!-- mdb js  -->
+    <script src="js/mdb.min.js"></script>
+    <script src="js/mdb.min.js.map"></script>
+
+    <script src="js/all.min.js"></script>
+    <!-- Main script file -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
