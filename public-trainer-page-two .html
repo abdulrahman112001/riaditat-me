@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!-- for english make lang en and dir ltr -->
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,304 +21,360 @@
     <!-- fontawesome file -->
     <link rel="stylesheet" href="css/all.css">
 
+
     <!-- owl -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-        <!-- calender -->
-        <link rel="stylesheet" href="css/simple-calendar.css">
+    <!-- calender -->
+    <link rel="stylesheet" href="css/simple-calendar.css">
     <!-- Main style file -->
     <link rel="stylesheet" href="css/main.css">
 
     <style>
-     .item a{
-    text-decoration: none;
-    cursor: pointer;
-    border: navajowhite;
-  }
-  .item .dropdown-menu.show{
-    border: none;
-  }
-  .item .dropdown-menu{
-    padding: 0.5rem 10px;
-    min-width: 1rem;
-    transform: translate(51.9375px, 9px) !important;
-  }
-  .item .dropdown-menu  {
-    background-color: white;
-    color: #1FB9B3;
-    padding: 2px 11px;
-  }
-  .item .dropdown-toggle p{
-  padding: 0;
-  margin:  0;
-  height: 6px;
-  
-}
-.item .dropend .dropdown-toggle::after{
-  display: none;
-}
-.item .dotted{
-    position: absolute;
-    top: -7px;
-    left: 20px;
-    color: white;
-}
+        .item a {
+            text-decoration: none;
+            cursor: pointer;
+            border: navajowhite;
+        }
+
+        .item .dropdown-menu.show {
+            border: none;
+        }
+
+        .item .dropdown-menu {
+            padding: 0.5rem 10px;
+            min-width: 1rem;
+            transform: translate(51.9375px, 9px) !important;
+        }
+
+        .item .dropdown-menu {
+            background-color: white;
+            color: #1FB9B3;
+            padding: 2px 11px;
+        }
+
+        .item .dropdown-toggle p {
+            padding: 0;
+            margin: 0;
+            height: 6px;
+
+        }
+
+        .item .dropend .dropdown-toggle::after {
+            display: none;
+        }
+
+        .item .dotted {
+            position: absolute;
+            top: -7px;
+            left: 20px;
+            color: white;
+        }
+
+        .opt {
+            background-color: #1fb9b448;
+        }
+
+        .card .opt {
+            background-color: #1987541c !important;
+            color: #1FB9B3;
+            font-weight: bolder;
+            padding: 2px 15px;
+
+        }
+
+        .bg-img {
+            position: relative;
+            background-color: #1fb9b33b;
+            left: 12px;
+        }
+
+        .card {
+            border-radius: 5px;
+            background-color: #fff;
+            /* padding: 0px 13px; */
+            margin-bottom: 20px;
+        }
+
+        .modal-body .text .svg-inline--fa {
+            height: 1rem;
+            color: #1fb9b3;
+            padding:  0 10px;
+        }
+
+        .add-modal .file-label {
+            width: 100%;
+            border: 2px solid #1FB9B3;
+            border-radius: 6px;
+            text-align: center;
+            padding: 10% 0;
+            position: relative;
+        }
+
+        .add-modal .file-label.first {
+            width: inherit;
+        }
     </style>
 
 </head>
+
 <body>
 
     <header>
         <div class="container-fluid">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start header-with-search">
-              <a href="/" class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-                <picture>
-                    <source media="(min-width:650px)" srcset="img/logo.png">
-                    <img src="img/logo.png" width="150" height="75" alt="">
-                </picture>
-              </a>
-      
-              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li>
-                    <a href="#" class="nav-link px-2 dropdown-toggle active">تصفحي الدورات</a>
-                    <ul class="dropdown-menu dropdown-menu-light">
-                        <li>
-                            <a class="dropdown-item" href="#">الاستشارة</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">مساحات العمل</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">التسويق</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" class="nav-link dropdown-toggle px-2">الشبكة</a>
-                    <ul class="dropdown-menu dropdown-menu-light">
-                        <li>
-                            <a class="dropdown-item" href="#">الاستشارة</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">مساحات العمل</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">التسويق</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" class="nav-link px-2">الحاضنة</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link dropdown-toggle px-2">خدماتنا</a>
-                    <ul class="dropdown-menu dropdown-menu-light">
-                        <li>
-                            <a class="dropdown-item" href="#">الاستشارة</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">مساحات العمل</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">التسويق</a>
-                        </li>
-                    </ul>
-                </li>
-              </ul>
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="ابحثي عن  دورات تدريبية, رائدات أعمال" aria-label="Search">
-                <picture>
-                    <source srcset="img/Icon feather-search.png">
-                    <img src="img/Icon feather-search.png" alt="">
-                </picture>
-              </form>
-              <div class="text-end header-btns">
-                <div class="dropdown text-end icons">
-                    <a href="#" class="d-block link-dark text-decoration-none" id="dropdownMessages" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span>8</span>
-                        <i class="far fa-comment-alt"></i>
-                    </a>
-                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownMessages">
-                        <p class="order">الرسائل (2)</p>
-                        <li class="new">
-                            <a class="dropdown-item" href="#">
-                                <div class="d-inline-block">
-                                    <picture>
-                                        <source srcset="img/messages1.png">
-                                        <img src="img/messages1.png" alt="">
-                                    </picture>
-                                </div>
-                                <div class="d-inline-block">
-                                    <p>
-                                        <b>سلمى محمد</b>
-                                        <p class="gray time">
-                                            25 دقيقة
-                                        </p>
-                                    </p>
-                                    <p>إيه الأخبار</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="new">
-                            <a class="dropdown-item" href="#">
-                                <div class="d-inline-block">
-                                    <picture>
-                                        <source srcset="img/messages1.png">
-                                        <img src="img/messages1.png" alt="">
-                                    </picture>
-                                </div>
-                                <div class="d-inline-block">
-                                    <p>
-                                        <b>سلمى محمد</b>
-                                        <p class="gray time">
-                                            25 دقيقة
-                                        </p>
-                                    </p>
-                                    <p>إيه الأخبار</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <div class="d-inline-block">
-                                    <picture>
-                                        <source srcset="img/messages1.png">
-                                        <img src="img/messages1.png" alt="">
-                                    </picture>
-                                </div>
-                                <div class="d-inline-block">
-                                    <p>
-                                        <b>سلمى محمد</b>
-                                        <p class="gray time">
-                                            25 دقيقة
-                                        </p>
-                                    </p>
-                                    <p>إيه الأخبار</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <div class="d-inline-block">
-                                    <picture>
-                                        <source srcset="img/messages1.png">
-                                        <img src="img/messages1.png" alt="">
-                                    </picture>
-                                </div>
-                                <div class="d-inline-block">
-                                    <p>
-                                        <b>سلمى محمد</b>
-                                        <p class="gray time">
-                                            25 دقيقة
-                                        </p>
-                                    </p>
-                                    <p>إيه الأخبار</p>
-                                </div>
-                            </a>
-                        </li>
-                        <a href="#" class="bottom-link">
-                            عرض كل الرسائل
-                        </a>
-                    </ul>
-                </div>
-        
-                <div class="dropdown text-end icons">
-                    <a href="#" class="d-block link-dark text-decoration-none" id="dropdownNotification" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span>4</span>
-                        <i class="far fa-bell"></i>
-                    </a>
-                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownNotification">
-                        <p class="gray order">الجديد</p>
-                        <li class="new">
-                            <a class="dropdown-item" href="#">
-                                <div class="d-inline-block">
-                                    <picture>
-                                        <source srcset="img/notfication1.png">
-                                        <img src="img/notfication1.png" alt="">
-                                    </picture>
-                                </div>
-                                <div class="d-inline-block">
-                                    <p>لديك جلسة استشارية اليوم</p>
-                                    <p class="gray">25 دقيقة</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="new">
-                            <a class="dropdown-item" href="#">
-                                <div class="d-inline-block">
-                                    <picture>
-                                        <source srcset="img/notfication2.png">
-                                        <img src="img/notfication2.png" alt="">
-                                    </picture>
-                                </div>
-                                <div class="d-inline-block">
-                                    <p>تم رفع مرفق جديد</p>
-                                    <p class="gray">25 دقيقة</p>
-                                </div>
-                            </a>
-                        </li>
-                        <p class="gray order">الأقدم</p>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <div class="d-inline-block">
-                                    <picture>
-                                        <source srcset="img/notfication3.png">
-                                        <img src="img/notfication3.png" alt="">
-                                    </picture>
-                                </div>
-                                <div class="d-inline-block">
-                                    <p>لقد انتهيت من الحاضنة</p>
-                                    <p class="gray">2 يوم</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <div class="d-inline-block">
-                                    <picture>
-                                        <source srcset="img/notfication4.png">
-                                        <img src="img/notfication4.png" alt="">
-                                    </picture>
-                                </div>
-                                <div class="d-inline-block">
-                                    <p>تابع لقاء اليوم خطة العمل
-                                        ودراسة الجدوى المالية</p>
-                                    <p class="gray">2 يوم</p>
-                                </div>
-                            </a>    
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="icons add">
-                    <i class="fas fa-plus"></i>
-                </div>
-        
-                <div class="dropdown text-end user">
-                    <a href="#" class="d-block link-dark text-decoration-none" id="dropdownUser"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                        <picture>
-                            <source srcset="img/user-icon.png">
-                            <img src="img/user-icon.png" class="rounded-circle" width="32" height="32">
-                        </picture>
-                    </a>
-                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser">
-                        <li><a class="dropdown-item" href="#">دوراتي</a></li>
-                        <li><a class="dropdown-item" href="#">الصفحة الشخصية</a></li>
-                        <li><a class="dropdown-item" href="#">اعدادات الحساب</a></li>
-                        
-                        <li><a class="dropdown-item" href="#">كوني مدربة</a></li>
-                        <li><a class="dropdown-item" href="#">كوني شريكة(معلنة)</a></li>
-                        <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
-                    </ul>
-                </div>
-                <a href="#" class="btn btn-primary">
-                    طوري للمنصة المميزة
+            <div
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start header-with-search">
+                <a href="/" class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="img/logo.png">
+                        <img src="img/logo.png" width="150" height="75" alt="">
+                    </picture>
                 </a>
-                    
-              </div>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li>
+                        <a href="#" class="nav-link px-2 dropdown-toggle active">تصفحي الدورات</a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link dropdown-toggle px-2">الشبكة</a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2">الحاضنة</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link dropdown-toggle px-2">خدماتنا</a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                                <a class="dropdown-item" href="#">الاستشارة</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">التسويق</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="ابحثي عن  دورات تدريبية, رائدات أعمال"
+                        aria-label="Search">
+                    <picture>
+                        <source srcset="img/Icon feather-search.png">
+                        <img src="img/Icon feather-search.png" alt="">
+                    </picture>
+                </form>
+                <div class="text-end header-btns">
+                    <div class="dropdown text-end icons">
+                        <a href="#" class="d-block link-dark text-decoration-none" id="dropdownMessages"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>8</span>
+                            <i class="far fa-comment-alt"></i>
+                        </a>
+                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownMessages">
+                            <p class="order">الرسائل (2)</p>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/messages1.png">
+                                            <img src="img/messages1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>
+                                            <b>سلمى محمد</b>
+                                        <p class="gray time">
+                                            25 دقيقة
+                                        </p>
+                                        </p>
+                                        <p>إيه الأخبار</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <a href="#" class="bottom-link">
+                                عرض كل الرسائل
+                            </a>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown text-end icons">
+                        <a href="#" class="d-block link-dark text-decoration-none" id="dropdownNotification"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>4</span>
+                            <i class="far fa-bell"></i>
+                        </a>
+                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownNotification">
+                            <p class="gray order">الجديد</p>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication1.png">
+                                            <img src="img/notfication1.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>لديك جلسة استشارية اليوم</p>
+                                        <p class="gray">25 دقيقة</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="new">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication2.png">
+                                            <img src="img/notfication2.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>تم رفع مرفق جديد</p>
+                                        <p class="gray">25 دقيقة</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <p class="gray order">الأقدم</p>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication3.png">
+                                            <img src="img/notfication3.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>لقد انتهيت من الحاضنة</p>
+                                        <p class="gray">2 يوم</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-inline-block">
+                                        <picture>
+                                            <source srcset="img/notfication4.png">
+                                            <img src="img/notfication4.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <p>تابع لقاء اليوم خطة العمل
+                                            ودراسة الجدوى المالية</p>
+                                        <p class="gray">2 يوم</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="icons add">
+                        <i class="fas fa-plus"></i>
+                    </div>
+
+                    <div class="dropdown text-end user">
+                        <a href="#" class="d-block link-dark text-decoration-none" id="dropdownUser"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <picture>
+                                <source srcset="img/user-icon.png">
+                                <img src="img/user-icon.png" class="rounded-circle" width="32" height="32">
+                            </picture>
+                        </a>
+                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser">
+                            <li><a class="dropdown-item" href="#">دوراتي</a></li>
+                            <li><a class="dropdown-item" href="#">الصفحة الشخصية</a></li>
+                            <li><a class="dropdown-item" href="#">اعدادات الحساب</a></li>
+
+                            <li><a class="dropdown-item" href="#">كوني مدربة</a></li>
+                            <li><a class="dropdown-item" href="#">كوني شريكة(معلنة)</a></li>
+                            <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-primary">
+                        طوري للمنصة المميزة
+                    </a>
+
+                </div>
             </div>
-          </div>
+        </div>
     </header>
     <main>
         <div class="container">
@@ -347,13 +404,14 @@
                         </div>
                         <div class="row mt-3">
                             <div class="col-12">
-                                حصلت على بكالوريوس معهد الكونسرفتوار، خبرة 5 سنوات في ريادة الأعمال، حصلت على جوائز عديدة ولها شركات ناجحة في المملكة وخارجها
+                                حصلت على بكالوريوس معهد الكونسرفتوار، خبرة 5 سنوات في ريادة الأعمال، حصلت على جوائز
+                                عديدة ولها شركات ناجحة في المملكة وخارجها
                             </div>
                             <div class="col-12 mt-4">
                                 <div class="row align-items-center justify-content-between">
-                              
+
                                     <div class="social-links col">
-    
+
                                         <span class="m-0">
                                             <a href="#">
                                                 <i class="fab fa-linkedin-in"></i>
@@ -372,10 +430,14 @@
                                             </a>
                                         </span>
                                     </div>
-                                    <div class="mt-4">
+                                    <div class="mt-4 d-flex justify-content-between">
                                         <a href="#" class="btn btn-primary col-auto">
                                             ارسلي رسالة
                                         </a>
+                                        <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop-cancel">
+                                        اكتبي تقييمك
+                                    </a>
                                     </div>
                                 </div>
                             </div>
@@ -388,18 +450,25 @@
 
                             <ul class="nav blogs-nav nav-tabs col-auto" id="myTab" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="service-tab" data-bs-toggle="tab" data-bs-target="#service" type="button" role="tab" aria-controls="service" aria-selected="true"> الخدمات  </button>
-                                  </li>
-                                <li class="nav-item" role="presentation">
-                                  <button class="nav-link " id="publishedCourses-tab" data-bs-toggle="tab" data-bs-target="#publishedCourses" type="button" role="tab" aria-controls="publishedCourses" aria-selected="true">قائمةالاعمال  </button>
+                                    <button class="nav-link active" id="service-tab" data-bs-toggle="tab"
+                                        data-bs-target="#service" type="button" role="tab" aria-controls="service"
+                                        aria-selected="true"> الخدمات </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                  <button class="nav-link " id="meetups-tab" data-bs-toggle="tab" data-bs-target="#meetups" type="button" role="tab" aria-controls="meetups" aria-selected="true">التقيميات</button>
-                                </li> 
+                                    <button class="nav-link " id="publishedCourses-tab" data-bs-toggle="tab"
+                                        data-bs-target="#publishedCourses" type="button" role="tab"
+                                        aria-controls="publishedCourses" aria-selected="true">قائمةالاعمال </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="meetups-tab" data-bs-toggle="tab"
+                                        data-bs-target="#meetups" type="button" role="tab" aria-controls="meetups"
+                                        aria-selected="true">التقيميات</button>
+                                </li>
                             </ul>
                         </div>
                         <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane my-work fade show active" id="service" role="tabpanel" aria-labelledby="service-tab">
+                            <div class="tab-pane my-work fade show active" id="service" role="tabpanel"
+                                aria-labelledby="service-tab">
                                 <div class="row">
                                     <div class="col-4 item">
                                         <picture>
@@ -413,20 +482,22 @@
                                         <h5 class="header-item"> A remote design sprint </h5>
                                         <div class="dotted">
                                             <div class="btn-group dropend">
-                                              <a type="" class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <p>.</p>
-                                                <p>.</p>
-                                                <p>.</p>
-                                          
-                                          
-                                              </a>
-                                              <ul class="dropdown-menu">
-                                                <a type="" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                                 حجز
+                                                <a type="" class=" dropdown-toggle" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <p>.</p>
+                                                    <p>.</p>
+                                                    <p>.</p>
+
+
                                                 </a>
-                                              </ul>
+                                                <ul class="dropdown-menu">
+                                                    <a type="" class="" data-bs-toggle="modal"
+                                                        data-bs-target="#staticBackdrop">
+                                                        حجز
+                                                    </a>
+                                                </ul>
                                             </div>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col-4 item">
                                         <picture>
@@ -495,7 +566,8 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="tab-pane my-work fade show " id="publishedCourses" role="tabpanel" aria-labelledby="publishedCourses-tab">
+                            <div class="tab-pane my-work fade show " id="publishedCourses" role="tabpanel"
+                                aria-labelledby="publishedCourses-tab">
                                 <div class="row">
                                     <div class="col-md-4 item">
                                         <picture>
@@ -564,7 +636,8 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="tab-pane my-meetups fade" id="meetups" role="tabpanel" aria-labelledby="meetups-tab">
+                            <div class="tab-pane my-meetups fade" id="meetups" role="tabpanel"
+                                aria-labelledby="meetups-tab">
                                 <h2 class="text-center m-0 bold">
                                     4.1
                                 </h2>
@@ -631,10 +704,8 @@
                                     </div>
                                 </div>
 
-                                <a href="#" class="btn btn-primary" >
-                                    اكتبي تقييمك 
-                                </a>
-                                
+                            
+
                                 <div class="text-center">
                                     <a href="#" class="show-more ">
                                         عرض المزيد
@@ -642,49 +713,24 @@
                                 </div>
                             </div>
                         </div>
-                          
+
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-dialog modal-dialog-centered">
-                <section class=" " >
-                    <div class="">                     
-                       
-                            <div id="calendarContainer" class="col"></div>
-            
-                     
 
-                           
-                    </div>
-            
-                </section>
-            </div>
-            <div class="modal-footer m-auto ">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">الغاء</button>
-              <button type="button" class="btn btn-primary">حجز </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      
     <footer>
         <div class="container-fluid">
             <div class="row justify-content-between row-cols-auto">
                 <div class="">
-                    <a href="/" class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                    <a href="/"
+                        class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
                         <picture>
                             <source media="(min-width:650px)" srcset="img/flogo.png">
                             <img src="img/flogo.png" width="150" height="75" alt="">
                         </picture>
-                        </a>
+                    </a>
                     <div class="social mt-3">
                         <a href="#">
                             <i class="fab fa-linkedin-in"></i>
@@ -737,7 +783,7 @@
                     <h6>اشتركي بالقائمة البريدية</h6>
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" placeholder="البريد الإلكتروني"
-                        aria-describedby="button-addon2">
+                            aria-describedby="button-addon2">
                         <button class="btn btn-primary" type="button" id="button-addon2">
                             <i class="fas fa-chevron-left"></i>
                         </button>
@@ -754,6 +800,94 @@
             </div>
         </div>
     </footer>
+
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-dialog modal-dialog-centered">
+                    <section class=" ">
+                        <div class="">
+
+                            <div id="calendarContainer" class="col"></div>
+
+
+
+
+                        </div>
+
+                    </section>
+                </div>
+                <div class="modal-footer m-auto ">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">الغاء</button>
+                    <button type="button" class="btn btn-primary">حجز </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- commint -->
+    <div style="z-index: 10000;" class="modal fade" id="staticBackdrop-cancel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel-cancel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body row justify-content-between border-0 p-0">
+
+                    <div class="col-7 mt-3 p-3 text-center">
+                        <h6 class="fw-bolder ">تقييم الخدمة</h6>
+                        <p class="mt-5 fs-6">من فضلك قم بتقييم الخدمة حتى يستفاد الآخرون</p>
+
+                        <div class="d-flex justify-content-between p-2 ">
+                            <i class="fa-solid fa-star fs-2"></i>
+                            <i class="fa-solid fa-star fs-2"></i>
+                            <i class="fa-solid fa-star fs-2"></i>
+                            <i class="fa-solid fa-star fs-2"></i>
+                            <i class="fa-solid fa-star fs-2"></i>
+                            <i class="fa-solid fa-star fs-2"></i>
+
+                        </div>
+                        <textarea name="" id="" cols="35" rows="5"></textarea>
+                        <div class="col-md-12">
+                            <label for="imginput" class="form-label file-label first w-100">
+                                <div class="text w-100 border p-1  d-flex justify-content-center align-items-center ">
+                                    <i class="fa-solid fa-camera fs-6"></i>                            
+                                    
+                                    <p class="mt-4 ">ارفاق  صورة</p>
+                                </div>
+                                <img src="none" id="image_selected" />
+                            </label>
+                            <input onchange="readURL(this);" class="form-control d-none" type="file" id="imginput">
+                        </div>
+                        <button href="" class=" btn btn-primary mt-3  w-75">  ارسال تقييم  </a> </button>
+
+                    </div>
+                    <div class="col-5 bg-img ">
+                        <button type="button" class="btn-close mt-1 position-absolute top-0 end-0 p-2"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class=" mt-4">
+                            <img style="    margin-top: 7rem !important;" class="mt-5 img-fluid" src="./img/Group 3024.png" alt="">
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <script src="js/lightbox.js"></script>
@@ -766,34 +900,38 @@
 
     <!-- Main script file -->
     <script src="js/main.js"></script>
+    <script src="js/all.min.js"></script>
 
 
-        <!-- calender -->
-        <script src="js/jquery.simple-calendar.min.js"></script>   
-        <script>
-            $("#calendarContainer").simpleCalendar({
-                displayEvent: true,
-                events: [
-                    // generate new event after tomorrow for one hour
-                    {startDate: new Date(new Date().setHours(new Date().getHours() + 24)).toDateString(),
-                        endDate: new Date(new Date().setHours(new Date().getHours() + 25)).toISOString(),
+
+    <!-- calender -->
+    <script src="js/jquery.simple-calendar.min.js"></script>
+    <script>
+        $("#calendarContainer").simpleCalendar({
+            displayEvent: true,
+            events: [
+                // generate new event after tomorrow for one hour
+                {
+                    startDate: new Date(new Date().setHours(new Date().getHours() + 24)).toDateString(),
+                    endDate: new Date(new Date().setHours(new Date().getHours() + 25)).toISOString(),
                     summary: 'Visit of the Eiffel Tower'
-                    },
-                    // generate new event for yesterday at noon
-                    {
+                },
+                // generate new event for yesterday at noon
+                {
                     startDate: new Date(new Date().setHours(new Date().getHours() - new Date().getHours() - 12, 0)).toISOString(),
                     endDate: new Date(new Date().setHours(new Date().getHours() - new Date().getHours() - 11)).getTime(),
                     summary: 'Restaurant'
-                    },
-                    // generate new event for the last two days
-                    {
+                },
+                // generate new event for the last two days
+                {
                     startDate: new Date(new Date().setHours(new Date().getHours() - 48)).toISOString(),
                     endDate: new Date(new Date().setHours(new Date().getHours() - 24)).getTime(),
                     summary: 'Visit of the Louvre'
-                    }
-                ],
-                months: ['يناير', 'فبراير', 'مارس', 'ابريل', 'مايو', 'يونيو', 'يوليو', 'اغسطس', 'سبتمبر', 'اكتوبر', 'نوفمبر', 'ديسمبر'],
-            })
-        </script>
+                }
+            ],
+            months: ['يناير', 'فبراير', 'مارس', 'ابريل', 'مايو', 'يونيو', 'يوليو', 'اغسطس', 'سبتمبر', 'اكتوبر', 'نوفمبر', 'ديسمبر'],
+        })
+    </script>
 </body>
+
 </html>

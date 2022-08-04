@@ -31,6 +31,90 @@
     <!-- Main style file -->
     <link rel="stylesheet" href="css/main.css">
 
+    <style>
+                .item a {
+            text-decoration: none;
+            cursor: pointer;
+            border: navajowhite;
+        }
+
+        .item .dropdown-menu.show {
+            border: none;
+        }
+
+        .item .dropdown-menu {
+            padding: 0.5rem 10px;
+            min-width: 1rem;
+            transform: translate(51.9375px, 9px) !important;
+        }
+
+        .item .dropdown-menu {
+            background-color: white;
+            color: #1FB9B3;
+            padding: 2px 11px;
+        }
+
+        .item .dropdown-toggle p {
+            padding: 0;
+            margin: 0;
+            height: 6px;
+
+        }
+
+        .item .dropend .dropdown-toggle::after {
+            display: none;
+        }
+
+        .item .dotted {
+            position: absolute;
+            top: -7px;
+            left: 20px;
+            color: white;
+        }
+             .opt {
+            background-color: #1fb9b448;
+        }
+
+        .card .opt {
+            background-color: #1987541c !important;
+            color: #1FB9B3;
+            font-weight: bolder;
+            padding: 2px 15px;
+
+        }
+
+        .bg-img {
+            position: relative;
+            background-color: #1fb9b33b;
+            left: 12px;
+        }
+             .card {
+            border-radius: 5px;
+            background-color: #fff;
+            /* padding: 0px 13px; */
+            margin-bottom: 20px;
+        }
+
+        .modal-body .text .svg-inline--fa {
+            height: 1rem;
+            color: #1fb9b3;
+            padding:  0 10px;
+        }
+
+        .add-modal .file-label {
+            width: 100%;
+            border: 2px solid #1FB9B3;
+            border-radius: 6px;
+            text-align: center;
+            padding: 10% 0;
+            position: relative;
+        }
+
+        .add-modal .file-label.first {
+            width: inherit;
+        }
+    </style>
+
 
 </head>
 
@@ -371,10 +455,12 @@
                                             على جوائز عديدة ولها شركات ناجحة في المملكة وخارجها
                                         </p>
 
-                                        <a href="#" class="btn btn-primary py-1">
+                                        <a href="#" class="btn btn-primary py-1"  data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop-cancel">
                                             تم الانتهاء
                                         </a>
-                                        <a href="#" class="btn text-danger  py-1">
+                                        <a href="#" class="btn text-danger  py-1" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">
                                             الغاء الطلب </a>
                                     </div>
                                 </div>
@@ -628,6 +714,81 @@
             </div>
         </div>
     </footer>
+
+
+
+    
+    <div style="z-index: 10000;" class="modal fade" id="staticBackdrop-cancel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel-cancel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body row justify-content-between border-0 p-0">
+
+                <div class="col-7 mt-3 p-3 text-center">
+                    <h6 class="fw-bolder ">احسنت ! نحن محظوظيت لنرى خدماتك  </h6>
+                    <p class="mt-5 fs-6">لقد قمت بتسليم خدمتك بنجاح من فضلك اصدر فاتورة لتستلم باقي مبلغك  </p>
+
+          
+                    <button href="" class=" btn btn-primary mt-3  w-75">  اصدار فاتورة    </a> </button>
+
+                </div>
+                <div class="col-5 bg-img p-4">
+                    <button type="button" class="btn-close mt-1 position-absolute top-0 end-0 p-2"
+                        data-bs-dismiss="modal" aria-label="Close">  </button>
+                    <div class=" ">
+                        <img  class="mt-5 img-fluid" src="./img/panass.png" alt="">
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div style="z-index: 10000;" class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+aria-labelledby="staticBackdropLabel-cancel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <div class="modal-body row justify-content-between border-0 p-0">
+
+            <div class="col-7 mt-3 p-3 text-center">
+                <h6 class="fw-bolder "> هل انت متاكد انك تريد الغاء الطلب ؟ </h6>
+                <p class="mt-5 fs-6">في حالة انك قمت بالغاء الطلب سوف يتم اعادة المبلغ المدفوع من قبل العميل واصدار فاتورة تريجع له    </p>
+
+      
+                <a href="" class=" text-danger mt-3  w-75">   الغاء الطلب    </a> </a>
+
+            </div>
+            <div class="col-5 bg-img p-4">
+                <button type="button" class="btn-close mt-1 position-absolute top-0 end-0 p-2"
+                    data-bs-dismiss="modal" aria-label="Close">  </button>
+                <div class=" ">
+                    <img  class="mt-5 img-fluid" src="./img/amico-2.png" alt="">
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+    </div>
+</div>
+</div>
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
