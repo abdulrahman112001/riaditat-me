@@ -11,6 +11,8 @@
 
     <!-- font file -->
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
 
     <!-- Bootstrap -->
     <!-- uncomment the following line for english  -->
@@ -29,7 +31,7 @@
     <link rel="stylesheet" href="css/main.css">
 
     <style>
-        .btn {
+        .btn.classification {
             background-color: white;
             color: black;
             padding: 0;
@@ -37,7 +39,7 @@
             color: #1FB9B3;
         }
 
-        .btn-secondary:hover {
+        .btn-secondary.classification:hover {
             background-color: transparent !important;
             color: #1FB9B3;
             border: none;
@@ -114,7 +116,95 @@
             background-color: #1FB9B3;
 
         }
-  
+
+        /* --------------------------- gallery  */
+
+        .modal-body {
+            position: relative;
+            height: 100%;
+        }
+
+        .bomodal-bodydy {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .swiper {
+            width: 100%;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .mySwiper2 {
+            height: 80%;
+            width: 100%;
+        }
+
+        .mySwiper {
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+
+        .mySwiper .swiper-slide {
+            width: 25%;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .mySwiper .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* *************** */
+
     </style>
 </head>
 
@@ -389,8 +479,8 @@
                             </h3>
 
                             <div class="dropdown m-3">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="btn btn-secondary dropdown-toggle classification " type="button"
+                                    id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
                                     تصنيف حسب
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -431,12 +521,13 @@
                                                     التجربة
                                                 </p>
                                             </div>
-                                            <div class="col-md-6 p-2">
-                                                <img class="img-fluid" src="img/unsplash_CCx6Fz_CmOI.png" alt="">
-                              
-
-
+                                            <div class="col-md-6 p-2" >
+                                                <img class="img-fluid" src="img/unsplash_tiWcNvpQF4E.png" alt="" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">
+                                                <img class="img-fluid" src="img/unsplash_tiWcNvpQF4E.png" alt="" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">
                                             </div>
+                                            
 
                                         </div>
 
@@ -507,8 +598,8 @@
                                                 </p>
                                             </div>
                                             <div class="col-md-6 p-2">
-                                                <img class="img-fluid" src="img/unsplash_BteCp6aq4GI.png" alt="">
-                                                <img class="img-fluid" src="img/unsplash_CCx6Fz_CmOI.png" alt="">
+                                                <img class="img-fluid" src="img/unsplash_tiWcNvpQF4E.png" alt="">
+
 
 
 
@@ -724,7 +815,140 @@
         </div>
     </footer>
 
+    <!-- Button trigger modal -->
 
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+
+                </div> -->
+                <div class="modal-body position-relative">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 p-2" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                            class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/unsplash_CCx6Fz_CmOI.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/unsplash_CCx6Fz_CmOI.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/unsplash_CCx6Fz_CmOI.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/unsplash_CCx6Fz_CmOI.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/unsplash_CCx6Fz_CmOI.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/unsplash_CCx6Fz_CmOI.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/unsplash_CCx6Fz_CmOI.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/unsplash_CCx6Fz_CmOI.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/unsplash_CCx6Fz_CmOI.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/unsplash_tiWcNvpQF4E.pngg" alt="">
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div> -->
+                             </div>
+                            <div thumbsSlider="" class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/unsplash_CCx6Fz_CmOI.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/unsplash_CCx6Fz_CmOI.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/unsplash_CCx6Fz_CmOI.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/unsplash_CCx6Fz_CmOI.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/unsplash_CCx6Fz_CmOI.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/unsplash_CCx6Fz_CmOI.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/unsplash_CCx6Fz_CmOI.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/unsplash_CCx6Fz_CmOI.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/unsplash_CCx6Fz_CmOI.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/unsplash_CCx6Fz_CmOI.png" />
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+           
+                        <div class=" col-md-6 row  flex-column">
+                            <div class="col-md-2">
+                                <img src="img/comment.png" alt="">
+                            </div>
+                            <div class="col-md-12 row justify-content-between mt-3">
+                                <div class="col-md-6">
+                                    <p> دينا حمزة   </p>
+    
+                                </div>
+                                <div class="col-md-6">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+    
+    
+                                </div>
+                                <div class="col-md-12 ">
+                                    
+                                    مميزة جدا وافضل شيء التزامها بالمواعيد وجودة العمل مصممة بالتااكيد سوف اكرر هذه التجربة 
+                                    
+
+                                </div>
+                                <div class="col-md-12 text-black-50 mt-2">
+                                    <p>منذ يوم </p>
+
+                                </div>
+
+                            </div>
+                     
+
+                            
+
+
+                        </div>
+                     
+
+                        </div>
+
+                    </div>
+                
+            </div>
+        </div>
+    </div>
 
 
     <!-- jQuery -->
@@ -740,19 +964,38 @@
     <!-- font awsem  -->
     <script src="js/all.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
     <!-- Main script file -->
     <script src="js/main.js"></script>
     <script>
 
-        $(".img-fluid").click(function () {
-            $(".trainer").addClass("trainer-show");
-            $(".close").click(function () {
-            $(".trainer").removeClass("trainer-show");
+        // $(".img-fluid").click(function () {
+        //     $(".trainer").addClass("trainer-show");
+        //     $(".close").click(function () {
+        //     $(".trainer").removeClass("trainer-show");
 
-            })
-        })
-
-
+        //     })
+        // })
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
     </script>
 </body>
 

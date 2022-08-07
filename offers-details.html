@@ -25,49 +25,13 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
+    <!-- calender -->
+    <link rel="stylesheet" href="css/simple-calendar.css">
+
     <!-- Main style file -->
     <link rel="stylesheet" href="css/main.css">
 
-    <style>
-        @media (max-width:760px) {
-            .single-interview video {
-                margin-right: 0;
-            }
 
-            .owl-carousel .owl-nav button.owl-next,
-            .owl-carousel .owl-nav button.owl-prev,
-            .owl-carousel button.owl-dot {
-                display: none;
-            }
-
-        }
-
-        .bg-img {
-            position: relative;
-            background-color: #1fb9b33b;
-            left: 12px;
-        }
-
-
-
-        .modal-body .text .svg-inline--fa {
-            height: 3rem;
-            color: #1fb9b3;
-        }
-
-        .add-modal .file-label {
-            width: 100%;
-            border: 2px solid #1FB9B3;
-            border-radius: 6px;
-            text-align: center;
-            padding: 10% 0;
-            position: relative;
-        }
-
-        .add-modal .file-label.first {
-            width: inherit;
-        }
-    </style>
 </head>
 
 <body>
@@ -83,56 +47,50 @@
                     </picture>
                 </a>
 
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 d-flex justify-content-between gap-4 mb-md-0">
+
                     <li>
-                        <a href="#" class="nav-link px-2 dropdown-toggle active">تصفحي الدورات</a>
-                        <ul class="dropdown-menu dropdown-menu-light">
-                            <li>
-                                <a class="dropdown-item" href="#">الاستشارة</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">مساحات العمل</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">التسويق</a>
-                            </li>
-                        </ul>
+                        <a href="#" class="nav-link px-2">الاعلانات</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link px-2">النماذج</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link dropdown-toggle px-2">الشبكة</a>
-                        <ul class="dropdown-menu dropdown-menu-light">
-                            <li>
-                                <a class="dropdown-item" href="#">الاستشارة</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">مساحات العمل</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">التسويق</a>
-                            </li>
-                        </ul>
+                        <a href="#" class="nav-link px-2">العروض</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link px-2">الحاضنة</a>
+                        <a href="#" class="nav-link px-2">المشاريع </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link dropdown-toggle px-2">خدماتنا</a>
+                        <a href="#" class="nav-link dropdown-toggle px-2">اخرى </a>
                         <ul class="dropdown-menu dropdown-menu-light">
                             <li>
-                                <a class="dropdown-item" href="#">الاستشارة</a>
+                                <a class="dropdown-item" href="#">رائدات الاعمال </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                                <a class="dropdown-item" href="#"> اللقاءات</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">التسويق</a>
+                                <a class="dropdown-item" href="#">البودكاست</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">قصص النجاح </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">المعارض </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">المدونة </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل </a>
                             </li>
                         </ul>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="ابحثي عن  دورات تدريبية, رائدات أعمال"
-                        aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="مالذي تبحث عنه ؟ " aria-label="Search">
                     <picture>
                         <source srcset="img/Icon feather-search.png">
                         <img src="img/Icon feather-search.png" alt="">
@@ -298,9 +256,9 @@
                         </ul>
                     </div>
 
-                    <div class="icons add">
+                    <!-- <div class="icons add">
                         <i class="fas fa-plus"></i>
-                    </div>
+                    </div> -->
 
                     <div class="dropdown text-end user">
                         <a href="#" class="d-block link-dark text-decoration-none" id="dropdownUser"
@@ -321,182 +279,65 @@
                         </ul>
                     </div>
                     <a href="#" class="btn btn-primary">
-                        طوري للمنصة المميزة
+                        سجل كشريك
                     </a>
 
                 </div>
             </div>
         </div>
     </header>
-    <main>
-        <div class="container">
-            <div class="row  single-interview interviews mt-3">
-                <div class="col-md-7 card">
-                    <div class="col-md-10">
 
-                        <div class="tag yellow max-content">
-                            مجلس
+    <section>
+        <div class="container">
+            <div class="row gap-3 p-5 ">
+                <div class="col-md-4 border p-5 row align-items-center">
+                    <img class="img-fluid" src="img/non.png" alt="">
+
+
+                </div>
+                <div class="col-md-7 border p-0 pt-4">
+                    <div class="row   gap-2  ps-4 pb-2 m-0 border-bottom ">
+                        <div style="width:60px ; height:60px"
+                            class="col-auto rounded-circle shadow align-items-center ">
+                            <img class="img-fluid w pt-4" src="img/non.png" alt="" width="40" height="3">
                         </div>
-                        <h3>
-                            خطة العمل ودراسة الجدوى المالية
-                        </h3>
-                        <p class="date">
-                            <span class="day">
-                                23 يوليو
-                            </span>
-                            |
-                            <span class="hour">
-                                2:30 ص
-                            </span>
-                        </p>
-                        <p>
-                            يبدأ من الخميس القادم، تعلمي كل ما تريدين معرفته عن دراسة الجدوى مع قامة من قامات رياديات
-                            الأعمال يبدأ من الخميس القادم، تعلمي كل ما تريدين معرفته عن دراسة الجدوى مع قامة من قامات
-                            رياديات الأعماليبدأ من الخميس القادم، تعلمي كل ما تريدين معرفته عن دراسة الجدوى مع قامة من
-                            قامات رياديات الأعماليبدأ من الخميس القادم، تعلمي كل ما تريدين معرفته عن دراسة الجدوى مع
-                            قامة من قامات رياديات الأعماليبدأ من الخميس القادم، تعلمي كل ما تريدين معرفته عن دراسة
-                            الجدوى مع قامة من قامات رياديات الأعماليبدأ من الخميس القادم، تعلمي كل ما تريدين معرفته عن
-                            دراسة الجدوى مع قامة من قامات رياديات الأعمال
-                        </p>
-                        <div class="row gx-1 author">
-                            <picture class="col-auto">
-                                <source srcset="img/exhibition.png">
-                                <img src="img/exhibition.png" alt="">
-                            </picture>
-                            <div class="col-auto">
-                                <h5>
-                                    <a href="#">
-                                        نسرين السيد
-                                    </a>
-                                </h5>
-                                <p class="title">
-                                    رائدة أعمال
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row align-items-center gx-3">
-                            <a href="#" class="btn btn-primary max-content" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop">
-                                انضمي إلى اللقاء
-                            </a>
-                            <a href="#" class="green max-content">
-                                أضف إلى جدولي
-                            </a>
+                        <div class="col-9">
+                            <h5>
+                                <a class="fw-bold" href="#">
+                                    نون
+                                </a>
+                            </h5>
+                            <p class="title">
+                                متجر الكترومي
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-5 pt-4 text-center">
-                    <video controls class="w-100 ">
-                        <source src="img/placeholder.mp4" type="video/mp4">
-                        Your browser does not support HTML video.
-                    </video>
-                </div>
-            </div>
-            <div class="row">
-                <div class="interviews">
-                    <div class="row mx-0 interviews-header  justify-content-between align-items-center">
-                        <h3 class="p-0 col-md-10">لقاءات اخرى</h3>
-                        <a href="#" class="btn btn-white-outlined col-md-2">
-                            عرض الكل
+                    <div class="p-4">
+                        <h6 class="fw-bolder "> احصل على خصم 10% عند استخدامك كود الخصم </h6>
+                        <h6 class="fw-bold"> شروط الاستخدام</h6>
+                        <p> 1- هذا العرض على منتجات التجميل فقط</p>
+                        <p> 2- هذا العرض على منتجات التجميل فقط</p>
+                        <p> 3- هذا العرض على منتجات التجميل فقط</p>
+                        <p>4- هذا العرض على منتجات التجميل فقط</p>
+
+                    </div>
+                    <div class="p-4">
+                        <a href="#" class="btn btn-primary">
+                            نسخ كود الخصم 
                         </a>
                     </div>
 
-                    <div class="interviews-carousel owl-carousel owl-theme">
-                        <div class="item">
-                            <picture>
-                                <source srcset="img/interview.png" type="">
-                                <img src="img/interview.png" width="140" alt="">
-                            </picture>
-
-                            <div class="text">
-                                <div class="tag yellow">
-                                    مجلس
-                                </div>
-                                <h5>
-                                    <a href="#">
-                                        خطة العمل ودراسة الجدوى المالية
-                                    </a>
-                                </h5>
-                                <p>23 يوليو</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <picture>
-                                <source srcset="img/interview.png" type="">
-                                <img src="img/interview.png" width="140" alt="">
-                            </picture>
-
-                            <div class="text">
-                                <div class="tag red">
-                                    ويبينار
-                                </div>
-                                <h5>
-                                    <a href="#">
-                                        خطة العمل ودراسة الجدوى المالية
-                                    </a>
-                                </h5>
-                                <p>23 يوليو</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <picture>
-                                <source srcset="img/interview.png" type="">
-                                <img src="img/interview.png" width="140" alt="">
-                            </picture>
-
-                            <div class="text">
-                                <div class="tag blue">
-                                    بزنس تو بزنس
-                                </div>
-                                <h5>
-                                    <a href="#">
-                                        خطة العمل ودراسة الجدوى المالية
-                                    </a>
-                                </h5>
-                                <p>23 يوليو</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <picture>
-                                <source srcset="img/interview.png" type="">
-                                <img src="img/interview.png" width="140" alt="">
-                            </picture>
-
-                            <div class="text">
-                                <div class="tag yellow">
-                                    مجلس
-                                </div>
-                                <h5>
-                                    <a href="#">
-                                        خطة العمل ودراسة الجدوى المالية
-                                    </a>
-                                </h5>
-                                <p>23 يوليو</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <picture>
-                                <source srcset="img/interview.png" type="">
-                                <img src="img/interview.png" width="140" alt="">
-                            </picture>
-
-                            <div class="text">
-                                <div class="tag yellow">
-                                    مجلس
-                                </div>
-                                <h5>
-                                    <a href="#">
-                                        خطة العمل ودراسة الجدوى المالية
-                                    </a>
-                                </h5>
-                                <p>23 يوليو</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+
             </div>
+
         </div>
-    </main>
+
+    </section>
+
+
+
+
     <footer>
         <div class="container-fluid">
             <div class="row justify-content-between row-cols-auto">
@@ -579,45 +420,6 @@
     </footer>
 
 
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body row justify-content-between border-0 p-0">
-
-                    <div class="col-7 mt-3 p-3 text-center">
-                        <h6 class="fw-bolder ">لقد تعديت الحد الاقصى للانضمامات المجانية </h6>
-                        <p class="mt-5 fs-6"> لقد قمت بتعدي الحد الاقصى لحضور الندوات في الاشتراك المجاني اذا كنت تريد حضور لامحدود قم بالاشتراك في الاشتارك الشهري والسنوي وسوف تحصل على الكثير من المزايا الاخرى </p>
-                        <button href="" class=" btn btn-primary mt-3  w-75">  الاشتراك   </a> </button>
-                        <button style="color: #1FB9B3;" class="mt-3 btn "data-bs-dismiss="modal"> ليس الان</button>
-
-                    </div>
-                    <div class="col-5 bg-img ">
-                        <button type="button" class="btn-close mt-1 position-absolute top-0 end-0 p-2"
-                            data-bs-dismiss="modal" aria-label="Close">
-                        </button>
-                        <div class=" mt-4">
-                            <img class="mt-5 img-fluid" src="./img/cuate-2.png" alt="">
-
-
-                        </div>
-
-
-                    </div>
-
-
-
-
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <script src="js/lightbox.js"></script>
@@ -628,8 +430,13 @@
     <!-- owl -->
     <script src="js/owl.carousel.min.js"></script>
 
+    <!-- calender -->
+    <script src="js/jquery.simple-calendar.min.js"></script>
+
     <!-- Main script file -->
     <script src="js/main.js"></script>
+
+
 </body>
 
 </html>
