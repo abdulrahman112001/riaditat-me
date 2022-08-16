@@ -493,7 +493,7 @@ $(document).ready(function () {
         nav: true,
         dots: false,
         margin: 20,
-        items : 5, 
+        items : 4, 
         rtl: true,
         lazyLoad: true,
         responsive:{
@@ -504,8 +504,7 @@ $(document).ready(function () {
                 items:2
             },
             1000:{
-                items:4
-            }
+                items:4          }
         }
     })
 

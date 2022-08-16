@@ -28,38 +28,35 @@
     <!-- Main style file -->
     <link rel="stylesheet" href="css/main.css">
     <style>
-        input,
-        textarea {
-            border: 1px solid rgba(0, 0, 0, 0.137);
+        .podcast .item .bg {
+            filter: blur(2px);
+            -webkit-filter: blur(2px);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 4px;
+            border: none;
         }
 
-        .list-group-item.active,
-        .bg-share {
-            background-color: #1FB9B3;
-            border: 2px solid #1FB9B3;
+        .podcast .item .bg::after {
+            content: '';
+            background: white !important;
+            position: absolute;
+            left: 0;
+            width: 210px;
+            top: 0;
+            height: 256px;
+            border-radius: 12px;
+            z-index: 1;
         }
 
-        .list-group-item {
-            background-color: #1fb9b42a;
-
-
-        }
-
-        label .border {
-            border: 2px solid #1FB9B3 !important;
-        }
-
-        .svg-inline--fa {
-            color: #1FB9B3;
-        }
-
-        .img-out {
-            width: 200px;
-            height: 200px;
-
+        .podcast .item .text {
+            margin: 15px;
+            font-size: 14px;
+            color: black;
+            text-align: center;
         }
     </style>
-
 
 </head>
 
@@ -76,64 +73,50 @@
                     </picture>
                 </a>
 
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <!-- <li>
-                        <a href="#" class="nav-link px-2 dropdown-toggle active">بحث عن مشروع </a>
-                        <ul class="dropdown-menu dropdown-menu-light">
-                            <li>
-                                <a class="dropdown-item" href="#">الاستشارة</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">مساحات العمل</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">التسويق</a>
-                            </li>
-                        </ul>
-                    </li> -->
-                    <!-- <li>
-                        <a href="#" class="nav-link dropdown-toggle px-2">الشبكة</a>
-                        <ul class="dropdown-menu dropdown-menu-light">
-                            <li>
-                                <a class="dropdown-item" href="#">الاستشارة</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">مساحات العمل</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">التسويق</a>
-                            </li>
-                        </ul>
-                    </li> -->
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 d-flex justify-content-between gap-4 mb-md-0">
+
                     <li>
-                        <a href="#" class="nav-link px-2">بحث عن مقدم خدمة</a>
+                        <a href="#" class="nav-link px-2">الاعلانات</a>
                     </li>
-                    <li id="add-project">
-                        <a href="#" class="nav-link px-2"> طلباتي </a>
+
+                    <li>
+                        <a href="#" class="nav-link px-2">النماذج</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link px-2"> أضف مشروع </a>
+                        <a href="#" class="nav-link px-2">العروض</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link px-2"> خدمات من المقر </a>
+                        <a href="#" class="nav-link px-2">المشاريع </a>
                     </li>
-                    <!-- <li>
-                        <a href="#" class="nav-link dropdown-toggle px-2">خدماتنا</a>
+                    <li>
+                        <a href="#" class="nav-link dropdown-toggle px-2">اخرى </a>
                         <ul class="dropdown-menu dropdown-menu-light">
                             <li>
-                                <a class="dropdown-item" href="#">الاستشارة</a>
+                                <a class="dropdown-item" href="#">رائدات الاعمال </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                                <a class="dropdown-item" href="#"> اللقاءات</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">التسويق</a>
+                                <a class="dropdown-item" href="#">البودكاست</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">قصص النجاح </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">المعارض </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">المدونة </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل </a>
                             </li>
                         </ul>
-                    </li> -->
+                    </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="ابحث عن  مشروع  " aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="مالذي تبحث عنه ؟ " aria-label="Search">
                     <picture>
                         <source srcset="img/Icon feather-search.png">
                         <img src="img/Icon feather-search.png" alt="">
@@ -322,120 +305,321 @@
                         </ul>
                     </div>
                     <a href="#" class="btn btn-primary">
-                        طوري للمنصة المميزة
+                        سجل كشريك
                     </a>
 
                 </div>
             </div>
         </div>
     </header>
-    <section class="m-5">
+
+
+    <section class="member-ship">
         <div class="container">
-            <div class="row">
-                <div style="margin-top: 150px;" class="col-md-3 ">
-                    <div class="col-12">
-                        <h5 class="fw-bolder"> نوع الطلب </h5>
-                        <div class="list-group" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action active" id="list-home-list"
-                                data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">مشروع قمت
-                                باضافته </a>
-                            <a class="list-group-item list-group-item-action" id="list-profile-list"
-                                data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">مشروع
-                                موجود من مقدم الخدمة </a>
+            <div>
+                <div class="pt-3">
+                    <div class="row gap-5 m-0 p-0 ">
+                        <h4 class="fw-bolder"> بطاقة العضوية </h4>
+                        <div class="col-md-3">
+                            <img src="img/member-ship-1.png" alt="">
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-9">
-                    <h3>طلباتي </h3>
-                    <div class="col-12 ">
-                        <ul class="nav nav-pills mb-3 blogs-nav p-3" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                                    aria-selected="true">الكل</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-profile" type="button" role="tab"
-                                    aria-controls="pills-profile" aria-selected="false">السابقة </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-contact" type="button" role="tab"
-                                    aria-controls="pills-contact" aria-selected="false"> الحالية </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-services-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-services" type="button" role="tab"
-                                    aria-controls="pills-services" aria-selected="false">الجديدة </button>
-                            </li>
-                        </ul>
-                        <div class="tab-content border " id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                                aria-labelledby="pills-home-tab">
-
-                                <div class="tab-content" id="nav-tabContent">
-                                    <div class="tab-pane fade show active" id="list-home" role="tabpanel"
-                                        aria-labelledby="list-home-list">
-
-                                        <div class="row mb-5 ">
-                                            <div style="color:#1FB9B3 ;"
-                                                class="box col-md-2 fw-bolder text-center  shadow m-5 p-3">
-                                                خدمة كوشة الافراح
-                                            </div>
-                                            <div style="color:#1FB9B3 ;"
-                                                class="box col-md-2 fw-bolder text-center  shadow m-5 p-3">
-                                                خدمة زفاف
-                                            </div>
-                                            <div style="color:#1FB9B3 ;"
-                                                class="box col-md-2 fw-bolder text-center  shadow m-5 p-3">
-                                                خدمة مساج
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="tab-pane fade" id="list-profile" role="tabpanel"
-                                        aria-labelledby="list-profile-list">
-
-                                        <div class="row mb-5 ">
-                                            <div style="color:#1FB9B3 ;"
-                                                class="box col-md-2 fw-bolder text-center  shadow m-5 p-3">
-                                            2   خدمة كوشة الافراح
-                                            </div>
-                                            <div style="color:#1FB9B3 ;"
-                                                class="box col-md-2 fw-bolder text-center  shadow m-5 p-3">
-                                            2    خدمة زفاف
-                                            </div>
-                                            <div style="color:#1FB9B3 ;"
-                                                class="box col-md-2 fw-bolder text-center  shadow m-5 p-3">
-                                            2    خدمة مساج
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                aria-labelledby="pills-profile-tab">...</div>
-                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                                aria-labelledby="pills-contact-tab">...</div>
-                            <div class="tab-pane fade" id="pills-services" role="tabpanel"
-                                aria-labelledby="pills-services-tab">...</div>
-
+                        <div class="col-md-3">
+                            <img src="img/member-ship-2.png" alt="">
                         </div>
+
+
                     </div>
 
 
                 </div>
+                <div class="pt-3">
+                    <h4 class="fw-bolder"> ماهي بطاقة العضوية؟ </h4>
+                    <p> هي بطاقة مخصصة لأعضاء شبكة رياديات في المملكة العربية السعودية تحتوي على العديد من العروض
+                        والخصومات
+                        على منتجات وخدمات ومطاعم ومراكز تجميل. </p>
+                </div>
+                <div class="pt-4">
+                    <h4 class="fw-bolder"> ماهي الأصناف التي ستتمكن من الحصول على عروض عليها؟ </h4>
+                    <p>
+                        السوبر ماركت - الجمال - منتجات الأطفال - استشارات - أزياء - مطاعم - مجوهرات - صالونات ومراكز
+                        تجميل -
+                        تعليم وتدريب - كافي هاوس
+
+                    </p>
+                </div>
+                <div class="pt-4">
+                    <h4 class="fw-bolder"> ما هي طريقة الاستخدام؟ </h4>
+                    <p>
+                    <h6> 1- قم بإبراز البطاقة للكاشير </h6>
+                    <h6> 2- قم بإبراز البطاقة للكاشير </h6>
+                    <h6> 3- قم بإبراز البطاقة للكاشير </h6>
+
+
+
+
+
+                    </p>
+                </div>
+
             </div>
 
+
+
+
+
+            <div>
+                <main class="  mt-5">
+                    <div class="">
+
+                        <div class="row justify-content-between mt-3 ">
+                            <h1 class="col-auto">
+                                العلامات التجارية
+                            </h1>
+                            <!-- <form class="col-auto search-input">
+                            <input class="form-control me-2" type="search" placeholder="ابحثي عن مستشارين"
+                                aria-label="Search">
+                            <picture>
+                                <source srcset="img/Icon feather-search.png">
+                                <img src="img/Icon feather-search.png" alt="">
+                            </picture>
+                        </form> -->
+                        </div>
+                        <ul class="nav blogs-nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="blogs-tab" data-bs-toggle="tab"
+                                    data-bs-target="#blogs" type="button" role="tab" aria-controls="blogs"
+                                    aria-selected="true">المجوهرات </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="exhibitions-tab" data-bs-toggle="tab"
+                                    data-bs-target="#exhibitions" type="button" role="tab" aria-controls="exhibitions"
+                                    aria-selected="false">التجميل </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="projects-tab" data-bs-toggle="tab"
+                                    data-bs-target="#projects" type="button" role="tab" aria-controls="projects"
+                                    aria-selected="false">الازياء </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="flower-tab" data-bs-toggle="tab" data-bs-target="#flower"
+                                    type="button" role="tab" aria-controls="projects" aria-selected="false">الزهور
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="healthy-tab" data-bs-toggle="tab" data-bs-target="#healthy"
+                                    type="button" role="tab" aria-controls="projects" aria-selected="false">الصحه
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="serv-tab" data-bs-toggle="tab" data-bs-target="#serv"
+                                    type="button" role="tab" aria-controls="projects" aria-selected="false">خدمات
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="coffe-tab" data-bs-toggle="tab" data-bs-target="#coffe"
+                                    type="button" role="tab" aria-controls="projects" aria-selected="false">مطاعم ومقاهي
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="elctron-tab" data-bs-toggle="tab" data-bs-target="#elctron"
+                                    type="button" role="tab" aria-controls="projects" aria-selected="false">التجاره
+                                    الالكترونية </button>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="blogs" role="tabpanel"
+                                aria-labelledby="blogs-tab">
+                                <div class="row">
+                                    <div class="podcast">
+                                        <div class="podcast-carousel owl-carousel owl-theme ">
+                                            <div class="item m-auto">
+                                                <div class="bg" style="background-color: white;">
+
+                                                </div>
+                                                <div class="text">
+                                                    <picture>
+                                                        <source srcset="img/NoPath - Copy (4).png" type="">
+                                                        <img src="img/NoPath - Copy (4).png" width="140" alt="">
+                                                    </picture>
+                                                    <h5>
+                                                        <a href="#">
+                                                            مجموعة العماري </a>
+                                                    </h5>
+                                                </div>
+
+                                            </div>
+                                            <div class="item  m-auto">
+                                                <div class="bg" style="background-color: white;">
+
+                                                </div>
+                                                <div class="text">
+                                                    <picture>
+                                                        <source srcset="img/NoPath.png" type="">
+                                                        <img src="img/NoPath.png" width="140" alt="">
+                                                    </picture>
+                                                    <h5>
+                                                        <a href="#">
+                                                            أثيل </a>
+                                                    </h5>
+                                                </div>
+
+                                            </div>
+                                            <div class="item  m-auto">
+                                                <div class="bg" style="background-color: white;">
+
+                                                </div>
+                                                <div class="text">
+                                                    <picture>
+                                                        <source srcset="img/NoPath - Copy.png" type="">
+                                                        <img src="img/NoPath - Copy.png" width="140" alt="">
+                                                    </picture>
+                                                    <h5>
+                                                        <a href="#">
+                                                            سرماس </a>
+                                                    </h5>
+                                                </div>
+
+                                            </div>
+                                            <div class="item  m-auto">
+                                                <div class="bg" style="background-color: white;">
+
+                                                </div>
+                                                <div class="text">
+                                                    <picture>
+                                                        <source srcset="img/NoPath - Copy (5).png" type="">
+                                                        <img src="img/NoPath - Copy (5).png" width="140" alt="">
+                                                    </picture>
+                                                    <h5>
+                                                        <a href="#">
+                                                            دانات </a>
+                                                    </h5>
+                                                </div>
+
+                                            </div>
+                                            <div class="item  m-auto">
+                                                <div class="bg" style="background-color: white;">
+
+                                                </div>
+                                                <div class="text">
+                                                    <picture>
+                                                        <source srcset="img/bakoura.png" type="">
+                                                        <img src="img/bakoura.png" width="140" alt="">
+                                                    </picture>
+                                                    <h5>
+                                                        <a href="#">
+                                                            باكورة </a>
+                                                    </h5>
+                                                </div>
+
+                                            </div>
+                                            <div class="item  m-auto">
+                                                <div class="bg" style="background-color: white;">
+
+                                                </div>
+                                                <div class="text">
+                                                    <picture>
+                                                        <source srcset="img/bakoura.png" type="">
+                                                        <img src="img/bakoura.png" width="140" alt="">
+                                                    </picture>
+                                                    <h5>
+                                                        <a href="#">
+                                                            باكورة </a>
+                                                    </h5>
+                                                </div>
+
+                                            </div>
+                                            <div class="item  m-auto">
+                                                <div class="bg" style="background-color: white;">
+
+                                                </div>
+                                                <div class="text">
+                                                    <picture>
+                                                        <source srcset="img/bakoura.png" type="">
+                                                        <img src="img/bakoura.png" width="140" alt="">
+                                                    </picture>
+                                                    <h5>
+                                                        <a href="#">
+                                                            باكورة </a>
+                                                    </h5>
+                                                </div>
+
+                                            </div>
+                                            <div class="item  m-auto">
+                                                <div class="bg" style="background-color: white;">
+
+                                                </div>
+                                                <div class="text">
+                                                    <picture>
+                                                        <source srcset="img/bakoura.png" type="">
+                                                        <img src="img/bakoura.png" width="140" alt="">
+                                                    </picture>
+                                                    <h5>
+                                                        <a href="#">
+                                                            باكورة </a>
+                                                    </h5>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+                                <div class="row">
+
+
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="exhibitions" role="tabpanel"
+                                aria-labelledby="exhibitions-tab">
+
+                            </div>
+                            <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+
+
+                            </div>
+                            <div class="tab-pane fade" id="flower" role="tabpanel" aria-labelledby="flower-tab">
+
+
+                            </div>
+                            <div class="tab-pane fade" id="healthy" role="tabpanel" aria-labelledby="healthy-tab">
+
+
+                            </div>
+                            <div class="tab-pane fade" id="serv" role="tabpanel" aria-labelledby="serv-tab">
+
+
+                            </div>
+                            <div class="tab-pane fade" id="coffe" role="tabpanel" aria-labelledby="coffe-tab">
+
+
+                            </div>
+                            <div class="tab-pane fade" id="elctron" role="tabpanel" aria-labelledby="elctron-tab">
+
+
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+            </div>
+            </main>
         </div>
+
+
+        </div>
+
+
+
     </section>
-
-
 
 
     <footer>
@@ -518,25 +702,18 @@
             </div>
         </div>
     </footer>
-
-
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <script src="js/lightbox.js"></script>
-
-
 
     <!-- Bootstrap -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <!-- owl -->
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/all.min.js"></script>
 
     <!-- Main script file -->
     <script src="js/main.js"></script>
-
 </body>
 
 </html>

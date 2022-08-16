@@ -28,66 +28,64 @@
     <!-- Main style file -->
     <link rel="stylesheet" href="css/main.css">
     <style>
-        h6,
-        h4 {
+        .adver {
+            background-color: #f2f2f2;
+        }
+
+        .tex {
             color: #1FB9B3;
+        }
+
+        .blogs-nav .nav-link.active {
+            border: 1px solid #1FB9B3 !important;
+            background-color: #1FB9B3 !important;
+            color: white;
             font-weight: bold;
-            padding: 10px;
-        }
-
-        h6 span {
-            color: black;
-            font-weight: 400;
-        }
-
-        .opt {
-            background-color: #1fb9b448;
-        }
-
-        .card .opt {
-            background-color: #1987541c !important;
-            color: #1FB9B3;
-            font-weight: bolder;
-            padding: 2px 15px;
 
         }
 
-        .bg-img {
-            position: relative;
-            background-color: #1fb9b33b;
-            left: 12px;
+        /* width */
+        .adver .tab::-webkit-scrollbar {
+            width: 5px;
+           
         }
 
-        .card {
-            border-radius: 5px;
-            background-color: #fff;
-            padding: 0px 13px;
-            margin-bottom: 20px;
+        /* Track */
+        .adver .tab::-webkit-scrollbar-track {
+            background: #1fb9b42a;
+           
+
         }
 
-        .modal-body .text .svg-inline--fa {
-            height: 3rem;
-            color: #1fb9b3;
+        /* Handle */
+        .adver .tab::-webkit-scrollbar-thumb {
+            background: #1FB9B3;
+            
         }
 
-        .add-modal .file-label {
-            width: 100%;
-            border: 2px solid #1FB9B3;
-            border-radius: 6px;
-            text-align: center;
-            padding: 10% 0;
-            position: relative;
+        /* Handle on hover */
+        .adver .tab::-webkit-scrollbar-thumb:hover {
+            background: #1FB9B3;
         }
 
-        .add-modal .file-label.first {
-            width: inherit;
+        .adver .tab {
+            height: 80vh;
+            overflow-y: scroll;
+
+        }
+        .border-main{
+            border: 2px solid #1FB9B3 !important;
+        }
+        .rounded-3{
+            border-radius: 15px !important;
+
         }
     </style>
+
 
 </head>
 
 <body>
-
     <header>
         <div class="container-fluid">
             <div
@@ -99,65 +97,50 @@
                     </picture>
                 </a>
 
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <!-- <li>
-                        <a href="#" class="nav-link px-2 dropdown-toggle active">بحث عن مشروع </a>
-                        <ul class="dropdown-menu dropdown-menu-light">
-                            <li>
-                                <a class="dropdown-item" href="#">الاستشارة</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">مساحات العمل</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">التسويق</a>
-                            </li>
-                        </ul>
-                    </li> -->
-                    <!-- <li>
-                        <a href="#" class="nav-link dropdown-toggle px-2">الشبكة</a>
-                        <ul class="dropdown-menu dropdown-menu-light">
-                            <li>
-                                <a class="dropdown-item" href="#">الاستشارة</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">مساحات العمل</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">التسويق</a>
-                            </li>
-                        </ul>
-                    </li> -->
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 d-flex justify-content-between gap-4 mb-md-0">
+
                     <li>
-                        <a href="#" class="nav-link px-2">بحث عن مقدم خدمة</a>
+                        <a href="#" class="nav-link px-2">الاعلانات</a>
                     </li>
-                    <li id="add-project">
-                        <a href="#" class="nav-link px-2"> طلباتي </a>
+
+                    <li>
+                        <a href="#" class="nav-link px-2">النماذج</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link px-2"> أضف مشروع </a>
+                        <a href="#" class="nav-link px-2">العروض</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link px-2"> خدمات من المقر </a>
+                        <a href="#" class="nav-link px-2">المشاريع </a>
                     </li>
-                    <!-- <li>
-                        <a href="#" class="nav-link dropdown-toggle px-2">خدماتنا</a>
+                    <li>
+                        <a href="#" class="nav-link dropdown-toggle px-2">اخرى </a>
                         <ul class="dropdown-menu dropdown-menu-light">
                             <li>
-                                <a class="dropdown-item" href="#">الاستشارة</a>
+                                <a class="dropdown-item" href="#">رائدات الاعمال </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                                <a class="dropdown-item" href="#"> اللقاءات</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">التسويق</a>
+                                <a class="dropdown-item" href="#">البودكاست</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">قصص النجاح </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">المعارض </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">المدونة </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل </a>
                             </li>
                         </ul>
-                    </li> -->
+                    </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="ابحث عن  مشروع  "
-                        aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="مالذي تبحث عنه ؟ " aria-label="Search">
                     <picture>
                         <source srcset="img/Icon feather-search.png">
                         <img src="img/Icon feather-search.png" alt="">
@@ -346,51 +329,92 @@
                         </ul>
                     </div>
                     <a href="#" class="btn btn-primary">
-                        طوري للمنصة المميزة
+                        سجل كشريك
                     </a>
 
                 </div>
             </div>
         </div>
     </header>
-    <section>
-        <div class="container p-4 ">
-            <div class="row border p-5">
-                <h4> خدمة  كوشة الافراح </h4>
+    <section class="m-5 adver p-5">
+        <div class="container">
+            <h3>اعلاناتي </h3>
+            <div class="col-12 ">
+                <ul class="nav nav-pills mb-3 blogs-nav p-3 row " id="pills-tab" role="tablist">
+                    <li class="nav-item col-md-4" role="presentation ">
+                        <button class="nav-link active w-100 bg-white  border-main " id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">الكل</button>
+                    </li>
 
-                <div>
-                    <h6>اسم  مقدم الخدمة :<span> عبير احمد </span> </h6>
-                    <h6>وصف المشروع :<span> -- </span> </h6>
-                    <h6>
-                        المهارات المطلوبة
+                    <li class="nav-item col-md-4" role="presentation">
+                        <button class="nav-link w-100  bg-white border-main" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false"> الحالي </button>
+                    </li>
+                    <li class="nav-item col-md-4" role="presentation">
+                        <button class="nav-link w-100  bg-white border-main" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">السابق </button>
+                    </li>
 
-                        :<a href="" class="opt mx-2 px-2 ">  تصميم  ورود </a>
-                        <a href="" class="opt px-2 "> زينة افراح  </a>
-                    </h6>
-                    <h6> مدة التسليم :<span> 5ايام </span> </h6>
-                    <h6> المبلغ المتوقع :<span> 100ريال -بعربون </span> </h6>
-                    <h6> حالة طلب الخدمة :<span> داخل  المقر  </span> </h6>
-                    <h6> الملف المرفق لوصف حالة المشروع :<span> اسم الملف </span> </h6>
-                    <div>
-                        <div class="modal-footerr border-0 pt-3">
-                            <button type="button" class="btn btn-primary">
-                                 تقييم الخدمة  
-                            </button>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop">
-                                 ابلاغ عن الخدمة 
-                            </button>
-                            <button type="button" class="btn btn-primary" >
-                              الدفع   
-                        </button>
+                </ul>
+                <div class="tab-content tab bg-white p-5" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <div class="row mb-5 ">
+                            <div class="border rounded-3 pt-2 mb-3 ">
+                                <h3 class="tex fw-bolder"> نون </h3>
+                                <p> 22/2/2022 </p>
+
+                            </div>
+                            <div class="border rounded-3 pt-2 mb-3 ">
+                                <h3 class="tex fw-bolder"> نون </h3>
+                                <p> 22/2/2022 </p>
+
+                            </div>
+                            <div class="border rounded-3 pt-2 mb-3 ">
+                                <h3 class="tex fw-bolder"> نون </h3>
+                                <p> 22/2/2022 </p>
+
+                            </div>
+                            <div class="border rounded-3 pt-2 mb-3 ">
+                                <h3 class="tex fw-bolder"> نون </h3>
+                                <p> 22/2/2022 </p>
+
+                            </div>
+
+
+
+
                         </div>
-                    </div>
 
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        ...</div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        ...</div>
+                    <div class="tab-pane fade" id="pills-services" role="tabpanel" aria-labelledby="pills-services-tab">
+                        ...</div>
 
                 </div>
+                <button class="btn-primary col-12 mt-2 p-2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect x="0.183105" width="23.661" height="24" fill="url(#pattern0)" />
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_863_28551"
+                                    transform="translate(0 0.0070622) scale(0.0104167 0.0102695)" />
+                            </pattern>
+                            <image id="image0_863_28551" width="96" height="96"
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAADk0lEQVR4nO2dTYsdRRSGnxIhjolmdioIutWlIiYbnWzcRvd+/QDRxDGIv0BwoaIRsw5xp5nEX6Ab4w/wc6coGkXnRjMRVPB10S1IuH21q7vr3Op5H5hNzdQ5p8/TTHdP3ekCY4wxxhhjjDHGGLNfSGMFkrQJPAocB+4B7gQOjhU/mGvAt8BnwEXgYkrpyhiBBwuQdBPwLPASsDm4ojpYAC8Db6SUfh8SaJAASXcAO8CDQ+JUzMfAYymly7kBsgW0zb8E3JUbYyZ8DRzJlXBDziRJB2jO/P3efGh6cL7tSW+yBAAn2L+/dpZxFHimSCZJm5IW6uZdSQ9LmssdEJIOtsd0fsVx/yzpcIlinl5RxMnJCwhG0vaK43+yRAE7Hcnfmzz5mhDaA0lfdiR/aPLka4KaX0fL+KJE8qsdyQ9NnnxNkHSoowdX+8bq/RwgSUsDpTTanzVqYKw+5N6GmpGwgGAsIJiqBUiqun6oVICkDUmngV1JVyS9KWkjuq4idNx+Lb0jmLCG15eU8GrhGkbpQ5W3oZIuA7ddN/xjSun6sSlrGKUPtQqYTQ1VXgPmhAUEYwHBWEAwFhCMBQRjAcFYQDAWEIwFBGMBwVhAMBYQTHEBkm6W9Fa7kJLFiti5LCSdVg2LOn2bsmT+mQGNmpozpfrwD0XXA9Ss4e4B63qm/QbcklL6679+cEgf/o2vAcEUFdCeWWdL5uzJ2f9z9o/JjSWTtZwE/gQeZ33+qW8BnANeLJ3Ya8LBNfgaEIwFBGMBwVhAMBYQjAUEYwHBWEAwFhCMBQRjAcFYQDAWEEytApa9MG9RvIoRqFXAO0vGzhWvIoKxFqMH1rChZnH/Wvv1tgp/oqHKRfmxkZTa3EVPgDb3KH2IWJIcjYjGj02t14DZYAHBWEAwOQL2lg1qf72y7NaOb/3aN1aOgO86xu/PiFUr93WMf983UI6ATzvGn8uIVSsnOsY/mTyzpKdWfLp4e/ICgpF0asXxP1GigE1JuyuK2JG0pfm9unhL0oUVx5316uKsp1dJp4BXcubOmOdTSq/1nZQr4ADwAXAkZ/4M+Qg4llL6o+/EIRs43E6zgcPduTFmwlc0Gzj8kDM5+0Gs3THiAeDD3Bgz4BJwNLf5MPBJOKX0E/AI8AKwOyRWZewC28DWkP1jYNxtrA7TbGF1HLiXZhuruTwd7wHfAJ8DF4D3U0q/xJZkjDHGGGOMMcYYY2rjb4ZtW6m5MRl4AAAAAElFTkSuQmCC" />
+                        </defs>
+                    </svg>
 
+                    اضافة اعلان
+                </button>
             </div>
-
 
         </div>
     </section>
@@ -476,60 +500,18 @@
         </div>
     </footer>
 
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body row justify-content-between border-0 p-0">
-
-                    <div class="col-7 mt-2 p-3 text-center">
-                        <h6 class="fw-bolder">نعتذر لك إذا حدث معك مشكلة!</h6>
-                        <p class="mt-3 fs-6"> أخبرنا من فضلك عن سبب انزعاجك من هذه الخدمة وسوف نقوم باتخاذ الإجراء المناسب</p>
-                        <textarea class="border" name="" id="" cols="35" rows="5"></textarea>
-                        <button href="" class=" btn btn-primary  w-75"> أبلغ عن الخدمة  </a>
-
-
-                    </div>
-                    <div class="col-5 bg-img ">
-                        <button type="button" class="btn-close mt-1 position-absolute top-0 end-0 p-2"
-                            data-bs-dismiss="modal" aria-label="Close"></button>
-                        <div class=" mt-4">
-                            <img class="mt-5 img-fluid" src="./img/panas.png" alt="">
-
-
-                        </div>
-
-
-                    </div>
-
-
-
-
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <script src="js/lightbox.js"></script>
-
-
 
     <!-- Bootstrap -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <!-- owl -->
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/all.min.js"></script>
 
     <!-- Main script file -->
     <script src="js/main.js"></script>
-
 </body>
 
 </html>

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!-- for english make lang en and dir ltr -->
 <html lang="ar" dir="rtl">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,66 +27,17 @@
     <!-- Main style file -->
     <link rel="stylesheet" href="css/main.css">
     <style>
-        h6,
-        h4 {
-            color: #1FB9B3;
-            font-weight: bold;
-            padding: 10px;
-        }
+        .date-input::before {
+    content: "\f133";
 
-        h6 span {
-            color: black;
-            font-weight: 400;
-        }
+    right: 9px;
 
-        .opt {
-            background-color: #1fb9b448;
-        }
-
-        .card .opt {
-            background-color: #1987541c !important;
-            color: #1FB9B3;
-            font-weight: bolder;
-            padding: 2px 15px;
-
-        }
-
-        .bg-img {
-            position: relative;
-            background-color: #1fb9b33b;
-            left: 12px;
-        }
-
-        .card {
-            border-radius: 5px;
-            background-color: #fff;
-            padding: 0px 13px;
-            margin-bottom: 20px;
-        }
-
-        .modal-body .text .svg-inline--fa {
-            height: 3rem;
-            color: #1fb9b3;
-        }
-
-        .add-modal .file-label {
-            width: 100%;
-            border: 2px solid #1FB9B3;
-            border-radius: 6px;
-            text-align: center;
-            padding: 10% 0;
-            position: relative;
-        }
-
-        .add-modal .file-label.first {
-            width: inherit;
-        }
+}
     </style>
 
+
 </head>
-
 <body>
-
     <header>
         <div class="container-fluid">
             <div
@@ -99,64 +49,50 @@
                     </picture>
                 </a>
 
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <!-- <li>
-                        <a href="#" class="nav-link px-2 dropdown-toggle active">بحث عن مشروع </a>
-                        <ul class="dropdown-menu dropdown-menu-light">
-                            <li>
-                                <a class="dropdown-item" href="#">الاستشارة</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">مساحات العمل</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">التسويق</a>
-                            </li>
-                        </ul>
-                    </li> -->
-                    <!-- <li>
-                        <a href="#" class="nav-link dropdown-toggle px-2">الشبكة</a>
-                        <ul class="dropdown-menu dropdown-menu-light">
-                            <li>
-                                <a class="dropdown-item" href="#">الاستشارة</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">مساحات العمل</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">التسويق</a>
-                            </li>
-                        </ul>
-                    </li> -->
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 d-flex justify-content-between gap-4 mb-md-0">
+          
                     <li>
-                        <a href="#" class="nav-link px-2">بحث عن مقدم خدمة</a>
+                        <a href="#" class="nav-link px-2">الاعلانات</a>
                     </li>
-                    <li id="add-project">
-                        <a href="#" class="nav-link px-2"> طلباتي </a>
+           
+                    <li>
+                        <a href="#" class="nav-link px-2">النماذج</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link px-2"> أضف مشروع </a>
+                        <a href="#" class="nav-link px-2">العروض</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link px-2"> خدمات من المقر </a>
+                        <a href="#" class="nav-link px-2">المشاريع </a>
                     </li>
-                    <!-- <li>
-                        <a href="#" class="nav-link dropdown-toggle px-2">خدماتنا</a>
+                    <li>
+                        <a href="#" class="nav-link dropdown-toggle px-2">اخرى  </a>
                         <ul class="dropdown-menu dropdown-menu-light">
                             <li>
-                                <a class="dropdown-item" href="#">الاستشارة</a>
+                                <a class="dropdown-item" href="#">رائدات الاعمال </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">مساحات العمل</a>
+                                <a class="dropdown-item" href="#"> اللقاءات</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">التسويق</a>
+                                <a class="dropdown-item" href="#">البودكاست</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">قصص النجاح </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">المعارض </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">المدونة  </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">مساحات العمل   </a>
                             </li>
                         </ul>
-                    </li> -->
+                    </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="ابحث عن  مشروع  "
+                    <input class="form-control me-2" type="search" placeholder="مالذي تبحث عنه ؟ "
                         aria-label="Search">
                     <picture>
                         <source srcset="img/Icon feather-search.png">
@@ -346,66 +282,116 @@
                         </ul>
                     </div>
                     <a href="#" class="btn btn-primary">
-                        طوري للمنصة المميزة
+                        سجل كشريك 
                     </a>
 
                 </div>
             </div>
         </div>
     </header>
-    <section>
-        <div class="container p-4 ">
-            <div class="row border p-5">
-                <h4> خدمة  كوشة الافراح </h4>
-
-                <div>
-                    <h6>اسم  مقدم الخدمة :<span> عبير احمد </span> </h6>
-                    <h6>وصف المشروع :<span> -- </span> </h6>
-                    <h6>
-                        المهارات المطلوبة
-
-                        :<a href="" class="opt mx-2 px-2 ">  تصميم  ورود </a>
-                        <a href="" class="opt px-2 "> زينة افراح  </a>
-                    </h6>
-                    <h6> مدة التسليم :<span> 5ايام </span> </h6>
-                    <h6> المبلغ المتوقع :<span> 100ريال -بعربون </span> </h6>
-                    <h6> حالة طلب الخدمة :<span> داخل  المقر  </span> </h6>
-                    <h6> الملف المرفق لوصف حالة المشروع :<span> اسم الملف </span> </h6>
-                    <div>
-                        <div class="modal-footerr border-0 pt-3">
-                            <button type="button" class="btn btn-primary">
-                                 تقييم الخدمة  
-                            </button>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop">
-                                 ابلاغ عن الخدمة 
-                            </button>
-                            <button type="button" class="btn btn-primary" >
-                              الدفع   
-                        </button>
+    <main>
+        <div class="container">
+            <div class="row justify-content-between align-items-start mt-3 add-offer">
+                <div class="col-md-7 offer post-project">
+                    <div class="card">
+                        <div class="header">
+                            <h3>
+                             عن  العروض 
+                            </h3>
+                            <div class="">
+                                <label for="imginput" class="form-label file-label">
+                                    <picture>
+                                        <source srcset="img/camera.png">
+                                        <img src="img/camera.png" alt="">
+                                    </picture>
+                                    <span>
+                                        إضافة  شعار 
+                                    </span>
+                                    <img src="#" id="image_selected"/>
+                                </label>
+                                <input onchange="readURL(this);" class="form-control d-none" type="file" id="imginput">
+                            </div>
                         </div>
-                    </div>
+                        <div class="row mt-5">
+                            <div class="mb-3 col-10">
+                                <input type="text" class="form-control" placeholder="اسم الشركة ">
+                            </div>
+                            <div class="mb-3 col-10">
+                                <input type="text" class="form-control" placeholder="تصنيف االشركة   ">
+                            </div>
+                            <div class="mb-3 col-md-10">
+                                <textarea class="form-control " placeholder="عن العرض"></textarea>
+                            </div>
+                            <div class="mb-3 col-md-10">
+                                <textarea class="form-control " placeholder=" طريقة الاستخدام "></textarea>
+                            </div>
+                            <div class="mb-3 col-10">
+                                <input type="text" class="form-control" placeholder=" طريقى الاستخدام  ">
+                            </div>    <div class="mb-3 col-10">
+                                <input type="text" class="form-control" placeholder=" رابط الموقع  ">
+                            </div>
+                        </div>    <div class="mb-3 col-10">
+                            <input type="text" class="form-control" placeholder="  كود الخصم   ">
+                        </div>
+                        <div class="mb-3 col-md-10 date-input">
+                            <input type="text"
+                            onfocus="(this.type='date')"
+                            onblur="(this.type='text')"
+                            class="form-control " placeholder="بداية الاعلان">
+                        </div>
+                        <h5 >
+                            مدة الإعلان
+                        </h5>
+                        <div class="offer-days mb-3">
+                            <i class="far fa-plus-square" onclick="addDay()"></i>
+                            <span>
 
+                                <span class="days-count">
+                                    1
+                                </span>
+                                يوم
+                            </span>
+                            <i class="far fa-minus-square" onclick="deleteDay()"></i>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class=" ">
+                                <h3>
+                                    السعر
+                                    <span class="w-50  border p-2 d-block mt-2">
+                                       <span>
+                                        50 
+                                       </span>
+                                        <span class="">
+                                            ريال
+                                        </span>
+                                    </span>
+                                </h3>
+                            </div>
+                        </div>
+                 
+                            <div class="row align-items-center justify-content-center">
 
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#successModal" class="btn btn-primary max-content mx-0 ">
+                                    نشر العروض 
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>            
                 </div>
-
             </div>
-
-
         </div>
-    </section>
-
+    </main>
     <footer>
         <div class="container-fluid">
             <div class="row justify-content-between row-cols-auto">
                 <div class="">
-                    <a href="/"
-                        class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                    <a href="/" class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
                         <picture>
                             <source media="(min-width:650px)" srcset="img/flogo.png">
                             <img src="img/flogo.png" width="150" height="75" alt="">
                         </picture>
-                    </a>
+                        </a>
                     <div class="social mt-3">
                         <a href="#">
                             <i class="fab fa-linkedin-in"></i>
@@ -458,7 +444,7 @@
                     <h6>اشتركي بالقائمة البريدية</h6>
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" placeholder="البريد الإلكتروني"
-                            aria-describedby="button-addon2">
+                        aria-describedby="button-addon2">
                         <button class="btn btn-primary" type="button" id="button-addon2">
                             <i class="fas fa-chevron-left"></i>
                         </button>
@@ -476,60 +462,36 @@
         </div>
     </footer>
 
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade checkout-modal" id="successModal"data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body row justify-content-between border-0 p-0">
-
-                    <div class="col-7 mt-2 p-3 text-center">
-                        <h6 class="fw-bolder">نعتذر لك إذا حدث معك مشكلة!</h6>
-                        <p class="mt-3 fs-6"> أخبرنا من فضلك عن سبب انزعاجك من هذه الخدمة وسوف نقوم باتخاذ الإجراء المناسب</p>
-                        <textarea class="border" name="" id="" cols="35" rows="5"></textarea>
-                        <button href="" class=" btn btn-primary  w-75"> أبلغ عن الخدمة  </a>
-
-
-                    </div>
-                    <div class="col-5 bg-img ">
-                        <button type="button" class="btn-close mt-1 position-absolute top-0 end-0 p-2"
-                            data-bs-dismiss="modal" aria-label="Close"></button>
-                        <div class=" mt-4">
-                            <img class="mt-5 img-fluid" src="./img/panas.png" alt="">
-
-
-                        </div>
-
-
-                    </div>
-
-
-
-
-
-                </div>
-
+          <div class="modal-content">
+            <div class="modal-body">
+                <i class="fas fa-check-circle"></i>
+                <h3>
+                    تم الارسال
+                </h3>
+                <p>
+                    سيتم مراجعة البيانات وإخطارك بعد 3 أيام كحد أقصى
+                </p>
+                <a href="#" data-bs-dismiss="modal" class="btn btn-primary d-inline-block mb-3">
+                    فهمت
+                </a>
+                <a href="#" class="green d-block text-center">الانتقال للصفحة الرئيسية</a>
             </div>
+          </div>
         </div>
-    </div>
-
-
+      </div>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <script src="js/lightbox.js"></script>
-
-
 
     <!-- Bootstrap -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <!-- owl -->
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/all.min.js"></script>
 
     <!-- Main script file -->
     <script src="js/main.js"></script>
-
 </body>
-
 </html>
